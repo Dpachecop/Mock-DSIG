@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Mock_DSIG
 {
-    public partial class Form7 : Form
+    public partial class PantallaSemilleroLider : Form
     {
-        public Form7()
+        public PantallaSemilleroLider()
         {
             InitializeComponent();
         }
