@@ -50,7 +50,7 @@ namespace Mock_DSIG
         }
 
 
-        public Boolean IniciarSesionComoInvestigador(String correo_inv, string contrasenia_inv)
+        public Boolean IniciarSesionComoInvestigador(String correo_inv, string contrasenia_inv )
         {
             SqlCommand Consulta; // Variable de tipo SqlCommand para ejecutar la consulta SQL
             Consulta = new SqlCommand("select  correo_inv, contrasenia_inv, tipo_inv  from INVESTIGADOR where correo_inv = @correo_inv and contrasenia_inv = @contrasenia_inv", cn.Conectar()); // Consulta SQL para verificar el inicio de sesión

@@ -34,8 +34,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.form_password = new System.Windows.Forms.TextBox();
+            this.form_correo = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -86,8 +86,8 @@
             // 
             this.groupBox1.BackColor = System.Drawing.Color.White;
             this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.form_password);
+            this.groupBox1.Controls.Add(this.form_correo);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.groupBox2);
@@ -112,23 +112,24 @@
             this.button1.TabIndex = 7;
             this.button1.Text = "INGRESAR";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox2
+            // form_password
             // 
-            this.textBox2.Location = new System.Drawing.Point(38, 373);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(451, 34);
-            this.textBox2.TabIndex = 6;
+            this.form_password.Location = new System.Drawing.Point(38, 373);
+            this.form_password.Multiline = true;
+            this.form_password.Name = "form_password";
+            this.form_password.PasswordChar = '*';
+            this.form_password.Size = new System.Drawing.Size(451, 34);
+            this.form_password.TabIndex = 6;
             // 
-            // textBox1
+            // form_correo
             // 
-            this.textBox1.Location = new System.Drawing.Point(38, 295);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(452, 34);
-            this.textBox1.TabIndex = 5;
+            this.form_correo.Location = new System.Drawing.Point(38, 295);
+            this.form_correo.Multiline = true;
+            this.form_correo.Name = "form_correo";
+            this.form_correo.Size = new System.Drawing.Size(452, 34);
+            this.form_correo.TabIndex = 5;
             // 
             // label5
             // 
@@ -217,8 +218,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox form_password;
+        private System.Windows.Forms.TextBox form_correo;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox groupBox2;
