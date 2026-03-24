@@ -60,6 +60,12 @@
     <Compile Include="FormUsuario.Designer.cs">
       <DependentUpon>FormUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuInicialAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuInicialAdministrador.Designer.cs">
+      <DependentUpon>MenuInicialAdministrador.cs</DependentUpon>
+    </Compile>
     <Compile Include="principal_screen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +115,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormUsuario.resx">
       <DependentUpon>FormUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuInicialAdministrador.resx">
+      <DependentUpon>MenuInicialAdministrador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="principal_screen.resx">
       <DependentUpon>principal_screen.cs</DependentUpon>
