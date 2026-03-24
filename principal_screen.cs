@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace Mock_DSIG
 {
-    public partial class Form1 : Form
+    public partial class principal_screen : Form
     {
 
 
         consultas_login cn = new consultas_login();
-        public Form1()
+        public principal_screen()
         {
             InitializeComponent();
         }
