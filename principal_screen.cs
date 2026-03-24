@@ -27,20 +27,27 @@ namespace Mock_DSIG
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "" || textBox2.Text == "")
-            {
-                MessageBox.Show("Debe Ingresar Datos Validos para Poder Iniciar Sesión", "ADVERTENCIA", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                cn.IniciarSesionComoAdmin(textBox1.Text, textBox2.Text);
-                this.Hide();
-            }
+          
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+            FormAdmin frmIniciarSesion = new FormAdmin();
+            frmIniciarSesion.Show();
+            this.Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            FormUsuario frmIniciarSesion = new FormUsuario();
+            frmIniciarSesion.Show();
+            this.Hide();
         }
     }
 }
