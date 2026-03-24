@@ -42,6 +42,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.BOTON_PRUEBA = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -50,6 +51,7 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.White;
+            this.groupBox1.Controls.Add(this.BOTON_PRUEBA);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.textBox1);
@@ -194,6 +196,15 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "DSIG - INICIO DE SESIÓN";
             // 
+            // BOTON_PRUEBA
+            // 
+            this.BOTON_PRUEBA.Location = new System.Drawing.Point(38, 502);
+            this.BOTON_PRUEBA.Name = "BOTON_PRUEBA";
+            this.BOTON_PRUEBA.Size = new System.Drawing.Size(452, 23);
+            this.BOTON_PRUEBA.TabIndex = 8;
+            this.BOTON_PRUEBA.Text = "button3";
+            this.BOTON_PRUEBA.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -232,6 +243,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button BOTON_PRUEBA;
     }
 }
 
