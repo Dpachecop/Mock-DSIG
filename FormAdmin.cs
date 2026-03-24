@@ -16,5 +16,20 @@ namespace Mock_DSIG
         {
             InitializeComponent();
         }
+
+        consultas_login cn = new consultas_login();
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (form_correo.Text == "" || form_password.Text == "")
+            {
+                MessageBox.Show("Debe Ingresar Datos Validos para Poder Iniciar Sesión", "ADVERTENCIA", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                cn.IniciarSesionComoAdmin(form_correo.Text, form_password.Text);
+                this.Hide();
+            }
+        }
     }
 }
