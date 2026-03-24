@@ -60,6 +60,12 @@
     <Compile Include="FormUsuario.Designer.cs">
       <DependentUpon>FormUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="PantallaSemilleroLider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaSemilleroLider.Designer.cs">
+      <DependentUpon>PantallaSemilleroLider.cs</DependentUpon>
+    </Compile>
     <Compile Include="principal_screen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,9 @@
     <EmbeddedResource Include="FormUsuario.resx">
       <DependentUpon>FormUsuario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PantallaSemilleroLider.resx">
+      <DependentUpon>PantallaSemilleroLider.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="principal_screen.resx">
       <DependentUpon>principal_screen.cs</DependentUpon>
     </EmbeddedResource>
@@ -139,6 +148,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -152,6 +162,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Seed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Proyectos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Teams.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reportes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Salir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO-SEMILLERO-DSIG %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\conexion-a-internet.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
