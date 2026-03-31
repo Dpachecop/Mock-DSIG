@@ -16,5 +16,22 @@ namespace Mock_DSIG
         {
             InitializeComponent();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnInicioAdmin_Click(object sender, EventArgs e)
+        {
+            MenuInicialAdministrador menuInicialAdministrador = new MenuInicialAdministrador();
+            menuInicialAdministrador.Show();
+            this.Hide();
+        }
+
+        private void btnProyectosAdmin_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
