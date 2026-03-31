@@ -40,6 +40,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -58,7 +59,6 @@
             this.label20 = new System.Windows.Forms.Label();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -84,7 +84,7 @@
             this.Column5,
             this.Column6});
             this.dataGridView1.Location = new System.Drawing.Point(325, 423);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(1324, 554);
@@ -169,10 +169,22 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(79)))), ((int)(((byte)(124)))));
             this.panel1.Controls.Add(this.label5);
             this.panel1.Location = new System.Drawing.Point(276, -2);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1421, 98);
             this.panel1.TabIndex = 32;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label5.Location = new System.Drawing.Point(55, 36);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(613, 23);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "SIGSI - SISTEMA DE GESTION DE SEMILLEROS DE INVESTIGACIÓN";
             // 
             // panel2
             // 
@@ -289,8 +301,10 @@
             this.btnReportesAdmin.Name = "btnReportesAdmin";
             this.btnReportesAdmin.Size = new System.Drawing.Size(311, 60);
             this.btnReportesAdmin.TabIndex = 11;
+            this.btnReportesAdmin.TabStop = false;
             this.btnReportesAdmin.Text = "      REPORTES";
             this.btnReportesAdmin.UseVisualStyleBackColor = true;
+            this.btnReportesAdmin.Click += new System.EventHandler(this.btnReportesAdmin_Click);
             // 
             // btnUsuariosAdmin
             // 
@@ -304,6 +318,7 @@
             this.btnUsuariosAdmin.TabIndex = 10;
             this.btnUsuariosAdmin.Text = "       USUARIOS";
             this.btnUsuariosAdmin.UseVisualStyleBackColor = true;
+            this.btnUsuariosAdmin.Click += new System.EventHandler(this.btnUsuariosAdmin_Click);
             // 
             // btnProyectosAdmin
             // 
@@ -317,6 +332,7 @@
             this.btnProyectosAdmin.TabIndex = 9;
             this.btnProyectosAdmin.Text = "           PROYECTOS";
             this.btnProyectosAdmin.UseVisualStyleBackColor = true;
+            this.btnProyectosAdmin.Click += new System.EventHandler(this.btnProyectosAdmin_Click);
             // 
             // btnSemillerosAdmin
             // 
@@ -330,6 +346,7 @@
             this.btnSemillerosAdmin.TabIndex = 8;
             this.btnSemillerosAdmin.Text = "         SEMILLEROS";
             this.btnSemillerosAdmin.UseVisualStyleBackColor = true;
+            this.btnSemillerosAdmin.Click += new System.EventHandler(this.btnSemillerosAdmin_Click);
             // 
             // btnInicioAdmin
             // 
@@ -343,6 +360,7 @@
             this.btnInicioAdmin.TabIndex = 7;
             this.btnInicioAdmin.Text = "INICIO";
             this.btnInicioAdmin.UseVisualStyleBackColor = true;
+            this.btnInicioAdmin.Click += new System.EventHandler(this.btnInicioAdmin_Click);
             // 
             // label4
             // 
@@ -401,18 +419,6 @@
             this.pictureBox14.TabIndex = 20;
             this.pictureBox14.TabStop = false;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(55, 36);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(613, 23);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "SIGSI - SISTEMA DE GESTION DE SEMILLEROS DE INVESTIGACIÓN";
-            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -423,8 +429,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form5";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form5";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);

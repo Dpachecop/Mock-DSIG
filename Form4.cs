@@ -31,7 +31,28 @@ namespace Mock_DSIG
 
         private void btnProyectosAdmin_Click(object sender, EventArgs e)
         {
+            Form3 frmProyectos = new Form3();
+            frmProyectos.Show();
+            this.Hide();
+        }
 
+        private void btnUsuariosAdmin2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSemillerosAdmin_Click(object sender, EventArgs e)
+        {
+            Form2 frmSemillerosAdmin = new Form2();
+            frmSemillerosAdmin.Show();
+            this.Hide();
+        }
+
+        private void btnReportesAdmin_Click(object sender, EventArgs e)
+        {
+            Form5 frmReportes = new Form5();
+            frmReportes.Show();
+            this.Hide();
         }
     }
 }

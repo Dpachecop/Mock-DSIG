@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -64,7 +65,6 @@
             this.label20 = new System.Windows.Forms.Label();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -89,6 +89,18 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1421, 98);
             this.panel1.TabIndex = 2;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label6.Location = new System.Drawing.Point(48, 42);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(613, 23);
+            this.label6.TabIndex = 41;
+            this.label6.Text = "SIGSI - SISTEMA DE GESTION DE SEMILLEROS DE INVESTIGACIÓN";
             // 
             // label2
             // 
@@ -377,6 +389,7 @@
             this.btnReportesAdmin.TabIndex = 11;
             this.btnReportesAdmin.Text = "      REPORTES";
             this.btnReportesAdmin.UseVisualStyleBackColor = true;
+            this.btnReportesAdmin.Click += new System.EventHandler(this.btnReportesAdmin_Click);
             // 
             // btnUsuariosAdmin
             // 
@@ -390,6 +403,7 @@
             this.btnUsuariosAdmin.TabIndex = 10;
             this.btnUsuariosAdmin.Text = "       USUARIOS";
             this.btnUsuariosAdmin.UseVisualStyleBackColor = true;
+            this.btnUsuariosAdmin.Click += new System.EventHandler(this.btnUsuariosAdmin_Click);
             // 
             // btnProyectosAdmin2
             // 
@@ -416,6 +430,7 @@
             this.btnSemillerosAdmin.TabIndex = 8;
             this.btnSemillerosAdmin.Text = "         SEMILLEROS";
             this.btnSemillerosAdmin.UseVisualStyleBackColor = true;
+            this.btnSemillerosAdmin.Click += new System.EventHandler(this.btnSemillerosAdmin_Click);
             // 
             // btnInicioAdmin
             // 
@@ -429,6 +444,7 @@
             this.btnInicioAdmin.TabIndex = 7;
             this.btnInicioAdmin.Text = "INICIO";
             this.btnInicioAdmin.UseVisualStyleBackColor = true;
+            this.btnInicioAdmin.Click += new System.EventHandler(this.btnInicioAdmin_Click);
             // 
             // label4
             // 
@@ -487,18 +503,6 @@
             this.pictureBox14.TabIndex = 20;
             this.pictureBox14.TabStop = false;
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(48, 42);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(613, 23);
-            this.label6.TabIndex = 41;
-            this.label6.Text = "SIGSI - SISTEMA DE GESTION DE SEMILLEROS DE INVESTIGACIÓN";
-            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -517,6 +521,7 @@
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form3";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form3";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

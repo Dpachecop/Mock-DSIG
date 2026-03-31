@@ -47,6 +47,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -65,7 +66,6 @@
             this.label20 = new System.Windows.Forms.Label();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridUsuarios)).BeginInit();
@@ -100,7 +100,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(79)))), ((int)(((byte)(124)))));
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(640, 290);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(24, 26);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -112,7 +112,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(122)))), ((int)(((byte)(74)))));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(344, 288);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(24, 24);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -126,7 +126,7 @@
             this.btnEliminarUsuario.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminarUsuario.ForeColor = System.Drawing.Color.White;
             this.btnEliminarUsuario.Location = new System.Drawing.Point(817, 277);
-            this.btnEliminarUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEliminarUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminarUsuario.Name = "btnEliminarUsuario";
             this.btnEliminarUsuario.Size = new System.Drawing.Size(191, 49);
             this.btnEliminarUsuario.TabIndex = 27;
@@ -140,7 +140,7 @@
             this.btnEditUsuario.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditUsuario.ForeColor = System.Drawing.Color.White;
             this.btnEditUsuario.Location = new System.Drawing.Point(604, 277);
-            this.btnEditUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEditUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditUsuario.Name = "btnEditUsuario";
             this.btnEditUsuario.Size = new System.Drawing.Size(191, 49);
             this.btnEditUsuario.TabIndex = 26;
@@ -154,7 +154,7 @@
             this.btnAgregarNuevoUsuario.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarNuevoUsuario.ForeColor = System.Drawing.Color.White;
             this.btnAgregarNuevoUsuario.Location = new System.Drawing.Point(325, 277);
-            this.btnAgregarNuevoUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAgregarNuevoUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.btnAgregarNuevoUsuario.Name = "btnAgregarNuevoUsuario";
             this.btnAgregarNuevoUsuario.Size = new System.Drawing.Size(251, 49);
             this.btnAgregarNuevoUsuario.TabIndex = 25;
@@ -174,7 +174,7 @@
             this.Column5,
             this.Column6});
             this.dataGridUsuarios.Location = new System.Drawing.Point(325, 423);
-            this.dataGridUsuarios.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridUsuarios.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridUsuarios.Name = "dataGridUsuarios";
             this.dataGridUsuarios.RowHeadersWidth = 51;
             this.dataGridUsuarios.Size = new System.Drawing.Size(1324, 554);
@@ -265,10 +265,22 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(79)))), ((int)(((byte)(124)))));
             this.panel1.Controls.Add(this.label6);
             this.panel1.Location = new System.Drawing.Point(276, -2);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1421, 98);
             this.panel1.TabIndex = 21;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label6.Location = new System.Drawing.Point(43, 38);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(613, 23);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "SIGSI - SISTEMA DE GESTION DE SEMILLEROS DE INVESTIGACIÓN";
             // 
             // panel2
             // 
@@ -387,6 +399,7 @@
             this.btnReportesAdmin.TabIndex = 11;
             this.btnReportesAdmin.Text = "      REPORTES";
             this.btnReportesAdmin.UseVisualStyleBackColor = true;
+            this.btnReportesAdmin.Click += new System.EventHandler(this.btnReportesAdmin_Click);
             // 
             // btnUsuariosAdmin2
             // 
@@ -400,6 +413,7 @@
             this.btnUsuariosAdmin2.TabIndex = 10;
             this.btnUsuariosAdmin2.Text = "       USUARIOS";
             this.btnUsuariosAdmin2.UseVisualStyleBackColor = true;
+            this.btnUsuariosAdmin2.Click += new System.EventHandler(this.btnUsuariosAdmin2_Click);
             // 
             // btnProyectosAdmin
             // 
@@ -427,6 +441,7 @@
             this.btnSemillerosAdmin.TabIndex = 8;
             this.btnSemillerosAdmin.Text = "         SEMILLEROS";
             this.btnSemillerosAdmin.UseVisualStyleBackColor = true;
+            this.btnSemillerosAdmin.Click += new System.EventHandler(this.btnSemillerosAdmin_Click);
             // 
             // btnInicioAdmin
             // 
@@ -499,18 +514,6 @@
             this.pictureBox14.TabIndex = 20;
             this.pictureBox14.TabStop = false;
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(43, 38);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(613, 23);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "SIGSI - SISTEMA DE GESTION DE SEMILLEROS DE INVESTIGACIÓN";
-            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -527,8 +530,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form4";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form4";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

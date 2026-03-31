@@ -100,7 +100,9 @@ namespace Mock_DSIG
 
         private void btnReportesAdmin_Click(object sender, EventArgs e)
         {
-
+            Form5 frmReportes = new Form5();
+            frmReportes.Show();
+            this.Hide();
         }
 
         private void pictureBox9_Click(object sender, EventArgs e)
