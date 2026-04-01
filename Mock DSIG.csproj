@@ -66,11 +66,29 @@
     <Compile Include="MenuInicialAdministrador.Designer.cs">
       <DependentUpon>MenuInicialAdministrador.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuPrincipalLider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPrincipalLider.Designer.cs">
+      <DependentUpon>MenuPrincipalLider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaMiembrosLIder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaMiembrosLIder.Designer.cs">
+      <DependentUpon>PantallaMiembrosLIder.cs</DependentUpon>
+    </Compile>
     <Compile Include="PantallaSemilleroLider.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PantallaSemilleroLider.Designer.cs">
       <DependentUpon>PantallaSemilleroLider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProyectosLider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProyectosLider.Designer.cs">
+      <DependentUpon>ProyectosLider.cs</DependentUpon>
     </Compile>
     <Compile Include="screen_agg_inv.cs">
       <SubType>Form</SubType>
@@ -125,8 +143,17 @@
     <EmbeddedResource Include="MenuInicialAdministrador.resx">
       <DependentUpon>MenuInicialAdministrador.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipalLider.resx">
+      <DependentUpon>MenuPrincipalLider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaMiembrosLIder.resx">
+      <DependentUpon>PantallaMiembrosLIder.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PantallaSemilleroLider.resx">
       <DependentUpon>PantallaSemilleroLider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProyectosLider.resx">
+      <DependentUpon>ProyectosLider.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="screen_agg_inv.resx">
       <DependentUpon>screen_agg_inv.cs</DependentUpon>

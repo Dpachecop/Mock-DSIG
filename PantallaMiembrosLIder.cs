@@ -10,34 +10,31 @@ using System.Windows.Forms;
 
 namespace Mock_DSIG
 {
-    public partial class PantallaSemilleroLider : Form
+    public partial class PantallaMiembrosLIder : Form
     {
-        public PantallaSemilleroLider()
+        public PantallaMiembrosLIder()
         {
             InitializeComponent();
         }
 
-        private void dTPFechar_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnInicio_Click(object sender, EventArgs e)
+        private void btnInicioLider_Click(object sender, EventArgs e)
         {
             MenuPrincipalLider menuPrincipalLider = new MenuPrincipalLider();
             menuPrincipalLider.Show();
             this.Hide();
         }
 
-        private void btnProyectos_Click(object sender, EventArgs e)
+        private void btnProyectosLider_Click(object sender, EventArgs e)
         {
             ProyectosLider proyectosLider = new ProyectosLider();
             proyectosLider.Show();
+            this.Hide();
+        }
+
+        private void btnMiembrosLider_Click(object sender, EventArgs e)
+        {
+            PantallaMiembrosLIder pantallaMiembrosLIder = new PantallaMiembrosLIder();
+            pantallaMiembrosLIder.Show();
             this.Hide();
         }
     }
