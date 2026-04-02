@@ -68,7 +68,9 @@ namespace Mock_DSIG
             }
         }
 
-
-
+        private void btnConsultarAdmin_Click(object sender, EventArgs e)
+        {
+           
+        }
     }
 }

@@ -31,6 +31,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtidPROYECTO = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.comboBoxEstadoProyecto = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.comboBoxSemilleros = new System.Windows.Forms.ComboBox();
@@ -48,8 +50,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtidPROYECTO = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -100,6 +100,28 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Información General";
+            // 
+            // txtidPROYECTO
+            // 
+            this.txtidPROYECTO.Location = new System.Drawing.Point(31, 87);
+            this.txtidPROYECTO.Margin = new System.Windows.Forms.Padding(4);
+            this.txtidPROYECTO.Multiline = true;
+            this.txtidPROYECTO.Name = "txtidPROYECTO";
+            this.txtidPROYECTO.Size = new System.Drawing.Size(652, 41);
+            this.txtidPROYECTO.TabIndex = 15;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(28, 158);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(166, 18);
+            this.label8.TabIndex = 14;
+            this.label8.Text = "Nombre del Proyecto";
             // 
             // comboBoxEstadoProyecto
             // 
@@ -305,28 +327,7 @@
             this.button2.TabIndex = 16;
             this.button2.Text = "CANCELAR";
             this.button2.UseVisualStyleBackColor = false;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(28, 158);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(166, 18);
-            this.label8.TabIndex = 14;
-            this.label8.Text = "Nombre del Proyecto";
-            // 
-            // txtidPROYECTO
-            // 
-            this.txtidPROYECTO.Location = new System.Drawing.Point(31, 87);
-            this.txtidPROYECTO.Margin = new System.Windows.Forms.Padding(4);
-            this.txtidPROYECTO.Multiline = true;
-            this.txtidPROYECTO.Name = "txtidPROYECTO";
-            this.txtidPROYECTO.Size = new System.Drawing.Size(652, 41);
-            this.txtidPROYECTO.TabIndex = 15;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form6
             // 
