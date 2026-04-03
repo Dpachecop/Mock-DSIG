@@ -48,6 +48,12 @@
   <ItemGroup>
     <Compile Include="conexion.cs" />
     <Compile Include="consultas_login.cs" />
+    <Compile Include="EditarProyectosAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarProyectosAdmin.Designer.cs">
+      <DependentUpon>EditarProyectosAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +140,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="EditarProyectosAdmin.resx">
+      <DependentUpon>EditarProyectosAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormAdmin.resx">
       <DependentUpon>FormAdmin.cs</DependentUpon>
     </EmbeddedResource>

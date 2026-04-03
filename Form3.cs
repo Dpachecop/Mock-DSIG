@@ -24,7 +24,19 @@ namespace Mock_DSIG
             try
             {
                 DataTable dt = new DataTable();
-                string query = "SELECT  P.idPROYECTO AS [ID], P.nombre_proyecto AS [Nombre Proyecto], I.nombre_inv + ' ' + I.apellido_inv AS [Investigador Líder], P.FECHA_INICIO AS [Fecha Inicio], P.fecha_final_proyecto AS [Fecha Final], P.objetivo_proyecto AS [Descripción] FROM PROYECTO P LEFT JOIN PROYECTO_INVESTIGADOR PI ON P.idPROYECTO = PI.idPROYECTO LEFT JOIN INVESTIGADOR I ON PI.idINVESTIGADOR = I.idInv"; 
+                string query = @"SELECT 
+                            P.idPROYECTO AS [ID], 
+                            P.nombre_proyecto AS [Proyecto], 
+                            S.nombre_semillero AS [Semillero], 
+                            I.nombre_inv + ' ' + I.apellido_inv AS [Lider],
+                            P.FECHA_INICIO AS [Inicio], 
+                            P.fecha_final_proyecto AS [Fin],
+                            P.objetivo_proyecto AS [Objetivo],
+                            P.estado_proyecto AS [Estado]
+                         FROM PROYECTO P
+                         INNER JOIN SEMILLERO S ON P.SEMILLERO_idSEMILLERO = S.idSEMILLERO
+                         LEFT JOIN PROYECTO_INVESTIGADOR PI ON P.idPROYECTO = PI.idPROYECTO
+                         LEFT JOIN INVESTIGADOR I ON PI.idINVESTIGADOR = I.idInv";
                 SqlDataAdapter da = new SqlDataAdapter(query, cn.Conectar());
                 da.Fill(dt);
 
@@ -78,7 +90,7 @@ namespace Mock_DSIG
         private void btnAggProyectos_Click(object sender, EventArgs e)
         {
             Form6 frmRegistroProyecto = new Form6();
-            frmRegistroProyecto.ShowDialog(); 
+            frmRegistroProyecto.ShowDialog();
         }
 
         private void btnConsultarProyectosAdmin_Click(object sender, EventArgs e)
@@ -92,6 +104,61 @@ namespace Mock_DSIG
             {
                 Application.Exit();
             }
+        }
+
+        private void btnEditProyectos_Click(object sender, EventArgs e)
+        {
+            // Validar que haya una fila seleccionada
+            if (dataGridProyectos.SelectedRows.Count > 0)
+            {
+                int idProyecto = Convert.ToInt32(dataGridProyectos.CurrentRow.Cells["ID"].Value);
+                EditarProyectosAdmin frmEditar = new EditarProyectosAdmin(idProyecto);
+                frmEditar.ShowDialog();
+                ConsultarDatosProyectosAdmin();
+            }
+            else
+            {
+                MessageBox.Show("Por favor, seleccione una fila del listado para editar.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+        public void EliminarProyectos()
+        {
+            if (dataGridProyectos.SelectedRows.Count > 0)
+            {
+                int idProyecto = Convert.ToInt32(dataGridProyectos.CurrentRow.Cells["ID"].Value);
+
+                if (MessageBox.Show("¿Desea eliminar este proyecto y sus vínculos?", "ELIMINAR PROYECTOS",MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                {
+                    try
+                    {
+                        SqlConnection conexionAbierta = cn.Conectar();
+
+                        // EL FLUJO EN UNA SOLA CONSULTA:
+                        string query = @"DELETE FROM PROYECTO_INVESTIGADOR WHERE idPROYECTO = @id;
+                        DELETE FROM PROYECTO WHERE idPROYECTO = @id;";
+                        // se hace en este orden porque existen relaciones entre las tablas, si se intenta eliminar el proyecto primero no se podrá por la relación con las otras tablas
+                        SqlCommand cmd = new SqlCommand(query, conexionAbierta);
+                        cmd.Parameters.AddWithValue("@id", idProyecto);
+                        cmd.ExecuteNonQuery();
+
+                        MessageBox.Show("Eliminado con éxito");
+                        ConsultarDatosProyectosAdmin(); // Refrescar tabla
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error: " + ex.Message);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Seleccione una fila primero.");
+                }
+            }
+        }
+
+        private void btnEliminarProyectos_Click(object sender, EventArgs e)
+        {
+            EliminarProyectos();
         }
     }
 }

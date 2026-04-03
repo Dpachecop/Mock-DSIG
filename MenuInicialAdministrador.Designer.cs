@@ -37,7 +37,6 @@
             this.btnInicioAdmin = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
@@ -51,7 +50,7 @@
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panelSolicitudesPendientes = new System.Windows.Forms.Panel();
-            this.lblSolicitudesPendientes = new System.Windows.Forms.Label();
+            this.lblInvAdmin = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -65,12 +64,12 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.panelMiembros = new System.Windows.Forms.Panel();
-            this.lblMiembrosSemilleros = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lblProyectosAdmin = new System.Windows.Forms.Label();
+            this.lblProyectosenCursoAdmin = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panelProyectosActivos = new System.Windows.Forms.Panel();
-            this.lblProyectosActivos = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblSemillerossActivos = new System.Windows.Forms.Label();
+            this.lblSemillerosActivos = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.panel2.SuspendLayout();
@@ -194,26 +193,13 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(9, 165);
+            this.label3.Location = new System.Drawing.Point(9, 124);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(161, 23);
             this.label3.TabIndex = 5;
             this.label3.Text = "ADMINISTRADOR";
             this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label20.Location = new System.Drawing.Point(8, 132);
-            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(149, 23);
-            this.label20.TabIndex = 4;
-            this.label20.Text = "Ana Del Cristo";
-            this.label20.Click += new System.EventHandler(this.label20_Click);
             // 
             // pictureBox12
             // 
@@ -243,7 +229,6 @@
             this.panel2.Controls.Add(this.btnInicioAdmin);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.label20);
             this.panel2.Controls.Add(this.pictureBox12);
             this.panel2.Controls.Add(this.pictureBox14);
             this.panel2.Location = new System.Drawing.Point(-2, -1);
@@ -366,14 +351,14 @@
             this.label1.Location = new System.Drawing.Point(8, 42);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(613, 23);
+            this.label1.Size = new System.Drawing.Size(611, 23);
             this.label1.TabIndex = 3;
-            this.label1.Text = "SIGSI - SISTEMA DE GESTION DE SEMILLEROS DE INVESTIGACIÓN";
+            this.label1.Text = "DSIG - SISTEMA DE GESTION DE SEMILLEROS DE INVESTIGACIÓN";
             // 
             // panelSolicitudesPendientes
             // 
             this.panelSolicitudesPendientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panelSolicitudesPendientes.Controls.Add(this.lblSolicitudesPendientes);
+            this.panelSolicitudesPendientes.Controls.Add(this.lblInvAdmin);
             this.panelSolicitudesPendientes.Controls.Add(this.label7);
             this.panelSolicitudesPendientes.Controls.Add(this.pictureBox4);
             this.panelSolicitudesPendientes.Location = new System.Drawing.Point(1293, 283);
@@ -382,29 +367,29 @@
             this.panelSolicitudesPendientes.Size = new System.Drawing.Size(323, 293);
             this.panelSolicitudesPendientes.TabIndex = 43;
             // 
-            // lblSolicitudesPendientes
+            // lblInvAdmin
             // 
-            this.lblSolicitudesPendientes.AutoSize = true;
-            this.lblSolicitudesPendientes.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSolicitudesPendientes.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblSolicitudesPendientes.Location = new System.Drawing.Point(155, 135);
-            this.lblSolicitudesPendientes.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblSolicitudesPendientes.Name = "lblSolicitudesPendientes";
-            this.lblSolicitudesPendientes.Size = new System.Drawing.Size(36, 40);
-            this.lblSolicitudesPendientes.TabIndex = 10;
-            this.lblSolicitudesPendientes.Text = "8";
+            this.lblInvAdmin.AutoSize = true;
+            this.lblInvAdmin.Font = new System.Drawing.Font("Century Gothic", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInvAdmin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblInvAdmin.Location = new System.Drawing.Point(145, 105);
+            this.lblInvAdmin.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblInvAdmin.Name = "lblInvAdmin";
+            this.lblInvAdmin.Size = new System.Drawing.Size(89, 99);
+            this.lblInvAdmin.TabIndex = 10;
+            this.lblInvAdmin.Text = "8";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label7.Location = new System.Drawing.Point(52, 21);
+            this.label7.Location = new System.Drawing.Point(26, 18);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(227, 23);
+            this.label7.Size = new System.Drawing.Size(174, 23);
             this.label7.TabIndex = 10;
-            this.label7.Text = "Solicitudes Pendientes";
+            this.label7.Text = "INVESTIGADORES";
             // 
             // pictureBox4
             // 
@@ -544,8 +529,8 @@
             // panelMiembros
             // 
             this.panelMiembros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panelMiembros.Controls.Add(this.lblMiembrosSemilleros);
-            this.panelMiembros.Controls.Add(this.label6);
+            this.panelMiembros.Controls.Add(this.lblProyectosAdmin);
+            this.panelMiembros.Controls.Add(this.lblProyectosenCursoAdmin);
             this.panelMiembros.Controls.Add(this.pictureBox3);
             this.panelMiembros.Location = new System.Drawing.Point(849, 283);
             this.panelMiembros.Margin = new System.Windows.Forms.Padding(4);
@@ -553,29 +538,29 @@
             this.panelMiembros.Size = new System.Drawing.Size(316, 293);
             this.panelMiembros.TabIndex = 42;
             // 
-            // lblMiembrosSemilleros
+            // lblProyectosAdmin
             // 
-            this.lblMiembrosSemilleros.AutoSize = true;
-            this.lblMiembrosSemilleros.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMiembrosSemilleros.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblMiembrosSemilleros.Location = new System.Drawing.Point(148, 135);
-            this.lblMiembrosSemilleros.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblMiembrosSemilleros.Name = "lblMiembrosSemilleros";
-            this.lblMiembrosSemilleros.Size = new System.Drawing.Size(36, 40);
-            this.lblMiembrosSemilleros.TabIndex = 10;
-            this.lblMiembrosSemilleros.Text = "8";
+            this.lblProyectosAdmin.AutoSize = true;
+            this.lblProyectosAdmin.Font = new System.Drawing.Font("Century Gothic", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProyectosAdmin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblProyectosAdmin.Location = new System.Drawing.Point(133, 105);
+            this.lblProyectosAdmin.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblProyectosAdmin.Name = "lblProyectosAdmin";
+            this.lblProyectosAdmin.Size = new System.Drawing.Size(89, 99);
+            this.lblProyectosAdmin.TabIndex = 10;
+            this.lblProyectosAdmin.Text = "8";
             // 
-            // label6
+            // lblProyectosenCursoAdmin
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(41, 21);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(238, 23);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "Miembros del Semillero";
+            this.lblProyectosenCursoAdmin.AutoSize = true;
+            this.lblProyectosenCursoAdmin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProyectosenCursoAdmin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblProyectosenCursoAdmin.Location = new System.Drawing.Point(23, 18);
+            this.lblProyectosenCursoAdmin.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblProyectosenCursoAdmin.Name = "lblProyectosenCursoAdmin";
+            this.lblProyectosenCursoAdmin.Size = new System.Drawing.Size(228, 23);
+            this.lblProyectosenCursoAdmin.TabIndex = 9;
+            this.lblProyectosenCursoAdmin.Text = "PROYECTOS EN CURSO";
             // 
             // pictureBox3
             // 
@@ -591,8 +576,8 @@
             // panelProyectosActivos
             // 
             this.panelProyectosActivos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panelProyectosActivos.Controls.Add(this.lblProyectosActivos);
-            this.panelProyectosActivos.Controls.Add(this.label5);
+            this.panelProyectosActivos.Controls.Add(this.lblSemillerossActivos);
+            this.panelProyectosActivos.Controls.Add(this.lblSemillerosActivos);
             this.panelProyectosActivos.Controls.Add(this.pictureBox2);
             this.panelProyectosActivos.Location = new System.Drawing.Point(391, 283);
             this.panelProyectosActivos.Margin = new System.Windows.Forms.Padding(4);
@@ -600,29 +585,29 @@
             this.panelProyectosActivos.Size = new System.Drawing.Size(323, 296);
             this.panelProyectosActivos.TabIndex = 41;
             // 
-            // lblProyectosActivos
+            // lblSemillerossActivos
             // 
-            this.lblProyectosActivos.AutoSize = true;
-            this.lblProyectosActivos.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProyectosActivos.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblProyectosActivos.Location = new System.Drawing.Point(145, 135);
-            this.lblProyectosActivos.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblProyectosActivos.Name = "lblProyectosActivos";
-            this.lblProyectosActivos.Size = new System.Drawing.Size(36, 40);
-            this.lblProyectosActivos.TabIndex = 9;
-            this.lblProyectosActivos.Text = "8";
+            this.lblSemillerossActivos.AutoSize = true;
+            this.lblSemillerossActivos.Font = new System.Drawing.Font("Century Gothic", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSemillerossActivos.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblSemillerossActivos.Location = new System.Drawing.Point(120, 116);
+            this.lblSemillerossActivos.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblSemillerossActivos.Name = "lblSemillerossActivos";
+            this.lblSemillerossActivos.Size = new System.Drawing.Size(89, 99);
+            this.lblSemillerossActivos.TabIndex = 9;
+            this.lblSemillerossActivos.Text = "8";
             // 
-            // label5
+            // lblSemillerosActivos
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(81, 21);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(184, 23);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Proyectos Activos";
+            this.lblSemillerosActivos.AutoSize = true;
+            this.lblSemillerosActivos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSemillerosActivos.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblSemillerosActivos.Location = new System.Drawing.Point(19, 18);
+            this.lblSemillerosActivos.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblSemillerosActivos.Name = "lblSemillerosActivos";
+            this.lblSemillerosActivos.Size = new System.Drawing.Size(213, 23);
+            this.lblSemillerosActivos.TabIndex = 8;
+            this.lblSemillerosActivos.Text = "SEMILLEROS ACTIVOS";
             // 
             // pictureBox2
             // 
@@ -653,6 +638,7 @@
             this.Name = "MenuInicialAdministrador";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MenuInicialAdministrador";
+            this.Activated += new System.EventHandler(this.MenuInicialAdministrador_Activated);
             this.Load += new System.EventHandler(this.MenuInicialAdministrador_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.panel2.ResumeLayout(false);
@@ -692,14 +678,13 @@
         private System.Windows.Forms.Button btnInicioAdmin;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label20;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panelSolicitudesPendientes;
-        private System.Windows.Forms.Label lblSolicitudesPendientes;
+        private System.Windows.Forms.Label lblInvAdmin;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Panel panel6;
@@ -713,12 +698,12 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Panel panelMiembros;
-        private System.Windows.Forms.Label lblMiembrosSemilleros;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblProyectosAdmin;
+        private System.Windows.Forms.Label lblProyectosenCursoAdmin;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panelProyectosActivos;
-        private System.Windows.Forms.Label lblProyectosActivos;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblSemillerossActivos;
+        private System.Windows.Forms.Label lblSemillerosActivos;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox7;

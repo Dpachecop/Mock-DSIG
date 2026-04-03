@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Mock_DSIG
 {
     public partial class MenuInicialAdministrador : Form
     {
+        conexion cn = new conexion();
         public MenuInicialAdministrador()
         {
             InitializeComponent();
@@ -24,7 +26,7 @@ namespace Mock_DSIG
 
         private void MenuInicialAdministrador_Load(object sender, EventArgs e)
         {
-
+            ActualizarCantidades();
         }
 
         private void pictureBox12_Click(object sender, EventArgs e)
@@ -114,5 +116,36 @@ namespace Mock_DSIG
         {
 
         }
+        public void ActualizarCantidades()
+        {
+            try
+            {
+                // Aca hacemos una consulta simple para contabilizar la cantidad de semilleros, proyectos e investigadores y mostrarlo en los labels correspondientes
+                SqlConnection conexionAbierta = cn.Conectar();
+
+                string qSemilleros = "SELECT COUNT(*) FROM SEMILLERO"; 
+                SqlCommand cmd1 = new SqlCommand(qSemilleros, conexionAbierta);
+                lblSemillerossActivos.Text = cmd1.ExecuteScalar().ToString();
+
+
+                string qProyectos = "SELECT COUNT(*) FROM PROYECTO";
+                SqlCommand cmd2 = new SqlCommand(qProyectos, conexionAbierta);
+                lblProyectosAdmin.Text = cmd2.ExecuteScalar().ToString();
+
+                string qInvestigadores = "SELECT COUNT(*) FROM INVESTIGADOR";
+                SqlCommand cmd3 = new SqlCommand(qInvestigadores, conexionAbierta);
+                lblInvAdmin.Text = cmd3.ExecuteScalar().ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar estadísticas: " + ex.Message);
+            }
+        }
+
+        private void MenuInicialAdministrador_Activated(object sender, EventArgs e)
+        {
+            ActualizarCantidades();
+        }
     }
+    
 }

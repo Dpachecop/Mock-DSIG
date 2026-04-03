@@ -43,7 +43,9 @@ namespace Mock_DSIG
                 DateTime inicio = dateTimePickerInicio.Value;
                 DateTime final = dateTimePickerFinal.Value;
                 string objetivo = txtDescripcionProyecto.Text;
-                InsertarProyectos(idProy, idSemi, nombre, inicio, final, objetivo);
+                string estadoSeleccionado = comboBoxEstadoProyecto.SelectedItem.ToString();
+
+                InsertarProyectos(idProy, idSemi, nombre, inicio, final, objetivo, estadoSeleccionado);
                 VincularProyectoConInvestigador(idProy, idLider);
                 this.Close();
             }
@@ -56,12 +58,12 @@ namespace Mock_DSIG
         
 
 
-        public void InsertarProyectos(int idPROYECTO, int SEMILLERO_idSEMILLERO, string nombre_proyecto, DateTime FECHA_INICIO, DateTime fecha_final_proyecto, string objetivo_proyecto)
+        public void InsertarProyectos(int idPROYECTO, int SEMILLERO_idSEMILLERO, string nombre_proyecto, DateTime FECHA_INICIO, DateTime fecha_final_proyecto, string objetivo_proyecto, string estado)
         {
             try
             {
               
-                SqlCommand Insert = new SqlCommand("INSERT INTO PROYECTO (idPROYECTO, SEMILLERO_idSEMILLERO, nombre_proyecto, FECHA_INICIO, fecha_final_proyecto, objetivo_proyecto) " + "VALUES (@idPROYECTO, @SEMILLERO_idSEMILLERO, @nombre_proyecto, @FECHA_INICIO, @fecha_final_proyecto, @objetivo_proyecto)", cn.Conectar());
+                SqlCommand Insert = new SqlCommand("INSERT INTO PROYECTO (idPROYECTO, SEMILLERO_idSEMILLERO, nombre_proyecto, FECHA_INICIO, fecha_final_proyecto, objetivo_proyecto, estado_proyecto) " + "VALUES (@idPROYECTO, @SEMILLERO_idSEMILLERO, @nombre_proyecto, @FECHA_INICIO, @fecha_final_proyecto, @objetivo_proyecto, @estado_proyecto)", cn.Conectar());
 
                 Insert.CommandType = CommandType.Text;
 
@@ -72,6 +74,7 @@ namespace Mock_DSIG
                 Insert.Parameters.Add("@FECHA_INICIO", SqlDbType.Date).Value = FECHA_INICIO;
                 Insert.Parameters.Add("@fecha_final_proyecto", SqlDbType.Date).Value = fecha_final_proyecto;
                 Insert.Parameters.Add("@objetivo_proyecto", SqlDbType.VarChar).Value = objetivo_proyecto;
+                Insert.Parameters.AddWithValue("@estado_proyecto", estado);
 
                 Insert.ExecuteNonQuery();
                 MessageBox.Show("Proyecto registrado exitosamente", "INSERCION PROYECTOS", MessageBoxButtons.OK, MessageBoxIcon.Information);

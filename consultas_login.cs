@@ -36,7 +36,7 @@ namespace Mock_DSIG
                 if (Convert.ToString(correo_admin) == dr["correo_admin"].ToString() && contrasenia_admin == dr["contrasenia_admin"].ToString()) // Verificar si el correo y contrasenia coinciden con los datos obtenidos de la consulta SQL
                 {
                     MessageBox.Show("Bienvenido Administrador"); // Si coinciden, mostrar un mensaje de bienvenida para el administrador
-                   Form4 formAdministrador = new Form4(); // Crear una instancia del formulario de administrador
+                   MenuInicialAdministrador formAdministrador = new MenuInicialAdministrador(); // Crear una instancia del formulario de administrador
                     formAdministrador.Show(); // Mostrar el formulario de administrador
                     estado_coneccion = true; // Si coinciden, establecer el estado de la conexión como verdadero
                 }
