@@ -13,7 +13,6 @@ namespace Mock_DSIG
     public partial class principal_screen : Form
     {
 
-
         consultas_login cn = new consultas_login();
         public principal_screen()
         {
@@ -48,6 +47,11 @@ namespace Mock_DSIG
             FormUsuario frmIniciarSesion = new FormUsuario();
             frmIniciarSesion.Show();
             this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
