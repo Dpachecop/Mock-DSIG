@@ -72,11 +72,29 @@
     <Compile Include="MenuInicialAdministrador.Designer.cs">
       <DependentUpon>MenuInicialAdministrador.cs</DependentUpon>
     </Compile>
+    <Compile Include="menuinicialinvestigador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menuinicialinvestigador.Designer.cs">
+      <DependentUpon>menuinicialinvestigador.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuPrincipalLider.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MenuPrincipalLider.Designer.cs">
       <DependentUpon>MenuPrincipalLider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuProyectosInvestigador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuProyectosInvestigador.Designer.cs">
+      <DependentUpon>MenuProyectosInvestigador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuSemilleroInvestigador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuSemilleroInvestigador.Designer.cs">
+      <DependentUpon>MenuSemilleroInvestigador.cs</DependentUpon>
     </Compile>
     <Compile Include="PantallaMiembrosLIder.cs">
       <SubType>Form</SubType>
@@ -89,6 +107,12 @@
     </Compile>
     <Compile Include="PantallaSemilleroLider.Designer.cs">
       <DependentUpon>PantallaSemilleroLider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PerfilInvestigador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PerfilInvestigador.Designer.cs">
+      <DependentUpon>PerfilInvestigador.cs</DependentUpon>
     </Compile>
     <Compile Include="ProyectosLider.cs">
       <SubType>Form</SubType>
@@ -152,14 +176,26 @@
     <EmbeddedResource Include="MenuInicialAdministrador.resx">
       <DependentUpon>MenuInicialAdministrador.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="menuinicialinvestigador.resx">
+      <DependentUpon>menuinicialinvestigador.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipalLider.resx">
       <DependentUpon>MenuPrincipalLider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuProyectosInvestigador.resx">
+      <DependentUpon>MenuProyectosInvestigador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuSemilleroInvestigador.resx">
+      <DependentUpon>MenuSemilleroInvestigador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PantallaMiembrosLIder.resx">
       <DependentUpon>PantallaMiembrosLIder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PantallaSemilleroLider.resx">
       <DependentUpon>PantallaSemilleroLider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PerfilInvestigador.resx">
+      <DependentUpon>PerfilInvestigador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProyectosLider.resx">
       <DependentUpon>ProyectosLider.cs</DependentUpon>

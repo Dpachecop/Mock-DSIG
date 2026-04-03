@@ -1,6 +1,6 @@
 ﻿namespace Mock_DSIG
 {
-    partial class PantallaSemilleroLider
+    partial class MenuSemilleroInvestigador
     {
         /// <summary>
         /// Required designer variable.
@@ -28,30 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.label20 = new System.Windows.Forms.Label();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.gbDescripcion = new System.Windows.Forms.GroupBox();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
-            this.btnGuardarCambios = new System.Windows.Forms.Button();
-            this.btnEditarDatos = new System.Windows.Forms.Button();
+            this.btnGuardarCambiosInvestigador = new System.Windows.Forms.Button();
+            this.btnEditarDatosInvestigador = new System.Windows.Forms.Button();
             this.gbDatosgenerales = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.CBXestadoInvestigador = new System.Windows.Forms.ComboBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtAreadeconocimiento = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.dTPFechar = new System.Windows.Forms.DateTimePicker();
+            this.dTPFecharInvestigador = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
@@ -60,7 +60,7 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.btnSalirInvestigador = new System.Windows.Forms.Button();
-            this.btnPerfilInvestigador = new System.Windows.Forms.Button();
+            this.btnPertfilInvestigador = new System.Windows.Forms.Button();
             this.btnProyectosInvestigador = new System.Windows.Forms.Button();
             this.btnMiSemilleroInvestigador = new System.Windows.Forms.Button();
             this.btnInicioInvestigador = new System.Windows.Forms.Button();
@@ -69,12 +69,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.panel1.SuspendLayout();
-            this.gbDescripcion.SuspendLayout();
-            this.gbDatosgenerales.SuspendLayout();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.gbDescripcion.SuspendLayout();
+            this.gbDatosgenerales.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -85,15 +85,111 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.SuspendLayout();
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label13.Location = new System.Drawing.Point(572, 185);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(158, 21);
+            this.label13.TabIndex = 36;
+            this.label13.Text = "FechaActualizable";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label12.Location = new System.Drawing.Point(486, 184);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(93, 21);
+            this.label12.TabIndex = 35;
+            this.label12.Text = "Fundado : ";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label11.Location = new System.Drawing.Point(320, 184);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(173, 21);
+            this.label11.TabIndex = 34;
+            this.label11.Text = "Siglas-actualizables - ";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label10.Location = new System.Drawing.Point(501, 147);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(208, 26);
+            this.label10.TabIndex = 33;
+            this.label10.Text = "Texto Actualizable";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label9.Location = new System.Drawing.Point(319, 143);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(196, 32);
+            this.label9.TabIndex = 32;
+            this.label9.Text = "Mi Semillero - ";
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.Silver;
+            this.panel8.Controls.Add(this.label20);
+            this.panel8.Controls.Add(this.pictureBox13);
+            this.panel8.Location = new System.Drawing.Point(3, 790);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(1293, 31);
+            this.panel8.TabIndex = 31;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label20.Location = new System.Drawing.Point(78, 9);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(59, 16);
+            this.label20.TabIndex = 22;
+            this.label20.Text = "En linea";
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.Image = global::Mock_DSIG.Properties.Resources.conexion_a_internet;
+            this.pictureBox13.Location = new System.Drawing.Point(13, 2);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(59, 28);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox13.TabIndex = 21;
+            this.pictureBox13.TabStop = false;
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(79)))), ((int)(((byte)(124)))));
             this.panel1.Controls.Add(this.pictureBox5);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(209, 1);
+            this.panel1.Location = new System.Drawing.Point(223, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1066, 80);
-            this.panel1.TabIndex = 17;
+            this.panel1.TabIndex = 27;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::Mock_DSIG.Properties.Resources.LOGO_SEMILLERO_DSIG__1_;
+            this.pictureBox5.Location = new System.Drawing.Point(868, -19);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(239, 113);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 4;
+            this.pictureBox5.TabStop = false;
             // 
             // label1
             // 
@@ -110,13 +206,13 @@
             // 
             this.gbDescripcion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.gbDescripcion.Controls.Add(this.txtDescripcion);
-            this.gbDescripcion.Controls.Add(this.btnGuardarCambios);
-            this.gbDescripcion.Controls.Add(this.btnEditarDatos);
+            this.gbDescripcion.Controls.Add(this.btnGuardarCambiosInvestigador);
+            this.gbDescripcion.Controls.Add(this.btnEditarDatosInvestigador);
             this.gbDescripcion.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbDescripcion.Location = new System.Drawing.Point(808, 233);
+            this.gbDescripcion.Location = new System.Drawing.Point(821, 235);
             this.gbDescripcion.Name = "gbDescripcion";
             this.gbDescripcion.Size = new System.Drawing.Size(386, 313);
-            this.gbDescripcion.TabIndex = 20;
+            this.gbDescripcion.TabIndex = 30;
             this.gbDescripcion.TabStop = false;
             this.gbDescripcion.Text = "Descripción";
             // 
@@ -128,60 +224,60 @@
             this.txtDescripcion.Size = new System.Drawing.Size(348, 135);
             this.txtDescripcion.TabIndex = 20;
             // 
-            // btnGuardarCambios
+            // btnGuardarCambiosInvestigador
             // 
-            this.btnGuardarCambios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(122)))), ((int)(((byte)(74)))));
-            this.btnGuardarCambios.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnGuardarCambios.ForeColor = System.Drawing.Color.White;
-            this.btnGuardarCambios.Location = new System.Drawing.Point(228, 185);
-            this.btnGuardarCambios.Name = "btnGuardarCambios";
-            this.btnGuardarCambios.Size = new System.Drawing.Size(140, 36);
-            this.btnGuardarCambios.TabIndex = 2;
-            this.btnGuardarCambios.Text = "GUARDAR CAMBIOS";
-            this.btnGuardarCambios.UseVisualStyleBackColor = false;
+            this.btnGuardarCambiosInvestigador.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(122)))), ((int)(((byte)(74)))));
+            this.btnGuardarCambiosInvestigador.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnGuardarCambiosInvestigador.ForeColor = System.Drawing.Color.White;
+            this.btnGuardarCambiosInvestigador.Location = new System.Drawing.Point(228, 185);
+            this.btnGuardarCambiosInvestigador.Name = "btnGuardarCambiosInvestigador";
+            this.btnGuardarCambiosInvestigador.Size = new System.Drawing.Size(140, 36);
+            this.btnGuardarCambiosInvestigador.TabIndex = 2;
+            this.btnGuardarCambiosInvestigador.Text = "GUARDAR CAMBIOS";
+            this.btnGuardarCambiosInvestigador.UseVisualStyleBackColor = false;
             // 
-            // btnEditarDatos
+            // btnEditarDatosInvestigador
             // 
-            this.btnEditarDatos.BackColor = System.Drawing.Color.Silver;
-            this.btnEditarDatos.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnEditarDatos.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnEditarDatos.Location = new System.Drawing.Point(20, 185);
-            this.btnEditarDatos.Name = "btnEditarDatos";
-            this.btnEditarDatos.Size = new System.Drawing.Size(140, 36);
-            this.btnEditarDatos.TabIndex = 1;
-            this.btnEditarDatos.Text = "EDITAR DATOS";
-            this.btnEditarDatos.UseVisualStyleBackColor = false;
+            this.btnEditarDatosInvestigador.BackColor = System.Drawing.Color.Silver;
+            this.btnEditarDatosInvestigador.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnEditarDatosInvestigador.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnEditarDatosInvestigador.Location = new System.Drawing.Point(20, 185);
+            this.btnEditarDatosInvestigador.Name = "btnEditarDatosInvestigador";
+            this.btnEditarDatosInvestigador.Size = new System.Drawing.Size(140, 36);
+            this.btnEditarDatosInvestigador.TabIndex = 1;
+            this.btnEditarDatosInvestigador.Text = "EDITAR DATOS";
+            this.btnEditarDatosInvestigador.UseVisualStyleBackColor = false;
             // 
             // gbDatosgenerales
             // 
             this.gbDatosgenerales.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.gbDatosgenerales.Controls.Add(this.comboBox1);
+            this.gbDatosgenerales.Controls.Add(this.CBXestadoInvestigador);
             this.gbDatosgenerales.Controls.Add(this.txtNombre);
             this.gbDatosgenerales.Controls.Add(this.txtAreadeconocimiento);
             this.gbDatosgenerales.Controls.Add(this.label8);
-            this.gbDatosgenerales.Controls.Add(this.dTPFechar);
+            this.gbDatosgenerales.Controls.Add(this.dTPFecharInvestigador);
             this.gbDatosgenerales.Controls.Add(this.label7);
             this.gbDatosgenerales.Controls.Add(this.label6);
             this.gbDatosgenerales.Controls.Add(this.label5);
             this.gbDatosgenerales.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbDatosgenerales.Location = new System.Drawing.Point(311, 233);
+            this.gbDatosgenerales.Location = new System.Drawing.Point(324, 235);
             this.gbDatosgenerales.Name = "gbDatosgenerales";
             this.gbDatosgenerales.Size = new System.Drawing.Size(386, 313);
-            this.gbDatosgenerales.TabIndex = 19;
+            this.gbDatosgenerales.TabIndex = 29;
             this.gbDatosgenerales.TabStop = false;
             this.gbDatosgenerales.Text = "Datos Generales";
             // 
-            // comboBox1
+            // CBXestadoInvestigador
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.CBXestadoInvestigador.FormattingEnabled = true;
+            this.CBXestadoInvestigador.Items.AddRange(new object[] {
             "Habilitado",
             "Inhabilitado"});
-            this.comboBox1.Location = new System.Drawing.Point(22, 199);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(348, 24);
-            this.comboBox1.TabIndex = 20;
+            this.CBXestadoInvestigador.Location = new System.Drawing.Point(22, 199);
+            this.CBXestadoInvestigador.Margin = new System.Windows.Forms.Padding(2);
+            this.CBXestadoInvestigador.Name = "CBXestadoInvestigador";
+            this.CBXestadoInvestigador.Size = new System.Drawing.Size(348, 24);
+            this.CBXestadoInvestigador.TabIndex = 20;
             // 
             // txtNombre
             // 
@@ -210,13 +306,12 @@
             this.label8.TabIndex = 18;
             this.label8.Text = "Fecha de Creación";
             // 
-            // dTPFechar
+            // dTPFecharInvestigador
             // 
-            this.dTPFechar.Location = new System.Drawing.Point(27, 262);
-            this.dTPFechar.Name = "dTPFechar";
-            this.dTPFechar.Size = new System.Drawing.Size(343, 23);
-            this.dTPFechar.TabIndex = 18;
-            this.dTPFechar.ValueChanged += new System.EventHandler(this.dTPFechar_ValueChanged);
+            this.dTPFecharInvestigador.Location = new System.Drawing.Point(27, 262);
+            this.dTPFecharInvestigador.Name = "dTPFecharInvestigador";
+            this.dTPFecharInvestigador.Size = new System.Drawing.Size(343, 23);
+            this.dTPFecharInvestigador.TabIndex = 18;
             // 
             // label7
             // 
@@ -251,103 +346,6 @@
             this.label5.TabIndex = 1;
             this.label5.Text = "Nombre";
             // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.Silver;
-            this.panel8.Controls.Add(this.label20);
-            this.panel8.Controls.Add(this.pictureBox13);
-            this.panel8.Location = new System.Drawing.Point(-10, 788);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(1293, 31);
-            this.panel8.TabIndex = 21;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label20.Location = new System.Drawing.Point(78, 9);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(59, 16);
-            this.label20.TabIndex = 22;
-            this.label20.Text = "En linea";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label9.Location = new System.Drawing.Point(306, 141);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(196, 32);
-            this.label9.TabIndex = 22;
-            this.label9.Text = "Mi Semillero - ";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label10.Location = new System.Drawing.Point(488, 145);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(208, 26);
-            this.label10.TabIndex = 23;
-            this.label10.Text = "Texto Actualizable";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label11.Location = new System.Drawing.Point(307, 182);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(173, 21);
-            this.label11.TabIndex = 24;
-            this.label11.Text = "Siglas-actualizables - ";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label12.Location = new System.Drawing.Point(473, 182);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(93, 21);
-            this.label12.TabIndex = 25;
-            this.label12.Text = "Fundado : ";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label13.Location = new System.Drawing.Point(559, 183);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(158, 21);
-            this.label13.TabIndex = 26;
-            this.label13.Text = "FechaActualizable";
-            // 
-            // pictureBox13
-            // 
-            this.pictureBox13.Image = global::Mock_DSIG.Properties.Resources.conexion_a_internet;
-            this.pictureBox13.Location = new System.Drawing.Point(13, 2);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(59, 28);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox13.TabIndex = 21;
-            this.pictureBox13.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::Mock_DSIG.Properties.Resources.LOGO_SEMILLERO_DSIG__1_;
-            this.pictureBox5.Location = new System.Drawing.Point(867, -19);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(239, 113);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 4;
-            this.pictureBox5.TabStop = false;
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(79)))), ((int)(((byte)(124)))));
@@ -358,7 +356,7 @@
             this.panel2.Controls.Add(this.pictureBox6);
             this.panel2.Controls.Add(this.panel7);
             this.panel2.Controls.Add(this.btnSalirInvestigador);
-            this.panel2.Controls.Add(this.btnPerfilInvestigador);
+            this.panel2.Controls.Add(this.btnPertfilInvestigador);
             this.panel2.Controls.Add(this.btnProyectosInvestigador);
             this.panel2.Controls.Add(this.btnMiSemilleroInvestigador);
             this.panel2.Controls.Add(this.btnInicioInvestigador);
@@ -367,10 +365,10 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.pictureBox12);
-            this.panel2.Location = new System.Drawing.Point(-1, 1);
+            this.panel2.Location = new System.Drawing.Point(-2, 2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(233, 818);
-            this.panel2.TabIndex = 27;
+            this.panel2.TabIndex = 37;
             // 
             // pictureBox11
             // 
@@ -442,17 +440,18 @@
             this.btnSalirInvestigador.Text = "          CERRAR SESIÓN";
             this.btnSalirInvestigador.UseVisualStyleBackColor = true;
             // 
-            // btnPerfilInvestigador
+            // btnPertfilInvestigador
             // 
-            this.btnPerfilInvestigador.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnPerfilInvestigador.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPerfilInvestigador.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnPerfilInvestigador.Location = new System.Drawing.Point(0, 386);
-            this.btnPerfilInvestigador.Name = "btnPerfilInvestigador";
-            this.btnPerfilInvestigador.Size = new System.Drawing.Size(233, 48);
-            this.btnPerfilInvestigador.TabIndex = 10;
-            this.btnPerfilInvestigador.Text = "PERFIL";
-            this.btnPerfilInvestigador.UseVisualStyleBackColor = true;
+            this.btnPertfilInvestigador.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnPertfilInvestigador.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPertfilInvestigador.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnPertfilInvestigador.Location = new System.Drawing.Point(0, 386);
+            this.btnPertfilInvestigador.Name = "btnPertfilInvestigador";
+            this.btnPertfilInvestigador.Size = new System.Drawing.Size(233, 48);
+            this.btnPertfilInvestigador.TabIndex = 10;
+            this.btnPertfilInvestigador.Text = "PERFIL";
+            this.btnPertfilInvestigador.UseVisualStyleBackColor = true;
+            this.btnPertfilInvestigador.Click += new System.EventHandler(this.btnPertfilInvestigador_Click);
             // 
             // btnProyectosInvestigador
             // 
@@ -465,6 +464,7 @@
             this.btnProyectosInvestigador.TabIndex = 9;
             this.btnProyectosInvestigador.Text = "               MIS  PROYECTOS";
             this.btnProyectosInvestigador.UseVisualStyleBackColor = true;
+            this.btnProyectosInvestigador.Click += new System.EventHandler(this.btnProyectosInvestigador_Click);
             // 
             // btnMiSemilleroInvestigador
             // 
@@ -477,6 +477,7 @@
             this.btnMiSemilleroInvestigador.TabIndex = 8;
             this.btnMiSemilleroInvestigador.Text = "           MI SEMILLERO";
             this.btnMiSemilleroInvestigador.UseVisualStyleBackColor = true;
+            this.btnMiSemilleroInvestigador.Click += new System.EventHandler(this.btnMiSemilleroInvestigador_Click);
             // 
             // btnInicioInvestigador
             // 
@@ -489,6 +490,7 @@
             this.btnInicioInvestigador.TabIndex = 7;
             this.btnInicioInvestigador.Text = "      INICIO";
             this.btnInicioInvestigador.UseVisualStyleBackColor = true;
+            this.btnInicioInvestigador.Click += new System.EventHandler(this.btnInicioInvestigador_Click);
             // 
             // label4
             // 
@@ -542,11 +544,11 @@
             this.pictureBox12.TabIndex = 20;
             this.pictureBox12.TabStop = false;
             // 
-            // PantallaSemilleroLider
+            // MenuSemilleroInvestigador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1273, 820);
+            this.ClientSize = new System.Drawing.Size(1296, 824);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
@@ -557,19 +559,20 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.gbDescripcion);
             this.Controls.Add(this.gbDatosgenerales);
-            this.Name = "PantallaSemilleroLider";
+            this.Name = "MenuSemilleroInvestigador";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "       ";
+            this.Text = "MenuSemilleroInvestigador";
+            this.Load += new System.EventHandler(this.MenuSemilleroInvestigador_Load);
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.gbDescripcion.ResumeLayout(false);
             this.gbDescripcion.PerformLayout();
             this.gbDatosgenerales.ResumeLayout(false);
             this.gbDatosgenerales.PerformLayout();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
@@ -585,30 +588,31 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox gbDescripcion;
-        private System.Windows.Forms.Button btnGuardarCambios;
-        private System.Windows.Forms.Button btnEditarDatos;
+        private System.Windows.Forms.TextBox txtDescripcion;
+        private System.Windows.Forms.Button btnGuardarCambiosInvestigador;
+        private System.Windows.Forms.Button btnEditarDatosInvestigador;
         private System.Windows.Forms.GroupBox gbDatosgenerales;
+        private System.Windows.Forms.ComboBox CBXestadoInvestigador;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtAreadeconocimiento;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.DateTimePicker dTPFechar;
+        private System.Windows.Forms.DateTimePicker dTPFecharInvestigador;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.PictureBox pictureBox13;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox txtDescripcion;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.PictureBox pictureBox9;
@@ -617,7 +621,7 @@
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Button btnSalirInvestigador;
-        private System.Windows.Forms.Button btnPerfilInvestigador;
+        private System.Windows.Forms.Button btnPertfilInvestigador;
         private System.Windows.Forms.Button btnProyectosInvestigador;
         private System.Windows.Forms.Button btnMiSemilleroInvestigador;
         private System.Windows.Forms.Button btnInicioInvestigador;

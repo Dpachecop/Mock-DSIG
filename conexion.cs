@@ -17,7 +17,7 @@ namespace Mock_DSIG
         {
             try
             {
-                String datasource = "DESKTOP-9S95AUB\\SQLEXPRESS";
+                String datasource = "localhost";
                 String initialCatalog = "DSIG";
                 con = new SqlConnection($"Data Source={datasource};Initial Catalog={initialCatalog};Integrated Security=True"); // Cadena de conexión = Nombre Servidor - Nombre BD - Tipo de Seguridad
                 con.Open();
