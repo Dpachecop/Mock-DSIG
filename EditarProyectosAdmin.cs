@@ -17,15 +17,13 @@ namespace Mock_DSIG
         conexion cn = new conexion();
         int idProyectoRecibido;
 
-        // Constructor que recibe el ID seleccionado en el DataGrid
         public EditarProyectosAdmin(int id)
         {
             InitializeComponent();
             this.idProyectoRecibido = id;
 
-            // El orden es vital: primero las listas, luego los datos del proyecto
+            // Cargamos primero la lista de semilleros y luego los datos del proyecto
             CargarSemilleros();
-            CargarInvestigadores();
             CargarDatosProyecto();
         }
 
@@ -41,43 +39,23 @@ namespace Mock_DSIG
                 comboBoxSemillerosedit.DataSource = dt;
                 comboBoxSemillerosedit.DisplayMember = "nombre_semillero";
                 comboBoxSemillerosedit.ValueMember = "idSEMILLERO";
+
+                cn.Cerrar();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error al cargar la lista de semilleros: " + ex.Message);
+                cn.Cerrar();
             }
         }
-
-        private void CargarInvestigadores()
-        {
-            try
-            {
-                string query = "SELECT idInv, nombre_inv + ' ' + apellido_inv AS nombre_completo FROM INVESTIGADOR";
-                SqlDataAdapter da = new SqlDataAdapter(query, cn.Conectar());
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-
-                comboBoxLideredit.DataSource = dt;
-                comboBoxLideredit.DisplayMember = "nombre_completo";
-                comboBoxLideredit.ValueMember = "idInv";
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error al cargar la lista de investigadores: " + ex.Message);
-            }
-        }
-
-        public void CargarDatosProyecto() 
+        public void CargarDatosProyecto()
         {
             // Bloqueamos el ID para que no sea editable
             txtidPROYECTOedit.ReadOnly = true;
 
             try
             {
-                string query = @"SELECT P.*, PI.idINVESTIGADOR 
-                                FROM PROYECTO P 
-                                LEFT JOIN PROYECTO_INVESTIGADOR PI ON P.idPROYECTO = PI.idPROYECTO 
-                                WHERE P.idPROYECTO = @id";
+                string query = @"SELECT * FROM PROYECTO WHERE idPROYECTO = @id";
 
                 SqlCommand cmd = new SqlCommand(query, cn.Conectar());
                 cmd.Parameters.AddWithValue("@id", idProyectoRecibido);
@@ -93,8 +71,6 @@ namespace Mock_DSIG
                     {
                         dateTimePickerInicioedit.Value = Convert.ToDateTime(dr["FECHA_INICIO"]);
                     }
-                       
-
                     if (dr["fecha_final_proyecto"] != DBNull.Value)
                     {
                         dateTimePickerFinaledit.Value = Convert.ToDateTime(dr["fecha_final_proyecto"]);
@@ -102,20 +78,20 @@ namespace Mock_DSIG
                     if (dr["SEMILLERO_idSEMILLERO"] != DBNull.Value)
                     {
                         comboBoxSemillerosedit.SelectedValue = dr["SEMILLERO_idSEMILLERO"];
-                        comboBoxSemillerosedit.Enabled = false; 
                     }
-
-                    // Cargar Investigador Líder actual
-                    if (dr["idINVESTIGADOR"] != DBNull.Value)
+                    if (dr["estado_proyecto"] != DBNull.Value)
                     {
-                        comboBoxLideredit.SelectedValue = dr["idINVESTIGADOR"];
+                        comboBoxEstadoProyectoedit.SelectedItem = dr["estado_proyecto"].ToString();
                     }
+                        
                 }
                 dr.Close();
+                cn.Cerrar();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error al cargar los datos del proyecto: " + ex.Message);
+                cn.Cerrar();
             }
         }
 
@@ -123,40 +99,27 @@ namespace Mock_DSIG
         {
             try
             {
-                SqlConnection conexionAbierta = cn.Conectar();
-                string queryProyecto = @"UPDATE PROYECTO SET 
-                                        nombre_proyecto = @nombre, 
-                                        objetivo_proyecto = @desc, 
-                                        FECHA_INICIO = @inicio, 
-                                        fecha_final_proyecto = @final,
-                                        estado_proyecto = @estado
-                                        WHERE idPROYECTO = @id";
-
-                SqlCommand cmdP = new SqlCommand(queryProyecto, conexionAbierta);
+                string queryProyecto = @"UPDATE PROYECTO SET nombre_proyecto = @nombre, objetivo_proyecto = @desc,  FECHA_INICIO = @inicio, fecha_final_proyecto = @final, estado_proyecto = @estado, SEMILLERO_idSEMILLERO = @idSemi WHERE idPROYECTO = @id";
+                SqlCommand cmdP = new SqlCommand(queryProyecto, cn.Conectar());
                 cmdP.Parameters.AddWithValue("@nombre", txtNombreProyectoedit.Text);
                 cmdP.Parameters.AddWithValue("@desc", txtDescripcionProyectoedit.Text);
                 cmdP.Parameters.AddWithValue("@inicio", dateTimePickerInicioedit.Value);
                 cmdP.Parameters.AddWithValue("@final", dateTimePickerFinaledit.Value);
                 cmdP.Parameters.AddWithValue("@id", idProyectoRecibido);
-                cmdP.Parameters.AddWithValue("@estado", comboBoxEstadoProyectoedit.SelectedItem.ToString());
+                cmdP.Parameters.AddWithValue("@idSemi", comboBoxSemillerosedit.SelectedValue);
+
+                // Validación simple para el estado
+                string estado = comboBoxEstadoProyectoedit.SelectedItem != null ? comboBoxEstadoProyectoedit.SelectedItem.ToString() : "Activo";
+                cmdP.Parameters.AddWithValue("@estado", estado);
                 cmdP.ExecuteNonQuery();
-
-                // Borra al lider anterior e Insertar nuevo (si el usuario lo desea, si no queda igual)
-                string queryPuente = @"DELETE FROM PROYECTO_INVESTIGADOR WHERE idPROYECTO = @id;
-                                      INSERT INTO PROYECTO_INVESTIGADOR (idPROYECTO, idINVESTIGADOR) 
-                                      VALUES (@id, @idInv)";
-
-                SqlCommand cmdI = new SqlCommand(queryPuente, conexionAbierta);
-                cmdI.Parameters.AddWithValue("@id", idProyectoRecibido);
-                cmdI.Parameters.AddWithValue("@idInv", comboBoxLideredit.SelectedValue);
-                cmdI.ExecuteNonQuery();
-
                 MessageBox.Show("Proyecto actualizado correctamente.", "ÉXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Close(); 
+                cn.Cerrar();
+                this.Close();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error al guardar los cambios: " + ex.Message);
+                cn.Cerrar();
             }
         }
 

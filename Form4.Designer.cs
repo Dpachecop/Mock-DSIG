@@ -63,7 +63,6 @@
             this.btnInicioAdmin = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -87,7 +86,7 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(847, 288);
+            this.label2.Location = new System.Drawing.Point(868, 285);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(28, 28);
@@ -99,7 +98,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(79)))), ((int)(((byte)(124)))));
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(640, 290);
+            this.pictureBox2.Location = new System.Drawing.Point(661, 287);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(24, 26);
@@ -111,7 +110,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(122)))), ((int)(((byte)(74)))));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(344, 288);
+            this.pictureBox1.Location = new System.Drawing.Point(365, 285);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(24, 24);
@@ -125,7 +124,7 @@
             this.btnEliminarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEliminarUsuario.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminarUsuario.ForeColor = System.Drawing.Color.White;
-            this.btnEliminarUsuario.Location = new System.Drawing.Point(817, 277);
+            this.btnEliminarUsuario.Location = new System.Drawing.Point(838, 274);
             this.btnEliminarUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminarUsuario.Name = "btnEliminarUsuario";
             this.btnEliminarUsuario.Size = new System.Drawing.Size(191, 49);
@@ -139,7 +138,7 @@
             this.btnEditUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEditUsuario.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditUsuario.ForeColor = System.Drawing.Color.White;
-            this.btnEditUsuario.Location = new System.Drawing.Point(604, 277);
+            this.btnEditUsuario.Location = new System.Drawing.Point(625, 274);
             this.btnEditUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditUsuario.Name = "btnEditUsuario";
             this.btnEditUsuario.Size = new System.Drawing.Size(191, 49);
@@ -153,7 +152,7 @@
             this.btnAgregarNuevoUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAgregarNuevoUsuario.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarNuevoUsuario.ForeColor = System.Drawing.Color.White;
-            this.btnAgregarNuevoUsuario.Location = new System.Drawing.Point(325, 277);
+            this.btnAgregarNuevoUsuario.Location = new System.Drawing.Point(346, 274);
             this.btnAgregarNuevoUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.btnAgregarNuevoUsuario.Name = "btnAgregarNuevoUsuario";
             this.btnAgregarNuevoUsuario.Size = new System.Drawing.Size(251, 49);
@@ -242,7 +241,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.label3.Location = new System.Drawing.Point(321, 196);
+            this.label3.Location = new System.Drawing.Point(339, 199);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(167, 19);
@@ -253,7 +252,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(317, 148);
+            this.label1.Location = new System.Drawing.Point(335, 151);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(310, 44);
@@ -278,9 +277,9 @@
             this.label6.Location = new System.Drawing.Point(43, 38);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(613, 23);
+            this.label6.Size = new System.Drawing.Size(611, 23);
             this.label6.TabIndex = 4;
-            this.label6.Text = "SIGSI - SISTEMA DE GESTION DE SEMILLEROS DE INVESTIGACIÓN";
+            this.label6.Text = "DSIG - SISTEMA DE GESTION DE SEMILLEROS DE INVESTIGACIÓN";
             // 
             // panel2
             // 
@@ -299,7 +298,6 @@
             this.panel2.Controls.Add(this.btnInicioAdmin);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.label20);
             this.panel2.Controls.Add(this.pictureBox12);
             this.panel2.Controls.Add(this.pictureBox14);
             this.panel2.Location = new System.Drawing.Point(0, -2);
@@ -474,24 +472,12 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(9, 165);
+            this.label5.Location = new System.Drawing.Point(4, 120);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(161, 23);
             this.label5.TabIndex = 5;
             this.label5.Text = "ADMINISTRADOR";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label20.Location = new System.Drawing.Point(8, 132);
-            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(149, 23);
-            this.label20.TabIndex = 4;
-            this.label20.Text = "Ana Del Cristo";
             // 
             // pictureBox12
             // 
@@ -589,7 +575,6 @@
         private System.Windows.Forms.Button btnInicioAdmin;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label20;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.Label label6;

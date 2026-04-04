@@ -42,8 +42,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtNombreProyecto = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.comboBoxLider = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.dateTimePickerFinal = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
             this.dateTimePickerInicio = new System.Windows.Forms.DateTimePicker();
@@ -216,8 +214,6 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.comboBoxLider);
-            this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.dateTimePickerFinal);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.dateTimePickerInicio);
@@ -228,32 +224,10 @@
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(716, 217);
+            this.groupBox2.Size = new System.Drawing.Size(716, 134);
             this.groupBox2.TabIndex = 14;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Fechas y Responsable";
-            // 
-            // comboBoxLider
-            // 
-            this.comboBoxLider.FormattingEnabled = true;
-            this.comboBoxLider.Location = new System.Drawing.Point(35, 155);
-            this.comboBoxLider.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBoxLider.Name = "comboBoxLider";
-            this.comboBoxLider.Size = new System.Drawing.Size(652, 27);
-            this.comboBoxLider.TabIndex = 14;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(31, 132);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(138, 18);
-            this.label6.TabIndex = 17;
-            this.label6.Text = "Investigador Lider";
+            this.groupBox2.Text = "Fechas ";
             // 
             // dateTimePickerFinal
             // 
@@ -305,7 +279,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(597, 795);
+            this.button1.Location = new System.Drawing.Point(597, 720);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(152, 49);
@@ -320,7 +294,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(437, 795);
+            this.button2.Location = new System.Drawing.Point(437, 720);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(152, 49);
@@ -333,7 +307,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(773, 868);
+            this.ClientSize = new System.Drawing.Size(773, 779);
             this.ControlBox = false;
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -372,8 +346,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DateTimePicker dateTimePickerInicio;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox comboBoxLider;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox txtidPROYECTO;

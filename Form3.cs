@@ -14,7 +14,7 @@ namespace Mock_DSIG
     public partial class Form3 : Form
     {
         conexion cn = new conexion();
-        DataSet ds = new DataSet();
+        DataSet ds = new DataSet(); // ¡¡¡¡YA NO USAMOS DATA SET LO DEJO POR AQUI PARA QUE USTEDES SEPAN!!!!!
         public Form3()
         {
             InitializeComponent();
@@ -28,15 +28,12 @@ namespace Mock_DSIG
                             P.idPROYECTO AS [ID], 
                             P.nombre_proyecto AS [Proyecto], 
                             S.nombre_semillero AS [Semillero], 
-                            I.nombre_inv + ' ' + I.apellido_inv AS [Lider],
-                            P.FECHA_INICIO AS [Inicio], 
-                            P.fecha_final_proyecto AS [Fin],
+                            P.FECHA_INICIO AS [Fecha de Inicio], 
+                            P.fecha_final_proyecto AS [Fecha de Finalización],
                             P.objetivo_proyecto AS [Objetivo],
                             P.estado_proyecto AS [Estado]
                          FROM PROYECTO P
-                         INNER JOIN SEMILLERO S ON P.SEMILLERO_idSEMILLERO = S.idSEMILLERO
-                         LEFT JOIN PROYECTO_INVESTIGADOR PI ON P.idPROYECTO = PI.idPROYECTO
-                         LEFT JOIN INVESTIGADOR I ON PI.idINVESTIGADOR = I.idInv";
+                         INNER JOIN SEMILLERO S ON P.SEMILLERO_idSEMILLERO = S.idSEMILLERO";
                 SqlDataAdapter da = new SqlDataAdapter(query, cn.Conectar());
                 da.Fill(dt);
 

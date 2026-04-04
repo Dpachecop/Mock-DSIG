@@ -16,7 +16,7 @@ namespace Mock_DSIG
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new menuinicialinvestigador());
+            Application.Run(new Form2());
         }
     }
 }

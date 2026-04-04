@@ -33,8 +33,6 @@
             this.btnCancelarEdit = new System.Windows.Forms.Button();
             this.btnActualizarInfo = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.comboBoxLideredit = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.dateTimePickerFinaledit = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
             this.dateTimePickerInicioedit = new System.Windows.Forms.DateTimePicker();
@@ -84,7 +82,7 @@
             this.btnCancelarEdit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCancelarEdit.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelarEdit.ForeColor = System.Drawing.Color.Black;
-            this.btnCancelarEdit.Location = new System.Drawing.Point(296, 793);
+            this.btnCancelarEdit.Location = new System.Drawing.Point(296, 726);
             this.btnCancelarEdit.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelarEdit.Name = "btnCancelarEdit";
             this.btnCancelarEdit.Size = new System.Drawing.Size(152, 49);
@@ -99,7 +97,7 @@
             this.btnActualizarInfo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnActualizarInfo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActualizarInfo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnActualizarInfo.Location = new System.Drawing.Point(465, 793);
+            this.btnActualizarInfo.Location = new System.Drawing.Point(465, 726);
             this.btnActualizarInfo.Margin = new System.Windows.Forms.Padding(4);
             this.btnActualizarInfo.Name = "btnActualizarInfo";
             this.btnActualizarInfo.Size = new System.Drawing.Size(279, 49);
@@ -110,8 +108,6 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.comboBoxLideredit);
-            this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.dateTimePickerFinaledit);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.dateTimePickerInicioedit);
@@ -122,32 +118,10 @@
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(716, 217);
+            this.groupBox2.Size = new System.Drawing.Size(716, 144);
             this.groupBox2.TabIndex = 18;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Fechas y Responsable";
-            // 
-            // comboBoxLideredit
-            // 
-            this.comboBoxLideredit.FormattingEnabled = true;
-            this.comboBoxLideredit.Location = new System.Drawing.Point(35, 155);
-            this.comboBoxLideredit.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBoxLideredit.Name = "comboBoxLideredit";
-            this.comboBoxLideredit.Size = new System.Drawing.Size(652, 27);
-            this.comboBoxLideredit.TabIndex = 14;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(31, 132);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(138, 18);
-            this.label6.TabIndex = 17;
-            this.label6.Text = "Investigador Lider";
+            this.groupBox2.Text = "Fechas ";
             // 
             // dateTimePickerFinaledit
             // 
@@ -333,7 +307,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(773, 868);
+            this.ClientSize = new System.Drawing.Size(773, 785);
             this.ControlBox = false;
             this.Controls.Add(this.btnCancelarEdit);
             this.Controls.Add(this.btnActualizarInfo);
@@ -360,8 +334,6 @@
         private System.Windows.Forms.Button btnCancelarEdit;
         private System.Windows.Forms.Button btnActualizarInfo;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.ComboBox comboBoxLideredit;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DateTimePicker dateTimePickerFinaledit;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DateTimePicker dateTimePickerInicioedit;
