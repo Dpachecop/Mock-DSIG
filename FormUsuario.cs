@@ -32,5 +32,12 @@ namespace Mock_DSIG
                 this.Hide();
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            principal_screen EleccionRol = new principal_screen();
+            EleccionRol.Show();
+            this.Hide();
+        }
     }
 }

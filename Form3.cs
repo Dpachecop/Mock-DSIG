@@ -97,9 +97,11 @@ namespace Mock_DSIG
 
         private void btnSalirAdmin_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("¿Estás seguro de que deseas salir?", "Confirmar salida", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (MessageBox.Show("¿Desea Cerrar Sesión?", "DSIG", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                Application.Exit();
+                principal_screen  principal_Screen = new principal_screen();
+                principal_Screen.Show();
+                this.Hide();
             }
         }
 

@@ -266,7 +266,7 @@
             this.panel1.Location = new System.Drawing.Point(276, -2);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1421, 98);
+            this.panel1.Size = new System.Drawing.Size(1457, 98);
             this.panel1.TabIndex = 21;
             // 
             // label6
@@ -309,7 +309,7 @@
             // pictureBox9
             // 
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(99, 964);
+            this.pictureBox9.Location = new System.Drawing.Point(99, 970);
             this.pictureBox9.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(27, 30);
@@ -377,13 +377,14 @@
             this.btnSalirAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSalirAdmin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalirAdmin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnSalirAdmin.Location = new System.Drawing.Point(1, 948);
+            this.btnSalirAdmin.Location = new System.Drawing.Point(1, 955);
             this.btnSalirAdmin.Margin = new System.Windows.Forms.Padding(4);
             this.btnSalirAdmin.Name = "btnSalirAdmin";
             this.btnSalirAdmin.Size = new System.Drawing.Size(311, 60);
             this.btnSalirAdmin.TabIndex = 12;
             this.btnSalirAdmin.Text = "   SALIR";
             this.btnSalirAdmin.UseVisualStyleBackColor = true;
+            this.btnSalirAdmin.Click += new System.EventHandler(this.btnSalirAdmin_Click);
             // 
             // btnReportesAdmin
             // 
@@ -504,7 +505,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1697, 1009);
+            this.ClientSize = new System.Drawing.Size(1732, 1014);
+            this.ControlBox = false;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox2);
@@ -519,7 +521,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form4";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form4";
+            this.Text = "DSIG - USUARIOS - ADMINISTRADOR";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridUsuarios)).EndInit();

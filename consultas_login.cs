@@ -68,8 +68,8 @@ namespace Mock_DSIG
                 if (Convert.ToString(correo_inv) == dr["correo_inv"].ToString() && contrasenia_inv == dr["contrasenia_inv"].ToString() && "LIDER" == dr["tipo_inv"].ToString()) // Verificar si el correo y contrasenia coinciden con los datos obtenidos de la consulta SQL
                 {
                     MessageBox.Show("Bienvenido LIDER"); // Si coinciden, mostrar un mensaje de bienvenida para el administrador
-                    Form4 formAdministrador = new Form4(); // Crear una instancia del formulario de administrador
-                    formAdministrador.Show(); // Mostrar el formulario de administrador
+                    MenuPrincipalLider FormularioLIder= new MenuPrincipalLider(); // Crear una instancia del formulario de administrador
+                    FormularioLIder.Show(); // Mostrar el formulario de administrador
                     estado_coneccion = true; // Si coinciden, establecer el estado de la conexión como verdadero
                 }
                 else
@@ -77,8 +77,8 @@ namespace Mock_DSIG
                     if (Convert.ToString(correo_inv) == dr["correo_inv"].ToString() && contrasenia_inv == dr["contrasenia_inv"].ToString() && "INVESTIGADOR" == dr["tipo_inv"].ToString()) // Verificar si el IDusuario y PasswordUsuario coinciden con los datos obtenidos de la consulta SQL
                     {
                         MessageBox.Show("Bienvenido INVESTIGADOR"); // Si coinciden, mostrar un mensaje de bienvenida para el usuario
-                        Form4 formUsuario = new Form4(); // Crear una instancia del formulario de usuario
-                        formUsuario.Show(); // Mostrar el formulario de usuario
+                        menuinicialinvestigador MenuInvestigador = new menuinicialinvestigador(); // Crear una instancia del formulario de usuario
+                        MenuInvestigador.Show(); // Mostrar el formulario de usuario
                         estado_coneccion = true; // Si coinciden, establecer el estado de la conexión como verdadero
 
                     }

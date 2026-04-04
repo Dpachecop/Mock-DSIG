@@ -52,8 +52,8 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(79)))), ((int)(((byte)(124)))));
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(499, 127);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Location = new System.Drawing.Point(264, 30);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(699, 65);
             this.panel1.TabIndex = 13;
@@ -65,12 +65,13 @@
             this.button2.Font = new System.Drawing.Font("Bauhaus 93", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Red;
             this.button2.Location = new System.Drawing.Point(631, 18);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(52, 39);
             this.button2.TabIndex = 1;
             this.button2.Text = "X";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label2
             // 
@@ -81,9 +82,9 @@
             this.label2.Location = new System.Drawing.Point(21, 21);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(247, 23);
+            this.label2.Size = new System.Drawing.Size(411, 23);
             this.label2.TabIndex = 0;
-            this.label2.Text = "DSIG - INICIO DE SESIÓN";
+            this.label2.Text = "DSIG - INICIO DE SESIÓN - INVESTIGADOR";
             // 
             // groupBox1
             // 
@@ -97,10 +98,10 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.pictureBox1);
-            this.groupBox1.Location = new System.Drawing.Point(499, 185);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Location = new System.Drawing.Point(264, 88);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(699, 678);
             this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
@@ -112,7 +113,7 @@
             this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(53, 527);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(599, 62);
             this.button1.TabIndex = 7;
@@ -123,7 +124,7 @@
             // form_password
             // 
             this.form_password.Location = new System.Drawing.Point(51, 459);
-            this.form_password.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.form_password.Margin = new System.Windows.Forms.Padding(4);
             this.form_password.Multiline = true;
             this.form_password.Name = "form_password";
             this.form_password.PasswordChar = '*';
@@ -133,7 +134,7 @@
             // form_correo
             // 
             this.form_correo.Location = new System.Drawing.Point(51, 363);
-            this.form_correo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.form_correo.Margin = new System.Windows.Forms.Padding(4);
             this.form_correo.Multiline = true;
             this.form_correo.Name = "form_correo";
             this.form_correo.Size = new System.Drawing.Size(601, 41);
@@ -166,9 +167,9 @@
             // groupBox2
             // 
             this.groupBox2.Location = new System.Drawing.Point(51, 252);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(603, 10);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
@@ -201,7 +202,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(227, 15);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(248, 162);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -212,13 +213,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1697, 1009);
+            this.ClientSize = new System.Drawing.Size(1271, 812);
+            this.ControlBox = false;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormUsuario";
+            this.Text = "DSIG - INICIO SESIÓN USUARIO";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);

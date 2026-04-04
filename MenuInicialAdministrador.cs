@@ -114,7 +114,12 @@ namespace Mock_DSIG
 
         private void btnSalirAdmin_Click(object sender, EventArgs e)
         {
-
+            if (MessageBox.Show("¿Desea Cerrar Sesión?", "DSIG", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                principal_screen principal_Screen = new principal_screen();
+                principal_Screen.Show();
+                this.Hide();
+            }
         }
         public void ActualizarCantidades()
         {
