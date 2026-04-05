@@ -42,5 +42,18 @@ namespace Mock_DSIG
         {
 
         }
+
+        private void btnSalirLider_Click(object sender, EventArgs e)
+        {
+          if (MessageBox.Show("¿Desea Cerrar Sesión?", "DSIG", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void btnReportesLider_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

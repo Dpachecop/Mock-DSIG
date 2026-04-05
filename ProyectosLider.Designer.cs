@@ -45,7 +45,6 @@
             this.btnInicioLider = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -105,7 +104,6 @@
             this.panel2.Controls.Add(this.btnInicioLider);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.pictureBox12);
             this.panel2.Location = new System.Drawing.Point(-2, -1);
@@ -128,7 +126,7 @@
             // pictureBox10
             // 
             this.pictureBox10.Image = global::Mock_DSIG.Properties.Resources.Reportes;
-            this.pictureBox10.Location = new System.Drawing.Point(102, 546);
+            this.pictureBox10.Location = new System.Drawing.Point(98, 546);
             this.pictureBox10.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(29, 27);
@@ -139,7 +137,7 @@
             // pictureBox9
             // 
             this.pictureBox9.Image = global::Mock_DSIG.Properties.Resources.Teams;
-            this.pictureBox9.Location = new System.Drawing.Point(102, 490);
+            this.pictureBox9.Location = new System.Drawing.Point(97, 490);
             this.pictureBox9.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(29, 27);
@@ -150,7 +148,7 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = global::Mock_DSIG.Properties.Resources.Proyectos;
-            this.pictureBox8.Location = new System.Drawing.Point(103, 433);
+            this.pictureBox8.Location = new System.Drawing.Point(99, 433);
             this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(29, 27);
@@ -161,7 +159,7 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = global::Mock_DSIG.Properties.Resources.Seed;
-            this.pictureBox7.Location = new System.Drawing.Point(102, 375);
+            this.pictureBox7.Location = new System.Drawing.Point(99, 375);
             this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(29, 27);
@@ -172,7 +170,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::Mock_DSIG.Properties.Resources.home;
-            this.pictureBox6.Location = new System.Drawing.Point(101, 316);
+            this.pictureBox6.Location = new System.Drawing.Point(98, 316);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(29, 27);
@@ -287,24 +285,12 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(16, 151);
+            this.label3.Location = new System.Drawing.Point(16, 116);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(61, 23);
             this.label3.TabIndex = 5;
             this.label3.Text = "LÍDER";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(16, 125);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(149, 23);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Ana Del Cristo";
             // 
             // pictureBox1
             // 
@@ -341,10 +327,10 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::Mock_DSIG.Properties.Resources.LOGO_SEMILLERO_DSIG__1_;
-            this.pictureBox5.Location = new System.Drawing.Point(1156, -23);
+            this.pictureBox5.Location = new System.Drawing.Point(1209, -23);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(319, 139);
+            this.pictureBox5.Size = new System.Drawing.Size(266, 132);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 4;
             this.pictureBox5.TabStop = false;
@@ -357,9 +343,9 @@
             this.label1.Location = new System.Drawing.Point(49, 37);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(613, 23);
+            this.label1.Size = new System.Drawing.Size(611, 23);
             this.label1.TabIndex = 3;
-            this.label1.Text = "SIGSI - SISTEMA DE GESTION DE SEMILLEROS DE INVESTIGACIÓN";
+            this.label1.Text = "DSIG - SISTEMA DE GESTION DE SEMILLEROS DE INVESTIGACIÓN";
             // 
             // label5
             // 
@@ -572,6 +558,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1697, 1009);
+            this.ControlBox = false;
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.btnConsultarAdmin);
             this.Controls.Add(this.label5);
@@ -587,7 +574,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "ProyectosLider";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ProyectosLider";
+            this.Text = "DSIG - PROYECTOS - LIDER";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
@@ -628,7 +615,6 @@
         private System.Windows.Forms.Button btnInicioLider;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.Panel panel1;

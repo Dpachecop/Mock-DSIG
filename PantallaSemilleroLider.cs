@@ -40,5 +40,49 @@ namespace Mock_DSIG
             proyectosLider.Show();
             this.Hide();
         }
+
+        private void btnMiSemilleroInvestigador_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnInicioInvestigador_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnProyectosInvestigador_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSalirLider_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿Desea Cerrar Sesión?", "DSIG", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void btnInicioLider_Click(object sender, EventArgs e)
+        {
+            MenuPrincipalLider menuPrincipalLider = new MenuPrincipalLider();
+            menuPrincipalLider.Show();
+            this.Hide();
+        }
+
+        private void btnProyectosLider_Click(object sender, EventArgs e)
+        {
+            ProyectosLider proyectosLider = new ProyectosLider();
+            proyectosLider.Show();
+            this.Hide();
+        }
+
+        private void btnMiembrosLider_Click(object sender, EventArgs e)
+        {
+            PantallaMiembrosLIder pantallaMiembrosLIder = new PantallaMiembrosLIder();
+            pantallaMiembrosLIder.Show();
+            this.Hide();
+        }
     }
 }

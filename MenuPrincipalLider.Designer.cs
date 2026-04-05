@@ -46,7 +46,6 @@
             this.btnInicioLider = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -115,7 +114,6 @@
             this.panel2.Controls.Add(this.btnInicioLider);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.pictureBox12);
             this.panel2.Location = new System.Drawing.Point(-7, -2);
@@ -127,7 +125,7 @@
             // pictureBox11
             // 
             this.pictureBox11.Image = global::Mock_DSIG.Properties.Resources.Salir;
-            this.pictureBox11.Location = new System.Drawing.Point(79, 927);
+            this.pictureBox11.Location = new System.Drawing.Point(79, 935);
             this.pictureBox11.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(29, 27);
@@ -204,13 +202,14 @@
             this.btnSalirLider.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSalirLider.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalirLider.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnSalirLider.Location = new System.Drawing.Point(0, 910);
+            this.btnSalirLider.Location = new System.Drawing.Point(0, 918);
             this.btnSalirLider.Margin = new System.Windows.Forms.Padding(4);
             this.btnSalirLider.Name = "btnSalirLider";
             this.btnSalirLider.Size = new System.Drawing.Size(311, 60);
             this.btnSalirLider.TabIndex = 12;
             this.btnSalirLider.Text = "          CERRAR SESIÓN";
             this.btnSalirLider.UseVisualStyleBackColor = true;
+            this.btnSalirLider.Click += new System.EventHandler(this.btnSalirLider_Click);
             // 
             // btnReportesLider
             // 
@@ -224,6 +223,7 @@
             this.btnReportesLider.TabIndex = 11;
             this.btnReportesLider.Text = "         REPORTES";
             this.btnReportesLider.UseVisualStyleBackColor = true;
+            this.btnReportesLider.Click += new System.EventHandler(this.btnReportesLider_Click);
             // 
             // btnMiembrosLider
             // 
@@ -298,24 +298,12 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(16, 151);
+            this.label3.Location = new System.Drawing.Point(18, 113);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(61, 23);
             this.label3.TabIndex = 5;
             this.label3.Text = "LÍDER";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(16, 125);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(149, 23);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Ana Del Cristo";
             // 
             // pictureBox1
             // 
@@ -459,6 +447,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1697, 1009);
+            this.ControlBox = false;
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
@@ -467,7 +456,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "MenuPrincipalLider";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MenuPrincipalLider";
+            this.Text = "DSIG - MENÚ INICIAL - LÍDER";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -512,7 +501,6 @@
         private System.Windows.Forms.Button btnInicioLider;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.Label label9;

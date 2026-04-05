@@ -37,5 +37,17 @@ namespace Mock_DSIG
             pantallaMiembrosLIder.Show();
             this.Hide();
         }
+
+        private void btnMiSemilleroLider_Click(object sender, EventArgs e)
+        {
+            PantallaSemilleroLider pantallaSemilleroLider = new PantallaSemilleroLider();
+            pantallaSemilleroLider.Show();
+            this.Hide();
+        }
+
+        private void btnReportesLider_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
