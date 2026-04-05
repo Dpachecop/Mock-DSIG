@@ -159,8 +159,25 @@ namespace Mock_DSIG
 
         private void btnEditSemilleros_Click(object sender, EventArgs e)
         {
-      
+            if (dataGridSemilleros.SelectedRows.Count > 0)
+            {
+                // CONVERSIÓN SEGURA:
+                // Asegúrate de que la columna [0] sea realmente el ID numérico
+                int id = Convert.ToInt32(dataGridSemilleros.CurrentRow.Cells[0].Value);
+                string nombre = dataGridSemilleros.CurrentRow.Cells[1].Value.ToString();
+                string area = dataGridSemilleros.CurrentRow.Cells[2].Value.ToString();
+                string estado = dataGridSemilleros.CurrentRow.Cells[4].Value.ToString();
+                DateTime fecha = Convert.ToDateTime(dataGridSemilleros.CurrentRow.Cells[5].Value);
+
+                // Aquí es donde salta el error si EditarSemillerosAdmin no tiene el constructor de 5 parámetros
+                EditarSemillerosAdmin frmEditar = new EditarSemillerosAdmin(id, nombre, area, estado, fecha);
+                frmEditar.ShowDialog();
+
+                ConsultarSemilleros();
+            }
         }
+
+        
 
         private void btnAggSemilleros_Click(object sender, EventArgs e)
         {
@@ -181,6 +198,11 @@ namespace Mock_DSIG
                 principal_Screen.Show();
                 this.Hide();
             }
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

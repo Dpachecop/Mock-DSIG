@@ -1,6 +1,6 @@
 ﻿namespace Mock_DSIG
 {
-    partial class screen_agg_inv
+    partial class EditarUsuarioAdmin
     {
         /// <summary>
         /// Required designer variable.
@@ -31,25 +31,25 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.form_apellido = new System.Windows.Forms.TextBox();
+            this.form_apellidoEdit = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.form_numero_tlf = new System.Windows.Forms.TextBox();
+            this.form_numero_tlfEdit = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.form_id = new System.Windows.Forms.TextBox();
+            this.form_idEdit = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.combo_tipo_doc = new System.Windows.Forms.ComboBox();
+            this.combo_tipo_docEdit = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.form_correo = new System.Windows.Forms.TextBox();
+            this.form_correoEdit = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.form_nombres = new System.Windows.Forms.TextBox();
+            this.form_nombresEdit = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.form_password_final = new System.Windows.Forms.TextBox();
             this.form_password_inic = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.bt_cancelar = new System.Windows.Forms.Button();
-            this.bt_guardar = new System.Windows.Forms.Button();
+            this.bt_guardarEdit = new System.Windows.Forms.Button();
+            this.bt_cancelareDIT = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -59,11 +59,11 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(79)))), ((int)(((byte)(124)))));
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(0, -2);
+            this.panel1.Location = new System.Drawing.Point(-3, -4);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(781, 78);
-            this.panel1.TabIndex = 1;
+            this.panel1.TabIndex = 2;
             // 
             // label2
             // 
@@ -71,46 +71,46 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(16, 30);
+            this.label2.Location = new System.Drawing.Point(19, 30);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(285, 23);
+            this.label2.Size = new System.Drawing.Size(189, 23);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Agregar Nuevo Investigador";
+            this.label2.Text = "Editar Investigador";
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.form_apellido);
+            this.groupBox1.Controls.Add(this.form_apellidoEdit);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.form_numero_tlf);
+            this.groupBox1.Controls.Add(this.form_numero_tlfEdit);
             this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.form_id);
+            this.groupBox1.Controls.Add(this.form_idEdit);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.combo_tipo_doc);
+            this.groupBox1.Controls.Add(this.combo_tipo_docEdit);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.form_correo);
+            this.groupBox1.Controls.Add(this.form_correoEdit);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.form_nombres);
+            this.groupBox1.Controls.Add(this.form_nombresEdit);
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(79)))), ((int)(((byte)(124)))));
-            this.groupBox1.Location = new System.Drawing.Point(28, 96);
+            this.groupBox1.Location = new System.Drawing.Point(30, 103);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(716, 436);
-            this.groupBox1.TabIndex = 2;
+            this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos Personales";
             // 
-            // form_apellido
+            // form_apellidoEdit
             // 
-            this.form_apellido.Location = new System.Drawing.Point(403, 82);
-            this.form_apellido.Margin = new System.Windows.Forms.Padding(4);
-            this.form_apellido.Multiline = true;
-            this.form_apellido.Name = "form_apellido";
-            this.form_apellido.Size = new System.Drawing.Size(281, 41);
-            this.form_apellido.TabIndex = 17;
+            this.form_apellidoEdit.Location = new System.Drawing.Point(403, 82);
+            this.form_apellidoEdit.Margin = new System.Windows.Forms.Padding(4);
+            this.form_apellidoEdit.Multiline = true;
+            this.form_apellidoEdit.Name = "form_apellidoEdit";
+            this.form_apellidoEdit.Size = new System.Drawing.Size(281, 41);
+            this.form_apellidoEdit.TabIndex = 17;
             // 
             // label7
             // 
@@ -125,14 +125,14 @@
             this.label7.TabIndex = 16;
             this.label7.Text = "Apellidos";
             // 
-            // form_numero_tlf
+            // form_numero_tlfEdit
             // 
-            this.form_numero_tlf.Location = new System.Drawing.Point(32, 263);
-            this.form_numero_tlf.Margin = new System.Windows.Forms.Padding(4);
-            this.form_numero_tlf.Multiline = true;
-            this.form_numero_tlf.Name = "form_numero_tlf";
-            this.form_numero_tlf.Size = new System.Drawing.Size(652, 43);
-            this.form_numero_tlf.TabIndex = 15;
+            this.form_numero_tlfEdit.Location = new System.Drawing.Point(32, 263);
+            this.form_numero_tlfEdit.Margin = new System.Windows.Forms.Padding(4);
+            this.form_numero_tlfEdit.Multiline = true;
+            this.form_numero_tlfEdit.Name = "form_numero_tlfEdit";
+            this.form_numero_tlfEdit.Size = new System.Drawing.Size(652, 43);
+            this.form_numero_tlfEdit.TabIndex = 15;
             // 
             // label10
             // 
@@ -147,14 +147,15 @@
             this.label10.TabIndex = 14;
             this.label10.Text = "Número de Telefono";
             // 
-            // form_id
+            // form_idEdit
             // 
-            this.form_id.Location = new System.Drawing.Point(357, 377);
-            this.form_id.Margin = new System.Windows.Forms.Padding(4);
-            this.form_id.Multiline = true;
-            this.form_id.Name = "form_id";
-            this.form_id.Size = new System.Drawing.Size(328, 29);
-            this.form_id.TabIndex = 13;
+            this.form_idEdit.Location = new System.Drawing.Point(357, 377);
+            this.form_idEdit.Margin = new System.Windows.Forms.Padding(4);
+            this.form_idEdit.Multiline = true;
+            this.form_idEdit.Name = "form_idEdit";
+            this.form_idEdit.ReadOnly = true;
+            this.form_idEdit.Size = new System.Drawing.Size(328, 29);
+            this.form_idEdit.TabIndex = 13;
             // 
             // label5
             // 
@@ -169,18 +170,18 @@
             this.label5.TabIndex = 12;
             this.label5.Text = "Número de Documento";
             // 
-            // combo_tipo_doc
+            // combo_tipo_docEdit
             // 
-            this.combo_tipo_doc.FormattingEnabled = true;
-            this.combo_tipo_doc.Items.AddRange(new object[] {
+            this.combo_tipo_docEdit.FormattingEnabled = true;
+            this.combo_tipo_docEdit.Items.AddRange(new object[] {
             "CEDULA CIUDADANIA",
             "CEDULA EXTRANJERA",
             "TARJETA IDENTIDAD"});
-            this.combo_tipo_doc.Location = new System.Drawing.Point(32, 377);
-            this.combo_tipo_doc.Margin = new System.Windows.Forms.Padding(4);
-            this.combo_tipo_doc.Name = "combo_tipo_doc";
-            this.combo_tipo_doc.Size = new System.Drawing.Size(271, 27);
-            this.combo_tipo_doc.TabIndex = 11;
+            this.combo_tipo_docEdit.Location = new System.Drawing.Point(32, 377);
+            this.combo_tipo_docEdit.Margin = new System.Windows.Forms.Padding(4);
+            this.combo_tipo_docEdit.Name = "combo_tipo_docEdit";
+            this.combo_tipo_docEdit.Size = new System.Drawing.Size(271, 27);
+            this.combo_tipo_docEdit.TabIndex = 11;
             // 
             // label4
             // 
@@ -195,14 +196,14 @@
             this.label4.TabIndex = 10;
             this.label4.Text = "Tipo de Documento";
             // 
-            // form_correo
+            // form_correoEdit
             // 
-            this.form_correo.Location = new System.Drawing.Point(32, 166);
-            this.form_correo.Margin = new System.Windows.Forms.Padding(4);
-            this.form_correo.Multiline = true;
-            this.form_correo.Name = "form_correo";
-            this.form_correo.Size = new System.Drawing.Size(652, 43);
-            this.form_correo.TabIndex = 9;
+            this.form_correoEdit.Location = new System.Drawing.Point(32, 166);
+            this.form_correoEdit.Margin = new System.Windows.Forms.Padding(4);
+            this.form_correoEdit.Multiline = true;
+            this.form_correoEdit.Name = "form_correoEdit";
+            this.form_correoEdit.Size = new System.Drawing.Size(652, 43);
+            this.form_correoEdit.TabIndex = 9;
             // 
             // label1
             // 
@@ -230,14 +231,14 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "Nombres";
             // 
-            // form_nombres
+            // form_nombresEdit
             // 
-            this.form_nombres.Location = new System.Drawing.Point(32, 82);
-            this.form_nombres.Margin = new System.Windows.Forms.Padding(4);
-            this.form_nombres.Multiline = true;
-            this.form_nombres.Name = "form_nombres";
-            this.form_nombres.Size = new System.Drawing.Size(292, 41);
-            this.form_nombres.TabIndex = 6;
+            this.form_nombresEdit.Location = new System.Drawing.Point(32, 82);
+            this.form_nombresEdit.Margin = new System.Windows.Forms.Padding(4);
+            this.form_nombresEdit.Multiline = true;
+            this.form_nombresEdit.Name = "form_nombresEdit";
+            this.form_nombresEdit.Size = new System.Drawing.Size(292, 41);
+            this.form_nombresEdit.TabIndex = 6;
             // 
             // groupBox3
             // 
@@ -247,12 +248,12 @@
             this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(79)))), ((int)(((byte)(124)))));
-            this.groupBox3.Location = new System.Drawing.Point(28, 546);
+            this.groupBox3.Location = new System.Drawing.Point(30, 570);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox3.Size = new System.Drawing.Size(716, 119);
-            this.groupBox3.TabIndex = 4;
+            this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Acceso al Sistema";
             // 
@@ -302,52 +303,49 @@
             this.label9.TabIndex = 14;
             this.label9.Text = "Contraseña";
             // 
-            // bt_cancelar
+            // bt_guardarEdit
             // 
-            this.bt_cancelar.BackColor = System.Drawing.Color.White;
-            this.bt_cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.bt_cancelar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_cancelar.ForeColor = System.Drawing.Color.Black;
-            this.bt_cancelar.Location = new System.Drawing.Point(320, 704);
-            this.bt_cancelar.Margin = new System.Windows.Forms.Padding(4);
-            this.bt_cancelar.Name = "bt_cancelar";
-            this.bt_cancelar.Size = new System.Drawing.Size(152, 49);
-            this.bt_cancelar.TabIndex = 17;
-            this.bt_cancelar.Text = "CANCELAR";
-            this.bt_cancelar.UseVisualStyleBackColor = false;
-            this.bt_cancelar.Click += new System.EventHandler(this.bt_cancelar_Click);
+            this.bt_guardarEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(122)))), ((int)(((byte)(74)))));
+            this.bt_guardarEdit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bt_guardarEdit.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_guardarEdit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bt_guardarEdit.Location = new System.Drawing.Point(485, 716);
+            this.bt_guardarEdit.Margin = new System.Windows.Forms.Padding(4);
+            this.bt_guardarEdit.Name = "bt_guardarEdit";
+            this.bt_guardarEdit.Size = new System.Drawing.Size(264, 49);
+            this.bt_guardarEdit.TabIndex = 19;
+            this.bt_guardarEdit.Text = "ACTUALIZAR INFORMACIÓN";
+            this.bt_guardarEdit.UseVisualStyleBackColor = false;
+            this.bt_guardarEdit.Click += new System.EventHandler(this.bt_guardarEdit_Click);
             // 
-            // bt_guardar
+            // bt_cancelareDIT
             // 
-            this.bt_guardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(122)))), ((int)(((byte)(74)))));
-            this.bt_guardar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.bt_guardar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_guardar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bt_guardar.Location = new System.Drawing.Point(480, 704);
-            this.bt_guardar.Margin = new System.Windows.Forms.Padding(4);
-            this.bt_guardar.Name = "bt_guardar";
-            this.bt_guardar.Size = new System.Drawing.Size(264, 49);
-            this.bt_guardar.TabIndex = 18;
-            this.bt_guardar.Text = "GUARDAR INVESTIGADOR";
-            this.bt_guardar.UseVisualStyleBackColor = false;
-            this.bt_guardar.Click += new System.EventHandler(this.bt_guardar_Click);
+            this.bt_cancelareDIT.BackColor = System.Drawing.Color.White;
+            this.bt_cancelareDIT.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bt_cancelareDIT.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_cancelareDIT.ForeColor = System.Drawing.Color.Black;
+            this.bt_cancelareDIT.Location = new System.Drawing.Point(315, 716);
+            this.bt_cancelareDIT.Margin = new System.Windows.Forms.Padding(4);
+            this.bt_cancelareDIT.Name = "bt_cancelareDIT";
+            this.bt_cancelareDIT.Size = new System.Drawing.Size(152, 49);
+            this.bt_cancelareDIT.TabIndex = 20;
+            this.bt_cancelareDIT.Text = "CANCELAR";
+            this.bt_cancelareDIT.UseVisualStyleBackColor = false;
             // 
-            // screen_agg_inv
+            // EditarUsuarioAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(773, 776);
+            this.ClientSize = new System.Drawing.Size(773, 778);
             this.ControlBox = false;
-            this.Controls.Add(this.bt_guardar);
-            this.Controls.Add(this.bt_cancelar);
+            this.Controls.Add(this.bt_cancelareDIT);
+            this.Controls.Add(this.bt_guardarEdit);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "screen_agg_inv";
+            this.Name = "EditarUsuarioAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AGREGAR INVESTIGADOR - ADMINISTRADOR";
+            this.Text = "EDITAR USUARIO - ADMINISTRADOR";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -363,24 +361,24 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox form_correo;
+        private System.Windows.Forms.TextBox form_apellidoEdit;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox form_numero_tlfEdit;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox form_idEdit;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox combo_tipo_docEdit;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox form_correoEdit;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox form_nombres;
+        private System.Windows.Forms.TextBox form_nombresEdit;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.TextBox form_password_final;
         private System.Windows.Forms.TextBox form_password_inic;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox form_numero_tlf;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button bt_cancelar;
-        private System.Windows.Forms.Button bt_guardar;
-        private System.Windows.Forms.TextBox form_apellido;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox form_id;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox combo_tipo_doc;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button bt_guardarEdit;
+        private System.Windows.Forms.Button bt_cancelareDIT;
     }
 }

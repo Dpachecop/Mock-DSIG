@@ -26,7 +26,7 @@ namespace Mock_DSIG
 
             try
             {
-                Insert = new SqlCommand("INSERT INTO INVESTIGADOR (idInv, nombre_inv, apellido_inv,correo_inv,  numero_tel_inv, contrasenia_inv, tipo_inv ) VALUES (@idInv, @nombre_inv, @apellido_inv, @correo_inv,@numero_tel_inv, @contrasenia_inv,@tipo_inv)", cn.Conectar()); // Comando SQL para ejecutar la consulta
+                Insert = new SqlCommand("INSERT INTO INVESTIGADOR (idInv, nombre_inv, apellido_inv,correo_inv, numero_tel_inv, contrasenia_inv, tipo_inv ) VALUES (@idInv, @nombre_inv, @apellido_inv, @correo_inv,@numero_tel_inv, @contrasenia_inv, 'INVESTIGADOR')", cn.Conectar()); // Comando SQL para ejecutar la consulta
                 Insert.CommandType = CommandType.Text; // Consulta SQL de tipo TEXTO
                 Insert.Parameters.AddWithValue("@idInv", SqlDbType.Int).Value = idInv;
                 Insert.Parameters.AddWithValue("@nombre_inv", SqlDbType.NVarChar).Value = nombre_inv; // 
@@ -34,7 +34,6 @@ namespace Mock_DSIG
                 Insert.Parameters.AddWithValue("@correo_inv", SqlDbType.NVarChar).Value = correo_inv;
                 Insert.Parameters.AddWithValue("@numero_tel_inv", SqlDbType.NVarChar).Value = numero_tel_inv; // 
                 Insert.Parameters.AddWithValue("@contrasenia_inv", SqlDbType.NVarChar).Value = contrasenia_inv;
-                Insert.Parameters.AddWithValue("@tipo_inv", SqlDbType.NVarChar).Value = tipo_inv;
 
                 Insert.ExecuteNonQuery();
 
@@ -48,7 +47,7 @@ namespace Mock_DSIG
 
         private void bt_guardar_Click(object sender, EventArgs e)
         {
-            if  (form_correo.Text == "" || form_password_inic.Text == "" || form_nombres.Text == "" || form_apellido.Text == "" || form_numero_tlf.Text == "" || form_id.Text == "" || combo_rol.SelectedIndex == -1 || combo_tipo_doc.Text == "")
+            if  (form_correo.Text == "" || form_password_inic.Text == "" || form_nombres.Text == "" || form_apellido.Text == "" || form_numero_tlf.Text == "" || form_id.Text == "" || combo_tipo_doc.Text == "")
             {
                 MessageBox.Show("Debe Ingresar Datos Validos para Poder Registrar el Usuario", "ADVERTENCIA", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -65,7 +64,15 @@ namespace Mock_DSIG
                 }
 
 
-                Insertar_Usuario(int.Parse(form_id.Text), form_nombres.Text, form_apellido.Text, form_correo.Text, form_numero_tlf.Text, form_password_final.Text, combo_rol.SelectedItem.ToString());
+                Insertar_Usuario(int.Parse(form_id.Text), form_nombres.Text, form_apellido.Text, form_correo.Text, form_numero_tlf.Text, form_password_final.Text, "INVESTIGADOR");
+                this.Hide();
+            }
+        }
+
+        private void bt_cancelar_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿Desea Cancelar el Registro? Se Perderá la Información Escrita", "DSIG", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
                 this.Hide();
             }
         }

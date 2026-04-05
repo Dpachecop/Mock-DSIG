@@ -1,6 +1,6 @@
 ﻿namespace Mock_DSIG
 {
-    partial class AgregarSemilleroAdmin
+    partial class EditarSemillerosAdmin
     {
         /// <summary>
         /// Required designer variable.
@@ -31,21 +31,21 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtidSEMILLERO = new System.Windows.Forms.TextBox();
+            this.txtidSEMILLEROEdit = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.comboBoxEstadoSemillero = new System.Windows.Forms.ComboBox();
+            this.comboBoxEstadoSemilleroEdit = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtAreaconocimientosemillero = new System.Windows.Forms.TextBox();
+            this.txtAreaconocimientosemilleroEdit = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtNombreSemillero = new System.Windows.Forms.TextBox();
+            this.txtNombreSemilleroEdit = new System.Windows.Forms.TextBox();
+            this.btnCancelarEdit = new System.Windows.Forms.Button();
+            this.btnGuardarSemilleroEditado = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.comboBoxInvestigadorLider = new System.Windows.Forms.ComboBox();
+            this.comboBoxInvestigadorLiderEdit = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.dateTimePickerInicioSemillero = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerInicioSemilleroEdit = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
-            this.btnGuardarSemillero = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -55,11 +55,11 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(79)))), ((int)(((byte)(124)))));
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(3, -2);
+            this.panel1.Location = new System.Drawing.Point(-1, -5);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(781, 78);
-            this.panel1.TabIndex = 1;
+            this.panel1.TabIndex = 2;
             // 
             // label2
             // 
@@ -70,39 +70,40 @@
             this.label2.Location = new System.Drawing.Point(16, 30);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(254, 23);
+            this.label2.Size = new System.Drawing.Size(158, 23);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Agregar Nuevo Semillero";
+            this.label2.Text = "Editar Semillero";
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.txtidSEMILLERO);
+            this.groupBox1.Controls.Add(this.txtidSEMILLEROEdit);
             this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.comboBoxEstadoSemillero);
+            this.groupBox1.Controls.Add(this.comboBoxEstadoSemilleroEdit);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.txtAreaconocimientosemillero);
+            this.groupBox1.Controls.Add(this.txtAreaconocimientosemilleroEdit);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.txtNombreSemillero);
+            this.groupBox1.Controls.Add(this.txtNombreSemilleroEdit);
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(79)))), ((int)(((byte)(124)))));
-            this.groupBox1.Location = new System.Drawing.Point(28, 125);
+            this.groupBox1.Location = new System.Drawing.Point(19, 96);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(716, 447);
-            this.groupBox1.TabIndex = 2;
+            this.groupBox1.Size = new System.Drawing.Size(716, 417);
+            this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Información General";
             // 
-            // txtidSEMILLERO
+            // txtidSEMILLEROEdit
             // 
-            this.txtidSEMILLERO.Location = new System.Drawing.Point(31, 87);
-            this.txtidSEMILLERO.Margin = new System.Windows.Forms.Padding(4);
-            this.txtidSEMILLERO.Multiline = true;
-            this.txtidSEMILLERO.Name = "txtidSEMILLERO";
-            this.txtidSEMILLERO.Size = new System.Drawing.Size(652, 41);
-            this.txtidSEMILLERO.TabIndex = 15;
+            this.txtidSEMILLEROEdit.Location = new System.Drawing.Point(31, 87);
+            this.txtidSEMILLEROEdit.Margin = new System.Windows.Forms.Padding(4);
+            this.txtidSEMILLEROEdit.Multiline = true;
+            this.txtidSEMILLEROEdit.Name = "txtidSEMILLEROEdit";
+            this.txtidSEMILLEROEdit.ReadOnly = true;
+            this.txtidSEMILLEROEdit.Size = new System.Drawing.Size(652, 41);
+            this.txtidSEMILLEROEdit.TabIndex = 15;
             // 
             // label8
             // 
@@ -117,17 +118,17 @@
             this.label8.TabIndex = 14;
             this.label8.Text = "Nombre del Semillero";
             // 
-            // comboBoxEstadoSemillero
+            // comboBoxEstadoSemilleroEdit
             // 
-            this.comboBoxEstadoSemillero.FormattingEnabled = true;
-            this.comboBoxEstadoSemillero.Items.AddRange(new object[] {
+            this.comboBoxEstadoSemilleroEdit.FormattingEnabled = true;
+            this.comboBoxEstadoSemilleroEdit.Items.AddRange(new object[] {
             "Activo",
             "Inactivo"});
-            this.comboBoxEstadoSemillero.Location = new System.Drawing.Point(37, 352);
-            this.comboBoxEstadoSemillero.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBoxEstadoSemillero.Name = "comboBoxEstadoSemillero";
-            this.comboBoxEstadoSemillero.Size = new System.Drawing.Size(644, 27);
-            this.comboBoxEstadoSemillero.TabIndex = 13;
+            this.comboBoxEstadoSemilleroEdit.Location = new System.Drawing.Point(31, 352);
+            this.comboBoxEstadoSemilleroEdit.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxEstadoSemilleroEdit.Name = "comboBoxEstadoSemilleroEdit";
+            this.comboBoxEstadoSemilleroEdit.Size = new System.Drawing.Size(650, 27);
+            this.comboBoxEstadoSemilleroEdit.TabIndex = 13;
             // 
             // label5
             // 
@@ -135,21 +136,21 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(37, 321);
+            this.label5.Location = new System.Drawing.Point(31, 321);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(63, 19);
             this.label5.TabIndex = 12;
             this.label5.Text = "Estado";
             // 
-            // txtAreaconocimientosemillero
+            // txtAreaconocimientosemilleroEdit
             // 
-            this.txtAreaconocimientosemillero.Location = new System.Drawing.Point(32, 267);
-            this.txtAreaconocimientosemillero.Margin = new System.Windows.Forms.Padding(4);
-            this.txtAreaconocimientosemillero.Multiline = true;
-            this.txtAreaconocimientosemillero.Name = "txtAreaconocimientosemillero";
-            this.txtAreaconocimientosemillero.Size = new System.Drawing.Size(652, 39);
-            this.txtAreaconocimientosemillero.TabIndex = 9;
+            this.txtAreaconocimientosemilleroEdit.Location = new System.Drawing.Point(32, 267);
+            this.txtAreaconocimientosemilleroEdit.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAreaconocimientosemilleroEdit.Multiline = true;
+            this.txtAreaconocimientosemilleroEdit.Name = "txtAreaconocimientosemilleroEdit";
+            this.txtAreaconocimientosemilleroEdit.Size = new System.Drawing.Size(652, 39);
+            this.txtAreaconocimientosemilleroEdit.TabIndex = 9;
             // 
             // label1
             // 
@@ -177,43 +178,73 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "ID del Semillero";
             // 
-            // txtNombreSemillero
+            // txtNombreSemilleroEdit
             // 
-            this.txtNombreSemillero.Location = new System.Drawing.Point(31, 181);
-            this.txtNombreSemillero.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNombreSemillero.Multiline = true;
-            this.txtNombreSemillero.Name = "txtNombreSemillero";
-            this.txtNombreSemillero.Size = new System.Drawing.Size(652, 41);
-            this.txtNombreSemillero.TabIndex = 6;
+            this.txtNombreSemilleroEdit.Location = new System.Drawing.Point(31, 181);
+            this.txtNombreSemilleroEdit.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNombreSemilleroEdit.Multiline = true;
+            this.txtNombreSemilleroEdit.Name = "txtNombreSemilleroEdit";
+            this.txtNombreSemilleroEdit.Size = new System.Drawing.Size(652, 41);
+            this.txtNombreSemilleroEdit.TabIndex = 6;
+            // 
+            // btnCancelarEdit
+            // 
+            this.btnCancelarEdit.BackColor = System.Drawing.Color.White;
+            this.btnCancelarEdit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCancelarEdit.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelarEdit.ForeColor = System.Drawing.Color.Black;
+            this.btnCancelarEdit.Location = new System.Drawing.Point(423, 783);
+            this.btnCancelarEdit.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCancelarEdit.Name = "btnCancelarEdit";
+            this.btnCancelarEdit.Size = new System.Drawing.Size(152, 49);
+            this.btnCancelarEdit.TabIndex = 20;
+            this.btnCancelarEdit.Text = "CANCELAR";
+            this.btnCancelarEdit.UseVisualStyleBackColor = false;
+            this.btnCancelarEdit.Click += new System.EventHandler(this.btnCancelarEdit_Click_1);
+            // 
+            // btnGuardarSemilleroEditado
+            // 
+            this.btnGuardarSemilleroEditado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(122)))), ((int)(((byte)(74)))));
+            this.btnGuardarSemilleroEditado.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnGuardarSemilleroEditado.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardarSemilleroEditado.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnGuardarSemilleroEditado.Location = new System.Drawing.Point(585, 784);
+            this.btnGuardarSemilleroEditado.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGuardarSemilleroEditado.Name = "btnGuardarSemilleroEditado";
+            this.btnGuardarSemilleroEditado.Size = new System.Drawing.Size(152, 49);
+            this.btnGuardarSemilleroEditado.TabIndex = 19;
+            this.btnGuardarSemilleroEditado.Text = "GUARDAR";
+            this.btnGuardarSemilleroEditado.UseVisualStyleBackColor = false;
+            this.btnGuardarSemilleroEditado.Click += new System.EventHandler(this.btnGuardarSemilleroEditado_Click);
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.comboBoxInvestigadorLider);
+            this.groupBox2.Controls.Add(this.comboBoxInvestigadorLiderEdit);
             this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.dateTimePickerInicioSemillero);
+            this.groupBox2.Controls.Add(this.dateTimePickerInicioSemilleroEdit);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(79)))), ((int)(((byte)(124)))));
-            this.groupBox2.Location = new System.Drawing.Point(28, 590);
+            this.groupBox2.Location = new System.Drawing.Point(21, 536);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(716, 230);
-            this.groupBox2.TabIndex = 15;
+            this.groupBox2.TabIndex = 18;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Fechas y Responsable";
             // 
-            // comboBoxInvestigadorLider
+            // comboBoxInvestigadorLiderEdit
             // 
-            this.comboBoxInvestigadorLider.FormattingEnabled = true;
-            this.comboBoxInvestigadorLider.Items.AddRange(new object[] {
+            this.comboBoxInvestigadorLiderEdit.FormattingEnabled = true;
+            this.comboBoxInvestigadorLiderEdit.Items.AddRange(new object[] {
             "Habilitado",
             "Inhabilitado"});
-            this.comboBoxInvestigadorLider.Location = new System.Drawing.Point(31, 165);
-            this.comboBoxInvestigadorLider.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBoxInvestigadorLider.Name = "comboBoxInvestigadorLider";
-            this.comboBoxInvestigadorLider.Size = new System.Drawing.Size(653, 27);
-            this.comboBoxInvestigadorLider.TabIndex = 16;
+            this.comboBoxInvestigadorLiderEdit.Location = new System.Drawing.Point(31, 165);
+            this.comboBoxInvestigadorLiderEdit.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxInvestigadorLiderEdit.Name = "comboBoxInvestigadorLiderEdit";
+            this.comboBoxInvestigadorLiderEdit.Size = new System.Drawing.Size(653, 27);
+            this.comboBoxInvestigadorLiderEdit.TabIndex = 16;
             // 
             // label4
             // 
@@ -228,14 +259,14 @@
             this.label4.TabIndex = 16;
             this.label4.Text = "Investigador Líder";
             // 
-            // dateTimePickerInicioSemillero
+            // dateTimePickerInicioSemilleroEdit
             // 
-            this.dateTimePickerInicioSemillero.Location = new System.Drawing.Point(32, 84);
-            this.dateTimePickerInicioSemillero.Margin = new System.Windows.Forms.Padding(4);
-            this.dateTimePickerInicioSemillero.Name = "dateTimePickerInicioSemillero";
-            this.dateTimePickerInicioSemillero.ShowCheckBox = true;
-            this.dateTimePickerInicioSemillero.Size = new System.Drawing.Size(649, 27);
-            this.dateTimePickerInicioSemillero.TabIndex = 14;
+            this.dateTimePickerInicioSemilleroEdit.Location = new System.Drawing.Point(32, 84);
+            this.dateTimePickerInicioSemilleroEdit.Margin = new System.Windows.Forms.Padding(4);
+            this.dateTimePickerInicioSemilleroEdit.Name = "dateTimePickerInicioSemilleroEdit";
+            this.dateTimePickerInicioSemilleroEdit.ShowCheckBox = true;
+            this.dateTimePickerInicioSemilleroEdit.Size = new System.Drawing.Size(649, 27);
+            this.dateTimePickerInicioSemilleroEdit.TabIndex = 14;
             // 
             // label9
             // 
@@ -250,50 +281,21 @@
             this.label9.TabIndex = 7;
             this.label9.Text = "Fecha de Inicio";
             // 
-            // btnGuardarSemillero
-            // 
-            this.btnGuardarSemillero.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(122)))), ((int)(((byte)(74)))));
-            this.btnGuardarSemillero.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnGuardarSemillero.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardarSemillero.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnGuardarSemillero.Location = new System.Drawing.Point(592, 838);
-            this.btnGuardarSemillero.Margin = new System.Windows.Forms.Padding(4);
-            this.btnGuardarSemillero.Name = "btnGuardarSemillero";
-            this.btnGuardarSemillero.Size = new System.Drawing.Size(152, 49);
-            this.btnGuardarSemillero.TabIndex = 16;
-            this.btnGuardarSemillero.Text = "GUARDAR";
-            this.btnGuardarSemillero.UseVisualStyleBackColor = false;
-            this.btnGuardarSemillero.Click += new System.EventHandler(this.btnGuardarSemillero_Click);
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.BackColor = System.Drawing.Color.White;
-            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCancelar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.ForeColor = System.Drawing.Color.Black;
-            this.btnCancelar.Location = new System.Drawing.Point(430, 837);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(152, 49);
-            this.btnCancelar.TabIndex = 17;
-            this.btnCancelar.Text = "CANCELAR";
-            this.btnCancelar.UseVisualStyleBackColor = false;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-            // 
-            // AgregarSemilleroAdmin
+            // EditarSemillerosAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(773, 915);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(773, 839);
             this.ControlBox = false;
-            this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.btnGuardarSemillero);
+            this.Controls.Add(this.btnCancelarEdit);
+            this.Controls.Add(this.btnGuardarSemilleroEditado);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
-            this.Name = "AgregarSemilleroAdmin";
+            this.Name = "EditarSemillerosAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AGREGAR SEMILLERO - DSIG";
+            this.Text = "EDITAR SEMILLEROS - ADMINISTRADOR";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -309,20 +311,20 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txtidSEMILLERO;
+        private System.Windows.Forms.TextBox txtidSEMILLEROEdit;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox comboBoxEstadoSemillero;
+        private System.Windows.Forms.ComboBox comboBoxEstadoSemilleroEdit;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtAreaconocimientosemillero;
+        private System.Windows.Forms.TextBox txtAreaconocimientosemilleroEdit;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtNombreSemillero;
+        private System.Windows.Forms.TextBox txtNombreSemilleroEdit;
+        private System.Windows.Forms.Button btnCancelarEdit;
+        private System.Windows.Forms.Button btnGuardarSemilleroEditado;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.DateTimePicker dateTimePickerInicioSemillero;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox comboBoxInvestigadorLider;
+        private System.Windows.Forms.ComboBox comboBoxInvestigadorLiderEdit;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button btnGuardarSemillero;
-        private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.DateTimePicker dateTimePickerInicioSemilleroEdit;
+        private System.Windows.Forms.Label label9;
     }
 }

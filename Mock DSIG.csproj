@@ -60,6 +60,18 @@
     <Compile Include="EditarProyectosAdmin.Designer.cs">
       <DependentUpon>EditarProyectosAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="EditarSemillerosAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarSemillerosAdmin.Designer.cs">
+      <DependentUpon>EditarSemillerosAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditarUsuarioAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarUsuarioAdmin.Designer.cs">
+      <DependentUpon>EditarUsuarioAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,6 +187,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EditarProyectosAdmin.resx">
       <DependentUpon>EditarProyectosAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditarSemillerosAdmin.resx">
+      <DependentUpon>EditarSemillerosAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditarUsuarioAdmin.resx">
+      <DependentUpon>EditarUsuarioAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormAdmin.resx">
       <DependentUpon>FormAdmin.cs</DependentUpon>
