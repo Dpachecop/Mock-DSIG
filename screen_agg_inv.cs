@@ -13,6 +13,26 @@ namespace Mock_DSIG
 {
     public partial class screen_agg_inv : Form
     {
+
+
+        public void VerificarLetras(KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && char.IsDigit(e.KeyChar) && (e.KeyChar != ','))
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo Puedes Ingresar Letras.", "PERSONAS", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+
+        public void VerificarNumeritos(KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != ','))
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo Puedes Ingresar Números.", "PERSONAS", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
         public screen_agg_inv()
         {
             InitializeComponent();
@@ -75,6 +95,21 @@ namespace Mock_DSIG
             {
                 this.Hide();
             }
+        }
+
+        private void form_nombres_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            VerificarLetras(e);
+        }
+
+        private void form_apellido_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            VerificarLetras(e);
+        }
+
+        private void form_numero_tlf_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            VerificarNumeritos(e);
         }
     }
 }

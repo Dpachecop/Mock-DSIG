@@ -60,9 +60,8 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(79)))), ((int)(((byte)(124)))));
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(0, -2);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(781, 78);
+            this.panel1.Size = new System.Drawing.Size(586, 63);
             this.panel1.TabIndex = 1;
             // 
             // label2
@@ -71,10 +70,9 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(16, 30);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(12, 24);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(285, 23);
+            this.label2.Size = new System.Drawing.Size(228, 19);
             this.label2.TabIndex = 1;
             this.label2.Text = "Agregar Nuevo Investigador";
             // 
@@ -94,23 +92,21 @@
             this.groupBox1.Controls.Add(this.form_nombres);
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(79)))), ((int)(((byte)(124)))));
-            this.groupBox1.Location = new System.Drawing.Point(28, 96);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Location = new System.Drawing.Point(21, 78);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(716, 436);
+            this.groupBox1.Size = new System.Drawing.Size(537, 354);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos Personales";
             // 
             // form_apellido
             // 
-            this.form_apellido.Location = new System.Drawing.Point(403, 82);
-            this.form_apellido.Margin = new System.Windows.Forms.Padding(4);
+            this.form_apellido.Location = new System.Drawing.Point(302, 67);
             this.form_apellido.Multiline = true;
             this.form_apellido.Name = "form_apellido";
-            this.form_apellido.Size = new System.Drawing.Size(281, 41);
+            this.form_apellido.Size = new System.Drawing.Size(212, 34);
             this.form_apellido.TabIndex = 17;
+            this.form_apellido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.form_apellido_KeyPress);
             // 
             // label7
             // 
@@ -118,21 +114,20 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(399, 48);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(299, 39);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(77, 18);
+            this.label7.Size = new System.Drawing.Size(62, 16);
             this.label7.TabIndex = 16;
             this.label7.Text = "Apellidos";
             // 
             // form_numero_tlf
             // 
-            this.form_numero_tlf.Location = new System.Drawing.Point(32, 263);
-            this.form_numero_tlf.Margin = new System.Windows.Forms.Padding(4);
+            this.form_numero_tlf.Location = new System.Drawing.Point(24, 214);
             this.form_numero_tlf.Multiline = true;
             this.form_numero_tlf.Name = "form_numero_tlf";
-            this.form_numero_tlf.Size = new System.Drawing.Size(652, 43);
+            this.form_numero_tlf.Size = new System.Drawing.Size(490, 36);
             this.form_numero_tlf.TabIndex = 15;
+            this.form_numero_tlf.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.form_numero_tlf_KeyPress);
             // 
             // label10
             // 
@@ -140,20 +135,18 @@
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(29, 240);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Location = new System.Drawing.Point(22, 195);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(158, 18);
+            this.label10.Size = new System.Drawing.Size(127, 16);
             this.label10.TabIndex = 14;
             this.label10.Text = "Número de Telefono";
             // 
             // form_id
             // 
-            this.form_id.Location = new System.Drawing.Point(357, 377);
-            this.form_id.Margin = new System.Windows.Forms.Padding(4);
+            this.form_id.Location = new System.Drawing.Point(268, 306);
             this.form_id.Multiline = true;
             this.form_id.Name = "form_id";
-            this.form_id.Size = new System.Drawing.Size(328, 29);
+            this.form_id.Size = new System.Drawing.Size(247, 24);
             this.form_id.TabIndex = 13;
             // 
             // label5
@@ -162,10 +155,9 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(353, 352);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(265, 286);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(182, 18);
+            this.label5.Size = new System.Drawing.Size(144, 16);
             this.label5.TabIndex = 12;
             this.label5.Text = "Número de Documento";
             // 
@@ -176,10 +168,9 @@
             "CEDULA CIUDADANIA",
             "CEDULA EXTRANJERA",
             "TARJETA IDENTIDAD"});
-            this.combo_tipo_doc.Location = new System.Drawing.Point(32, 377);
-            this.combo_tipo_doc.Margin = new System.Windows.Forms.Padding(4);
+            this.combo_tipo_doc.Location = new System.Drawing.Point(24, 306);
             this.combo_tipo_doc.Name = "combo_tipo_doc";
-            this.combo_tipo_doc.Size = new System.Drawing.Size(271, 27);
+            this.combo_tipo_doc.Size = new System.Drawing.Size(204, 24);
             this.combo_tipo_doc.TabIndex = 11;
             // 
             // label4
@@ -188,20 +179,18 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(28, 352);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(21, 286);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(153, 18);
+            this.label4.Size = new System.Drawing.Size(122, 16);
             this.label4.TabIndex = 10;
             this.label4.Text = "Tipo de Documento";
             // 
             // form_correo
             // 
-            this.form_correo.Location = new System.Drawing.Point(32, 166);
-            this.form_correo.Margin = new System.Windows.Forms.Padding(4);
+            this.form_correo.Location = new System.Drawing.Point(24, 135);
             this.form_correo.Multiline = true;
             this.form_correo.Name = "form_correo";
-            this.form_correo.Size = new System.Drawing.Size(652, 43);
+            this.form_correo.Size = new System.Drawing.Size(490, 36);
             this.form_correo.TabIndex = 9;
             // 
             // label1
@@ -210,10 +199,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(29, 139);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(22, 113);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(148, 18);
+            this.label1.Size = new System.Drawing.Size(117, 16);
             this.label1.TabIndex = 8;
             this.label1.Text = "Correo Electrónico";
             // 
@@ -223,21 +211,20 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(28, 48);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(21, 39);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(74, 18);
+            this.label3.Size = new System.Drawing.Size(60, 16);
             this.label3.TabIndex = 7;
             this.label3.Text = "Nombres";
             // 
             // form_nombres
             // 
-            this.form_nombres.Location = new System.Drawing.Point(32, 82);
-            this.form_nombres.Margin = new System.Windows.Forms.Padding(4);
+            this.form_nombres.Location = new System.Drawing.Point(24, 67);
             this.form_nombres.Multiline = true;
             this.form_nombres.Name = "form_nombres";
-            this.form_nombres.Size = new System.Drawing.Size(292, 41);
+            this.form_nombres.Size = new System.Drawing.Size(220, 34);
             this.form_nombres.TabIndex = 6;
+            this.form_nombres.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.form_nombres_KeyPress);
             // 
             // groupBox3
             // 
@@ -247,33 +234,29 @@
             this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(79)))), ((int)(((byte)(124)))));
-            this.groupBox3.Location = new System.Drawing.Point(28, 546);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox3.Location = new System.Drawing.Point(21, 444);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox3.Size = new System.Drawing.Size(716, 119);
+            this.groupBox3.Size = new System.Drawing.Size(537, 97);
             this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Acceso al Sistema";
             // 
             // form_password_final
             // 
-            this.form_password_final.Location = new System.Drawing.Point(392, 68);
-            this.form_password_final.Margin = new System.Windows.Forms.Padding(4);
+            this.form_password_final.Location = new System.Drawing.Point(294, 55);
             this.form_password_final.Multiline = true;
             this.form_password_final.Name = "form_password_final";
             this.form_password_final.PasswordChar = '*';
-            this.form_password_final.Size = new System.Drawing.Size(292, 30);
+            this.form_password_final.Size = new System.Drawing.Size(220, 25);
             this.form_password_final.TabIndex = 17;
             // 
             // form_password_inic
             // 
-            this.form_password_inic.Location = new System.Drawing.Point(32, 68);
-            this.form_password_inic.Margin = new System.Windows.Forms.Padding(4);
+            this.form_password_inic.Location = new System.Drawing.Point(24, 55);
             this.form_password_inic.Multiline = true;
             this.form_password_inic.Name = "form_password_inic";
             this.form_password_inic.PasswordChar = '*';
-            this.form_password_inic.Size = new System.Drawing.Size(292, 30);
+            this.form_password_inic.Size = new System.Drawing.Size(220, 25);
             this.form_password_inic.TabIndex = 14;
             // 
             // label8
@@ -282,10 +265,9 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(389, 42);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(292, 34);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(184, 18);
+            this.label8.Size = new System.Drawing.Size(145, 16);
             this.label8.TabIndex = 16;
             this.label8.Text = "Confirme su Contraseña";
             // 
@@ -295,10 +277,9 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(29, 42);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Location = new System.Drawing.Point(22, 34);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(93, 18);
+            this.label9.Size = new System.Drawing.Size(74, 16);
             this.label9.TabIndex = 14;
             this.label9.Text = "Contraseña";
             // 
@@ -308,10 +289,9 @@
             this.bt_cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.bt_cancelar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_cancelar.ForeColor = System.Drawing.Color.Black;
-            this.bt_cancelar.Location = new System.Drawing.Point(320, 704);
-            this.bt_cancelar.Margin = new System.Windows.Forms.Padding(4);
+            this.bt_cancelar.Location = new System.Drawing.Point(240, 572);
             this.bt_cancelar.Name = "bt_cancelar";
-            this.bt_cancelar.Size = new System.Drawing.Size(152, 49);
+            this.bt_cancelar.Size = new System.Drawing.Size(114, 40);
             this.bt_cancelar.TabIndex = 17;
             this.bt_cancelar.Text = "CANCELAR";
             this.bt_cancelar.UseVisualStyleBackColor = false;
@@ -323,10 +303,9 @@
             this.bt_guardar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.bt_guardar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_guardar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bt_guardar.Location = new System.Drawing.Point(480, 704);
-            this.bt_guardar.Margin = new System.Windows.Forms.Padding(4);
+            this.bt_guardar.Location = new System.Drawing.Point(360, 572);
             this.bt_guardar.Name = "bt_guardar";
-            this.bt_guardar.Size = new System.Drawing.Size(264, 49);
+            this.bt_guardar.Size = new System.Drawing.Size(198, 40);
             this.bt_guardar.TabIndex = 18;
             this.bt_guardar.Text = "GUARDAR INVESTIGADOR";
             this.bt_guardar.UseVisualStyleBackColor = false;
@@ -334,17 +313,16 @@
             // 
             // screen_agg_inv
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(773, 776);
+            this.ClientSize = new System.Drawing.Size(580, 630);
             this.ControlBox = false;
             this.Controls.Add(this.bt_guardar);
             this.Controls.Add(this.bt_cancelar);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "screen_agg_inv";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AGREGAR INVESTIGADOR - ADMINISTRADOR";

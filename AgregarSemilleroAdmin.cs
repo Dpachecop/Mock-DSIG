@@ -14,6 +14,26 @@ namespace Mock_DSIG
     public partial class AgregarSemilleroAdmin : Form
     {
         conexion cn = new conexion();
+
+
+        public void VerificarLetras(KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && char.IsDigit(e.KeyChar) && (e.KeyChar != ','))
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo Puedes Ingresar Letras.", "PERSONAS", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+
+        public void VerificarNumeritos(KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != ','))
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo Puedes Ingresar Números.", "PERSONAS", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
         public AgregarSemilleroAdmin()
         {
             InitializeComponent();
@@ -99,6 +119,21 @@ namespace Mock_DSIG
             {
                 this.Close();
             }
+        }
+
+        private void txtNombreSemillero_KeyPress(object sender, KeyPressEventArgs e)
+        {
+           
+        }
+
+        private void txtAreaconocimientosemillero_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            VerificarLetras(e);
+        }
+
+        private void txtidSEMILLERO_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            VerificarNumeritos(e);
         }
     }
     

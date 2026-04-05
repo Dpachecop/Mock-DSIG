@@ -15,7 +15,24 @@ namespace Mock_DSIG
     {
         // Instanciación de Clases
         conexion cn = new conexion();
+        public void VerificarLetras(KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && char.IsDigit(e.KeyChar) && (e.KeyChar != ','))
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo Puedes Ingresar Letras.", "PERSONAS", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
 
+
+        public void VerificarNumeritos(KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != ','))
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo Puedes Ingresar Números.", "PERSONAS", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
         public Form6()
         {
             InitializeComponent();
@@ -105,6 +122,11 @@ namespace Mock_DSIG
             {
                 this.Close();
             }
+        }
+
+        private void txtidPROYECTO_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            VerificarNumeritos(e);
         }
     }
 }

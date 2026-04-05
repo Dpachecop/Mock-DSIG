@@ -17,6 +17,19 @@ namespace Mock_DSIG
         conexion cn = new conexion();
         int idProyectoRecibido;
 
+
+
+        public void VerificarLetras(KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && char.IsDigit(e.KeyChar) && (e.KeyChar != ','))
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo Puedes Ingresar Letras.", "PERSONAS", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+
+     
         public EditarProyectosAdmin(int id)
         {
             InitializeComponent();
@@ -128,9 +141,14 @@ namespace Mock_DSIG
             this.Close();
         }
 
-        private void EditarProyectosAdmin_Load(object sender, EventArgs e)
+        private void txtNombreProyectoedit_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtNombreProyectoedit_KeyPress(object sender, KeyPressEventArgs e)
+        {
+       
         }
     }
 }
