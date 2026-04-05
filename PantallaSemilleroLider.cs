@@ -12,48 +12,38 @@ namespace Mock_DSIG
 {
     public partial class PantallaSemilleroLider : Form
     {
+        // Usamos el mismo nombre de variable para mantener coherencia en todo el proyecto
+        int idLiderSesion;
         public PantallaSemilleroLider()
         {
             InitializeComponent();
         }
-
-        private void dTPFechar_ValueChanged(object sender, EventArgs e)
+        public PantallaSemilleroLider(int idRecibido)
         {
-
+            InitializeComponent();
+            this.idLiderSesion = idRecibido;
         }
 
-        private void label9_Click(object sender, EventArgs e)
+        private void btnInicioLider_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void btnInicio_Click(object sender, EventArgs e)
-        {
-            MenuPrincipalLider menuPrincipalLider = new MenuPrincipalLider();
+            // Devolvemos el ID al menú al regresar
+            MenuPrincipalLider menuPrincipalLider = new MenuPrincipalLider(this.idLiderSesion);
             menuPrincipalLider.Show();
             this.Hide();
         }
 
-        private void btnProyectos_Click(object sender, EventArgs e)
+        private void btnProyectosLider_Click(object sender, EventArgs e)
         {
-            ProyectosLider proyectosLider = new ProyectosLider();
+            ProyectosLider proyectosLider = new ProyectosLider(this.idLiderSesion);
             proyectosLider.Show();
             this.Hide();
         }
 
-        private void btnMiSemilleroInvestigador_Click(object sender, EventArgs e)
+        private void btnMiembrosLider_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void btnInicioInvestigador_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnProyectosInvestigador_Click(object sender, EventArgs e)
-        {
-
+            PantallaMiembrosLIder pantallaMiembrosLIder = new PantallaMiembrosLIder(this.idLiderSesion);
+            pantallaMiembrosLIder.Show();
+            this.Hide();
         }
 
         private void btnSalirLider_Click(object sender, EventArgs e)
@@ -63,26 +53,9 @@ namespace Mock_DSIG
                 Application.Exit();
             }
         }
-
-        private void btnInicioLider_Click(object sender, EventArgs e)
-        {
-            MenuPrincipalLider menuPrincipalLider = new MenuPrincipalLider();
-            menuPrincipalLider.Show();
-            this.Hide();
-        }
-
-        private void btnProyectosLider_Click(object sender, EventArgs e)
-        {
-            ProyectosLider proyectosLider = new ProyectosLider();
-            proyectosLider.Show();
-            this.Hide();
-        }
-
-        private void btnMiembrosLider_Click(object sender, EventArgs e)
-        {
-            PantallaMiembrosLIder pantallaMiembrosLIder = new PantallaMiembrosLIder();
-            pantallaMiembrosLIder.Show();
-            this.Hide();
-        }
+        private void dTPFechar_ValueChanged(object sender, EventArgs e) { }
+        private void label9_Click(object sender, EventArgs e) { }
+        private void btnInicio_Click(object sender, EventArgs e) { btnInicioLider_Click(sender, e); }
+        private void btnProyectos_Click(object sender, EventArgs e) { btnProyectosLider_Click(sender, e); }
     }
 }

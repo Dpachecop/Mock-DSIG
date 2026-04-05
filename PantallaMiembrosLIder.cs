@@ -12,42 +12,47 @@ namespace Mock_DSIG
 {
     public partial class PantallaMiembrosLIder : Form
     {
+        int idLiderSesion;
         public PantallaMiembrosLIder()
         {
             InitializeComponent();
         }
 
+        public PantallaMiembrosLIder(int idRecibido)
+        {
+            InitializeComponent();
+            this.idLiderSesion = idRecibido; // asignamos el ID recibido a la variable local
+        }
+
         private void btnInicioLider_Click(object sender, EventArgs e)
         {
-            MenuPrincipalLider menuPrincipalLider = new MenuPrincipalLider();
+            MenuPrincipalLider menuPrincipalLider = new MenuPrincipalLider(this.idLiderSesion);
             menuPrincipalLider.Show();
             this.Hide();
         }
 
         private void btnProyectosLider_Click(object sender, EventArgs e)
         {
-            ProyectosLider proyectosLider = new ProyectosLider();
+            ProyectosLider proyectosLider = new ProyectosLider(this.idLiderSesion);
             proyectosLider.Show();
             this.Hide();
         }
 
         private void btnMiembrosLider_Click(object sender, EventArgs e)
         {
-            PantallaMiembrosLIder pantallaMiembrosLIder = new PantallaMiembrosLIder();
-            pantallaMiembrosLIder.Show();
-            this.Hide();
+           
         }
 
         private void btnMiSemilleroLider_Click(object sender, EventArgs e)
         {
-            PantallaSemilleroLider pantallaSemilleroLider = new PantallaSemilleroLider();
+            PantallaSemilleroLider pantallaSemilleroLider = new PantallaSemilleroLider(this.idLiderSesion);
             pantallaSemilleroLider.Show();
             this.Hide();
         }
 
         private void btnReportesLider_Click(object sender, EventArgs e)
         {
-
+          
         }
     }
 }
