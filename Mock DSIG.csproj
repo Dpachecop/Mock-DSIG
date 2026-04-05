@@ -66,6 +66,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AgregarActividadLider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarActividadLider.Designer.cs">
+      <DependentUpon>AgregarActividadLider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarFaseLider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarFaseLider.Designer.cs">
+      <DependentUpon>AgregarFaseLider.cs</DependentUpon>
+    </Compile>
     <Compile Include="AgregarNuevoProyectoLider.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,11 +92,23 @@
     </Compile>
     <Compile Include="conexion.cs" />
     <Compile Include="consultas_login.cs" />
+    <Compile Include="DetallesProyectosLider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetallesProyectosLider.Designer.cs">
+      <DependentUpon>DetallesProyectosLider.cs</DependentUpon>
+    </Compile>
     <Compile Include="EditarProyectosAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EditarProyectosAdmin.Designer.cs">
       <DependentUpon>EditarProyectosAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditarProyectosLider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarProyectosLider.Designer.cs">
+      <DependentUpon>EditarProyectosLider.cs</DependentUpon>
     </Compile>
     <Compile Include="EditarSemillerosAdmin.cs">
       <SubType>Form</SubType>
@@ -208,14 +232,26 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AgregarActividadLider.resx">
+      <DependentUpon>AgregarActividadLider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarFaseLider.resx">
+      <DependentUpon>AgregarFaseLider.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AgregarNuevoProyectoLider.resx">
       <DependentUpon>AgregarNuevoProyectoLider.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AgregarSemilleroAdmin.resx">
       <DependentUpon>AgregarSemilleroAdmin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DetallesProyectosLider.resx">
+      <DependentUpon>DetallesProyectosLider.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EditarProyectosAdmin.resx">
       <DependentUpon>EditarProyectosAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditarProyectosLider.resx">
+      <DependentUpon>EditarProyectosLider.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditarSemillerosAdmin.resx">
       <DependentUpon>EditarSemillerosAdmin.cs</DependentUpon>

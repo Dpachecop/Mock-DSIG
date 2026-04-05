@@ -90,7 +90,17 @@ namespace Mock_DSIG
 
         private void btnEditProyectosLider_Click(object sender, EventArgs e)
         {
-
+            if (dataGridProyectosLider.SelectedRows.Count > 0)
+            {
+                int idSeleccionado = Convert.ToInt32(dataGridProyectosLider.CurrentRow.Cells["ID"].Value);
+                EditarProyectosLider frmEditar = new EditarProyectosLider(idSeleccionado);
+                frmEditar.ShowDialog();
+                CargarProyectos();
+            }
+            else
+            {
+                MessageBox.Show("Por favor, selecciona una fila completa haciendo clic en el extremo izquierdo de la tabla.", "Selección requerida");
+            }
         }
 
         private void btnEliminarProyectosLider_Click(object sender, EventArgs e)
@@ -161,6 +171,53 @@ namespace Mock_DSIG
             else
             {
                 MessageBox.Show("Por favor, selecciona toda la fila del proyecto que deseas eliminar haciendo clic en el margen izquierdo de la tabla.", "Selección requerida", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btndetalles_Click(object sender, EventArgs e)
+        {
+            if (dataGridProyectosLider.SelectedRows.Count > 0)
+            {
+                int idProy = Convert.ToInt32(dataGridProyectosLider.CurrentRow.Cells["ID"].Value);
+                string nombreProy = dataGridProyectosLider.CurrentRow.Cells["NOMBRE PROYECTO"].Value.ToString();
+                DetallesProyectosLider frmDetalles = new DetallesProyectosLider(idProy, nombreProy);
+                frmDetalles.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Selecciona una fila para ver los detalles.");
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // Verificamos que haya un proyecto seleccionado en la tabla
+            if (dataGridProyectosLider.SelectedRows.Count > 0)
+            {
+                // Obtenemos el ID de la celda "ID" de la fila seleccionada
+                int idProy = Convert.ToInt32(dataGridProyectosLider.CurrentRow.Cells["ID"].Value);
+
+                // Abrimos el formulario enviándole el ID
+                AgregarFaseLider frmFase = new AgregarFaseLider(idProy);
+                frmFase.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Seleccione un proyecto de la lista para añadirle una fase.", "Aviso");
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (dataGridProyectosLider.SelectedRows.Count > 0)
+            {
+                int idProy = Convert.ToInt32(dataGridProyectosLider.CurrentRow.Cells["ID"].Value);
+                AgregarActividadLider frmAct = new AgregarActividadLider(idProy);
+                frmAct.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Seleccione un proyecto para añadirle una actividad.");
             }
         }
     }

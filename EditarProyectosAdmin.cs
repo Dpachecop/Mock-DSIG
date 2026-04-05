@@ -127,5 +127,10 @@ namespace Mock_DSIG
         {
             this.Close();
         }
+
+        private void EditarProyectosAdmin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
