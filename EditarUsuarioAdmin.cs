@@ -13,8 +13,29 @@ namespace Mock_DSIG
 {
     public partial class EditarUsuarioAdmin : Form
     {
+
+
         conexion cn = new conexion();
         int idOriginal; // Para saber a quién editar en el WHERE
+
+        public void VerificarLetras(KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && char.IsDigit(e.KeyChar) && (e.KeyChar != ','))
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo Puedes Ingresar Letras.", "PERSONAS", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+
+        public void VerificarNumeritos(KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != ','))
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo Puedes Ingresar Números.", "PERSONAS", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
 
         public EditarUsuarioAdmin(int id, string nombre, string apellido, string correo, string telefono, string pass)
         {
@@ -55,6 +76,49 @@ namespace Mock_DSIG
             {
                 MessageBox.Show("Error al actualizar: " + ex.Message);
                 cn.Cerrar();
+            }
+        }
+
+        private void form_nombresEdit_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            VerificarLetras(e);
+        }
+
+        private void form_numero_tlfEdit_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void form_numero_tlfEdit_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            VerificarNumeritos(e);
+        }
+
+        private void EditarUsuarioAdmin_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void form_nombresEdit_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void EditarUsuarioAdmin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void form_apellidoEdit_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            VerificarLetras(e);
+        }
+
+        private void bt_cancelareDIT_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿Estás seguro de que deseas cancelar? Se perderán los cambios no guardados.", "Confirmar Cancelación", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+                this.Close();
             }
         }
     }

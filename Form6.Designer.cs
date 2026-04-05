@@ -57,10 +57,9 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(79)))), ((int)(((byte)(124)))));
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(0, -6);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Location = new System.Drawing.Point(0, -5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(781, 78);
+            this.panel1.Size = new System.Drawing.Size(586, 63);
             this.panel1.TabIndex = 0;
             // 
             // label2
@@ -69,10 +68,9 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(16, 30);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(12, 24);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(252, 23);
+            this.label2.Size = new System.Drawing.Size(200, 19);
             this.label2.TabIndex = 1;
             this.label2.Text = "Agregar Nuevo Proyecto";
             // 
@@ -90,23 +88,21 @@
             this.groupBox1.Controls.Add(this.txtNombreProyecto);
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(79)))), ((int)(((byte)(124)))));
-            this.groupBox1.Location = new System.Drawing.Point(33, 97);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Location = new System.Drawing.Point(25, 79);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(716, 447);
+            this.groupBox1.Size = new System.Drawing.Size(537, 363);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Información General";
             // 
             // txtidPROYECTO
             // 
-            this.txtidPROYECTO.Location = new System.Drawing.Point(31, 87);
-            this.txtidPROYECTO.Margin = new System.Windows.Forms.Padding(4);
+            this.txtidPROYECTO.Location = new System.Drawing.Point(23, 71);
             this.txtidPROYECTO.Multiline = true;
             this.txtidPROYECTO.Name = "txtidPROYECTO";
-            this.txtidPROYECTO.Size = new System.Drawing.Size(652, 41);
+            this.txtidPROYECTO.Size = new System.Drawing.Size(490, 34);
             this.txtidPROYECTO.TabIndex = 15;
+            this.txtidPROYECTO.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtidPROYECTO_KeyPress);
             // 
             // label8
             // 
@@ -114,10 +110,9 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(28, 158);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(21, 128);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(166, 18);
+            this.label8.Size = new System.Drawing.Size(133, 16);
             this.label8.TabIndex = 14;
             this.label8.Text = "Nombre del Proyecto";
             // 
@@ -127,10 +122,9 @@
             this.comboBoxEstadoProyecto.Items.AddRange(new object[] {
             "Habilitado",
             "Inhabilitado"});
-            this.comboBoxEstadoProyecto.Location = new System.Drawing.Point(413, 381);
-            this.comboBoxEstadoProyecto.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxEstadoProyecto.Location = new System.Drawing.Point(310, 310);
             this.comboBoxEstadoProyecto.Name = "comboBoxEstadoProyecto";
-            this.comboBoxEstadoProyecto.Size = new System.Drawing.Size(271, 27);
+            this.comboBoxEstadoProyecto.Size = new System.Drawing.Size(204, 24);
             this.comboBoxEstadoProyecto.TabIndex = 13;
             // 
             // label5
@@ -139,20 +133,18 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(411, 352);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(308, 286);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(56, 18);
+            this.label5.Size = new System.Drawing.Size(45, 16);
             this.label5.TabIndex = 12;
             this.label5.Text = "Estado";
             // 
             // comboBoxSemilleros
             // 
             this.comboBoxSemilleros.FormattingEnabled = true;
-            this.comboBoxSemilleros.Location = new System.Drawing.Point(32, 381);
-            this.comboBoxSemilleros.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxSemilleros.Location = new System.Drawing.Point(24, 310);
             this.comboBoxSemilleros.Name = "comboBoxSemilleros";
-            this.comboBoxSemilleros.Size = new System.Drawing.Size(271, 27);
+            this.comboBoxSemilleros.Size = new System.Drawing.Size(204, 24);
             this.comboBoxSemilleros.TabIndex = 11;
             // 
             // label4
@@ -161,20 +153,18 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(31, 352);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(23, 286);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(152, 18);
+            this.label4.Size = new System.Drawing.Size(121, 16);
             this.label4.TabIndex = 10;
             this.label4.Text = "Semillero Asociado";
             // 
             // txtDescripcionProyecto
             // 
-            this.txtDescripcionProyecto.Location = new System.Drawing.Point(32, 260);
-            this.txtDescripcionProyecto.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDescripcionProyecto.Location = new System.Drawing.Point(24, 211);
             this.txtDescripcionProyecto.Multiline = true;
             this.txtDescripcionProyecto.Name = "txtDescripcionProyecto";
-            this.txtDescripcionProyecto.Size = new System.Drawing.Size(652, 72);
+            this.txtDescripcionProyecto.Size = new System.Drawing.Size(490, 59);
             this.txtDescripcionProyecto.TabIndex = 9;
             // 
             // label1
@@ -183,10 +173,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(29, 233);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(22, 189);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 18);
+            this.label1.Size = new System.Drawing.Size(77, 16);
             this.label1.TabIndex = 8;
             this.label1.Text = "Descripción";
             // 
@@ -196,20 +185,18 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(28, 48);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(21, 39);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(121, 18);
+            this.label3.Size = new System.Drawing.Size(97, 16);
             this.label3.TabIndex = 7;
             this.label3.Text = "ID del Proyecto";
             // 
             // txtNombreProyecto
             // 
-            this.txtNombreProyecto.Location = new System.Drawing.Point(31, 181);
-            this.txtNombreProyecto.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNombreProyecto.Location = new System.Drawing.Point(23, 147);
             this.txtNombreProyecto.Multiline = true;
             this.txtNombreProyecto.Name = "txtNombreProyecto";
-            this.txtNombreProyecto.Size = new System.Drawing.Size(652, 41);
+            this.txtNombreProyecto.Size = new System.Drawing.Size(490, 34);
             this.txtNombreProyecto.TabIndex = 6;
             // 
             // groupBox2
@@ -220,22 +207,19 @@
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(79)))), ((int)(((byte)(124)))));
-            this.groupBox2.Location = new System.Drawing.Point(33, 561);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Location = new System.Drawing.Point(25, 456);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(716, 134);
+            this.groupBox2.Size = new System.Drawing.Size(537, 109);
             this.groupBox2.TabIndex = 14;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Fechas ";
             // 
             // dateTimePickerFinal
             // 
-            this.dateTimePickerFinal.Location = new System.Drawing.Point(369, 85);
-            this.dateTimePickerFinal.Margin = new System.Windows.Forms.Padding(4);
+            this.dateTimePickerFinal.Location = new System.Drawing.Point(277, 69);
             this.dateTimePickerFinal.Name = "dateTimePickerFinal";
             this.dateTimePickerFinal.ShowCheckBox = true;
-            this.dateTimePickerFinal.Size = new System.Drawing.Size(317, 27);
+            this.dateTimePickerFinal.Size = new System.Drawing.Size(239, 23);
             this.dateTimePickerFinal.TabIndex = 16;
             // 
             // label7
@@ -244,20 +228,18 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(365, 48);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(274, 39);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(170, 18);
+            this.label7.Size = new System.Drawing.Size(136, 16);
             this.label7.TabIndex = 15;
             this.label7.Text = "Fecha de Finalización";
             // 
             // dateTimePickerInicio
             // 
-            this.dateTimePickerInicio.Location = new System.Drawing.Point(32, 84);
-            this.dateTimePickerInicio.Margin = new System.Windows.Forms.Padding(4);
+            this.dateTimePickerInicio.Location = new System.Drawing.Point(24, 68);
             this.dateTimePickerInicio.Name = "dateTimePickerInicio";
             this.dateTimePickerInicio.ShowCheckBox = true;
-            this.dateTimePickerInicio.Size = new System.Drawing.Size(317, 27);
+            this.dateTimePickerInicio.Size = new System.Drawing.Size(239, 23);
             this.dateTimePickerInicio.TabIndex = 14;
             // 
             // label9
@@ -266,10 +248,9 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(28, 48);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Location = new System.Drawing.Point(21, 39);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(123, 18);
+            this.label9.Size = new System.Drawing.Size(99, 16);
             this.label9.TabIndex = 7;
             this.label9.Text = "Fecha de Inicio";
             // 
@@ -279,10 +260,9 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(597, 720);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(448, 585);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(152, 49);
+            this.button1.Size = new System.Drawing.Size(114, 40);
             this.button1.TabIndex = 15;
             this.button1.Text = "GUARDAR";
             this.button1.UseVisualStyleBackColor = false;
@@ -294,10 +274,9 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(437, 720);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Location = new System.Drawing.Point(328, 585);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(152, 49);
+            this.button2.Size = new System.Drawing.Size(114, 40);
             this.button2.TabIndex = 16;
             this.button2.Text = "CANCELAR";
             this.button2.UseVisualStyleBackColor = false;
@@ -305,17 +284,16 @@
             // 
             // Form6
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(773, 779);
+            this.ClientSize = new System.Drawing.Size(580, 633);
             this.ControlBox = false;
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form6";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AGREGAR PROYECTOS";

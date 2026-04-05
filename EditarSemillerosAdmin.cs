@@ -16,7 +16,24 @@ namespace Mock_DSIG
         conexion cn = new conexion();
         int idOriginal; // variable para almacenar el ID del semillero que se va a editar
 
+        public void VerificarLetras(KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && char.IsDigit(e.KeyChar) && (e.KeyChar != ','))
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo Puedes Ingresar Letras.", "PERSONAS", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
 
+
+        public void VerificarNumeritos(KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != ','))
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo Puedes Ingresar Números.", "PERSONAS", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
         public EditarSemillerosAdmin(int id, string nombre, string area, string estado, DateTime fecha)
         {
             InitializeComponent();
@@ -123,5 +140,25 @@ namespace Mock_DSIG
             {
                 this.Close();
         }   }
+
+        private void txtidSEMILLEROEdit_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNombreSemilleroEdit_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNombreSemilleroEdit_KeyPress(object sender, KeyPressEventArgs e)
+        {
+          
+        }
+
+        private void txtAreaconocimientosemilleroEdit_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            VerificarLetras(e);
+        }
     }
 }
