@@ -57,6 +57,8 @@
             this.btnEditUsuariosLider = new System.Windows.Forms.Button();
             this.btnAggUsuariosLider = new System.Windows.Forms.Button();
             this.dataGridUsuariosLider = new System.Windows.Forms.DataGridView();
+            this.btnConsultarAdmin = new System.Windows.Forms.Button();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
@@ -70,6 +72,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridUsuariosLider)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -101,7 +104,7 @@
             // pictureBox11
             // 
             this.pictureBox11.Image = global::Mock_DSIG.Properties.Resources.Salir;
-            this.pictureBox11.Location = new System.Drawing.Point(79, 927);
+            this.pictureBox11.Location = new System.Drawing.Point(79, 882);
             this.pictureBox11.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(29, 27);
@@ -178,7 +181,7 @@
             this.btnSalirLider.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSalirLider.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalirLider.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnSalirLider.Location = new System.Drawing.Point(0, 910);
+            this.btnSalirLider.Location = new System.Drawing.Point(0, 864);
             this.btnSalirLider.Margin = new System.Windows.Forms.Padding(4);
             this.btnSalirLider.Name = "btnSalirLider";
             this.btnSalirLider.Size = new System.Drawing.Size(311, 60);
@@ -340,7 +343,7 @@
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Transparent;
-            this.label5.Location = new System.Drawing.Point(821, 268);
+            this.label5.Location = new System.Drawing.Point(922, 268);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(28, 28);
@@ -351,7 +354,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(79)))), ((int)(((byte)(124)))));
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(621, 270);
+            this.pictureBox2.Location = new System.Drawing.Point(722, 270);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(24, 26);
@@ -363,7 +366,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(122)))), ((int)(((byte)(74)))));
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(408, 268);
+            this.pictureBox3.Location = new System.Drawing.Point(398, 270);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(24, 24);
@@ -377,13 +380,14 @@
             this.btnEliminarUsuariosLider.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEliminarUsuariosLider.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminarUsuariosLider.ForeColor = System.Drawing.Color.White;
-            this.btnEliminarUsuariosLider.Location = new System.Drawing.Point(792, 257);
+            this.btnEliminarUsuariosLider.Location = new System.Drawing.Point(893, 257);
             this.btnEliminarUsuariosLider.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminarUsuariosLider.Name = "btnEliminarUsuariosLider";
-            this.btnEliminarUsuariosLider.Size = new System.Drawing.Size(191, 49);
+            this.btnEliminarUsuariosLider.Size = new System.Drawing.Size(319, 49);
             this.btnEliminarUsuariosLider.TabIndex = 33;
-            this.btnEliminarUsuariosLider.Text = "       ELIMINAR";
+            this.btnEliminarUsuariosLider.Text = "       DESVINCULAR MIEMBRO";
             this.btnEliminarUsuariosLider.UseVisualStyleBackColor = false;
+            this.btnEliminarUsuariosLider.Click += new System.EventHandler(this.btnEliminarUsuariosLider_Click);
             // 
             // btnEditUsuariosLider
             // 
@@ -391,7 +395,7 @@
             this.btnEditUsuariosLider.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEditUsuariosLider.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditUsuariosLider.ForeColor = System.Drawing.Color.White;
-            this.btnEditUsuariosLider.Location = new System.Drawing.Point(579, 257);
+            this.btnEditUsuariosLider.Location = new System.Drawing.Point(685, 257);
             this.btnEditUsuariosLider.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditUsuariosLider.Name = "btnEditUsuariosLider";
             this.btnEditUsuariosLider.Size = new System.Drawing.Size(191, 49);
@@ -408,20 +412,47 @@
             this.btnAggUsuariosLider.Location = new System.Drawing.Point(371, 257);
             this.btnAggUsuariosLider.Margin = new System.Windows.Forms.Padding(4);
             this.btnAggUsuariosLider.Name = "btnAggUsuariosLider";
-            this.btnAggUsuariosLider.Size = new System.Drawing.Size(191, 49);
+            this.btnAggUsuariosLider.Size = new System.Drawing.Size(301, 49);
             this.btnAggUsuariosLider.TabIndex = 31;
-            this.btnAggUsuariosLider.Text = "     NUEVO";
+            this.btnAggUsuariosLider.Text = "     VINCULAR MIEMBRO";
             this.btnAggUsuariosLider.UseVisualStyleBackColor = false;
             // 
             // dataGridUsuariosLider
             // 
             this.dataGridUsuariosLider.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridUsuariosLider.Location = new System.Drawing.Point(340, 418);
+            this.dataGridUsuariosLider.Location = new System.Drawing.Point(340, 355);
             this.dataGridUsuariosLider.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridUsuariosLider.Name = "dataGridUsuariosLider";
             this.dataGridUsuariosLider.RowHeadersWidth = 51;
             this.dataGridUsuariosLider.Size = new System.Drawing.Size(1324, 554);
             this.dataGridUsuariosLider.TabIndex = 37;
+            // 
+            // btnConsultarAdmin
+            // 
+            this.btnConsultarAdmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnConsultarAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnConsultarAdmin.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsultarAdmin.ForeColor = System.Drawing.Color.White;
+            this.btnConsultarAdmin.Location = new System.Drawing.Point(1220, 257);
+            this.btnConsultarAdmin.Margin = new System.Windows.Forms.Padding(4);
+            this.btnConsultarAdmin.Name = "btnConsultarAdmin";
+            this.btnConsultarAdmin.Size = new System.Drawing.Size(191, 49);
+            this.btnConsultarAdmin.TabIndex = 38;
+            this.btnConsultarAdmin.Text = "     CONSULTAR";
+            this.btnConsultarAdmin.UseVisualStyleBackColor = false;
+            this.btnConsultarAdmin.Click += new System.EventHandler(this.btnConsultarAdmin_Click);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(1237, 271);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 39;
+            this.pictureBox4.TabStop = false;
             // 
             // PantallaMiembrosLIder
             // 
@@ -429,6 +460,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1697, 922);
             this.ControlBox = false;
+            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.btnConsultarAdmin);
             this.Controls.Add(this.dataGridUsuariosLider);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.pictureBox2);
@@ -443,6 +476,7 @@
             this.Name = "PantallaMiembrosLIder";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DSIG - MIEMBROS - LIDER";
+            this.Load += new System.EventHandler(this.PantallaMiembrosLIder_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
@@ -458,6 +492,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridUsuariosLider)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -493,5 +528,7 @@
         private System.Windows.Forms.Button btnEditUsuariosLider;
         private System.Windows.Forms.Button btnAggUsuariosLider;
         private System.Windows.Forms.DataGridView dataGridUsuariosLider;
+        private System.Windows.Forms.Button btnConsultarAdmin;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }
