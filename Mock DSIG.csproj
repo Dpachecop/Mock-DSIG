@@ -232,6 +232,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VincularMiembroLider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VincularMiembroLider.Designer.cs">
+      <DependentUpon>VincularMiembroLider.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AgregarActividadLider.resx">
       <DependentUpon>AgregarActividadLider.cs</DependentUpon>
     </EmbeddedResource>
@@ -323,6 +329,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="VincularMiembroLider.resx">
+      <DependentUpon>VincularMiembroLider.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -115,7 +115,7 @@ namespace Mock_DSIG
 
         private void btnMiembrosLider_Click(object sender, EventArgs e)
         {
-           
+         
         }
 
         private void btnMiSemilleroLider_Click(object sender, EventArgs e)
@@ -171,6 +171,12 @@ namespace Mock_DSIG
                 MessageBox.Show("Por favor, selecciona una fila completa en la tabla primero.",
                                 "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+
+        private void btnAggUsuariosLider_Click(object sender, EventArgs e)
+        {
+            VincularMiembroLider vincularMiembroLider = new VincularMiembroLider(this.idLiderSesion);
+            vincularMiembroLider.ShowDialog();
         }
     }
 }

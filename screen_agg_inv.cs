@@ -111,5 +111,10 @@ namespace Mock_DSIG
         {
             VerificarNumeritos(e);
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
