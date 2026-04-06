@@ -150,5 +150,10 @@ namespace Mock_DSIG
         {
        
         }
+
+        private void EditarProyectosAdmin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

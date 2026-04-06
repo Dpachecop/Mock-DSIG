@@ -32,6 +32,9 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.gbDatosgenerales = new System.Windows.Forms.GroupBox();
+            this.txtboxDescripcion = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.btnEditarLider = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtAreadeconocimientoLider = new System.Windows.Forms.TextBox();
@@ -45,7 +48,6 @@
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -66,9 +68,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.btnEditarLider = new System.Windows.Forms.Button();
-            this.label14 = new System.Windows.Forms.Label();
-            this.txtboxDescripcion = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.gbDatosgenerales.SuspendLayout();
@@ -91,7 +90,7 @@
             this.panel1.Controls.Add(this.pictureBox5);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(280, -2);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1421, 98);
             this.panel1.TabIndex = 17;
@@ -100,7 +99,7 @@
             // 
             this.pictureBox5.Image = global::Mock_DSIG.Properties.Resources.LOGO_SEMILLERO_DSIG__1_;
             this.pictureBox5.Location = new System.Drawing.Point(1156, -23);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(319, 139);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -135,13 +134,48 @@
             this.gbDatosgenerales.Controls.Add(this.label5);
             this.gbDatosgenerales.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbDatosgenerales.Location = new System.Drawing.Point(373, 279);
-            this.gbDatosgenerales.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbDatosgenerales.Margin = new System.Windows.Forms.Padding(4);
             this.gbDatosgenerales.Name = "gbDatosgenerales";
-            this.gbDatosgenerales.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbDatosgenerales.Padding = new System.Windows.Forms.Padding(4);
             this.gbDatosgenerales.Size = new System.Drawing.Size(1259, 463);
             this.gbDatosgenerales.TabIndex = 19;
             this.gbDatosgenerales.TabStop = false;
             this.gbDatosgenerales.Text = "Datos Generales";
+            // 
+            // txtboxDescripcion
+            // 
+            this.txtboxDescripcion.Location = new System.Drawing.Point(654, 67);
+            this.txtboxDescripcion.Margin = new System.Windows.Forms.Padding(4);
+            this.txtboxDescripcion.Multiline = true;
+            this.txtboxDescripcion.Name = "txtboxDescripcion";
+            this.txtboxDescripcion.Size = new System.Drawing.Size(577, 282);
+            this.txtboxDescripcion.TabIndex = 22;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label14.Location = new System.Drawing.Point(650, 44);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(107, 19);
+            this.label14.TabIndex = 21;
+            this.label14.Text = "Descripción";
+            // 
+            // btnEditarLider
+            // 
+            this.btnEditarLider.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(122)))), ((int)(((byte)(74)))));
+            this.btnEditarLider.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnEditarLider.ForeColor = System.Drawing.Color.White;
+            this.btnEditarLider.Location = new System.Drawing.Point(1012, 373);
+            this.btnEditarLider.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEditarLider.Name = "btnEditarLider";
+            this.btnEditarLider.Size = new System.Drawing.Size(219, 57);
+            this.btnEditarLider.TabIndex = 2;
+            this.btnEditarLider.Text = "EDITAR DATOS";
+            this.btnEditarLider.UseVisualStyleBackColor = false;
+            this.btnEditarLider.Click += new System.EventHandler(this.btnEditarLider_Click);
             // 
             // comboBox1
             // 
@@ -158,20 +192,18 @@
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(29, 64);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombre.Multiline = true;
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.ReadOnly = true;
             this.txtNombre.Size = new System.Drawing.Size(514, 43);
             this.txtNombre.TabIndex = 19;
             // 
             // txtAreadeconocimientoLider
             // 
             this.txtAreadeconocimientoLider.Location = new System.Drawing.Point(29, 155);
-            this.txtAreadeconocimientoLider.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAreadeconocimientoLider.Margin = new System.Windows.Forms.Padding(4);
             this.txtAreadeconocimientoLider.Multiline = true;
             this.txtAreadeconocimientoLider.Name = "txtAreadeconocimientoLider";
-            this.txtAreadeconocimientoLider.ReadOnly = true;
             this.txtAreadeconocimientoLider.Size = new System.Drawing.Size(514, 43);
             this.txtAreadeconocimientoLider.TabIndex = 16;
             // 
@@ -190,7 +222,7 @@
             // dTPFechaSemilleroLIder
             // 
             this.dTPFechaSemilleroLIder.Location = new System.Drawing.Point(36, 322);
-            this.dTPFechaSemilleroLIder.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dTPFechaSemilleroLIder.Margin = new System.Windows.Forms.Padding(4);
             this.dTPFechaSemilleroLIder.Name = "dTPFechaSemilleroLIder";
             this.dTPFechaSemilleroLIder.Size = new System.Drawing.Size(507, 27);
             this.dTPFechaSemilleroLIder.TabIndex = 18;
@@ -238,7 +270,7 @@
             this.panel8.Controls.Add(this.label20);
             this.panel8.Controls.Add(this.pictureBox13);
             this.panel8.Location = new System.Drawing.Point(-13, 970);
-            this.panel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(1724, 38);
             this.panel8.TabIndex = 21;
@@ -259,7 +291,7 @@
             // 
             this.pictureBox13.Image = global::Mock_DSIG.Properties.Resources.conexion_a_internet;
             this.pictureBox13.Location = new System.Drawing.Point(17, 2);
-            this.pictureBox13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox13.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(79, 34);
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -291,24 +323,12 @@
             this.label10.TabIndex = 23;
             this.label10.Text = "Texto Actualizable";
             // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label11.Location = new System.Drawing.Point(367, 216);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(220, 23);
-            this.label11.TabIndex = 24;
-            this.label11.Text = "Siglas-actualizables - ";
-            // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label12.Location = new System.Drawing.Point(589, 216);
+            this.label12.Location = new System.Drawing.Point(364, 216);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(116, 23);
@@ -320,7 +340,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label13.Location = new System.Drawing.Point(703, 217);
+            this.label13.Location = new System.Drawing.Point(478, 217);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(196, 23);
@@ -378,7 +398,7 @@
             // pictureBox9
             // 
             this.pictureBox9.Image = global::Mock_DSIG.Properties.Resources.Teams;
-            this.pictureBox9.Location = new System.Drawing.Point(102, 490);
+            this.pictureBox9.Location = new System.Drawing.Point(98, 490);
             this.pictureBox9.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(29, 27);
@@ -389,7 +409,7 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = global::Mock_DSIG.Properties.Resources.Proyectos;
-            this.pictureBox8.Location = new System.Drawing.Point(103, 433);
+            this.pictureBox8.Location = new System.Drawing.Point(99, 433);
             this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(29, 27);
@@ -400,7 +420,7 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = global::Mock_DSIG.Properties.Resources.Seed;
-            this.pictureBox7.Location = new System.Drawing.Point(102, 375);
+            this.pictureBox7.Location = new System.Drawing.Point(98, 375);
             this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(29, 27);
@@ -411,7 +431,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::Mock_DSIG.Properties.Resources.home;
-            this.pictureBox6.Location = new System.Drawing.Point(101, 316);
+            this.pictureBox6.Location = new System.Drawing.Point(98, 316);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(29, 27);
@@ -555,40 +575,6 @@
             this.pictureBox12.TabIndex = 20;
             this.pictureBox12.TabStop = false;
             // 
-            // btnEditarLider
-            // 
-            this.btnEditarLider.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(122)))), ((int)(((byte)(74)))));
-            this.btnEditarLider.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnEditarLider.ForeColor = System.Drawing.Color.White;
-            this.btnEditarLider.Location = new System.Drawing.Point(1012, 373);
-            this.btnEditarLider.Margin = new System.Windows.Forms.Padding(4);
-            this.btnEditarLider.Name = "btnEditarLider";
-            this.btnEditarLider.Size = new System.Drawing.Size(219, 57);
-            this.btnEditarLider.TabIndex = 2;
-            this.btnEditarLider.Text = "EDITAR DATOS";
-            this.btnEditarLider.UseVisualStyleBackColor = false;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label14.Location = new System.Drawing.Point(650, 44);
-            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(107, 19);
-            this.label14.TabIndex = 21;
-            this.label14.Text = "Descripción";
-            // 
-            // txtboxDescripcion
-            // 
-            this.txtboxDescripcion.Location = new System.Drawing.Point(654, 67);
-            this.txtboxDescripcion.Margin = new System.Windows.Forms.Padding(4);
-            this.txtboxDescripcion.Multiline = true;
-            this.txtboxDescripcion.Name = "txtboxDescripcion";
-            this.txtboxDescripcion.Size = new System.Drawing.Size(577, 282);
-            this.txtboxDescripcion.TabIndex = 22;
-            // 
             // PantallaSemilleroLider
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -598,17 +584,17 @@
             this.ControlBox = false;
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.gbDatosgenerales);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "PantallaSemilleroLider";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DSIG - MI SEMILLERO - LÍDER";
+            this.Load += new System.EventHandler(this.PantallaSemilleroLider_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -649,7 +635,6 @@
         private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.ComboBox comboBox1;

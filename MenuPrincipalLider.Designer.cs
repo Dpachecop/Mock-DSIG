@@ -50,14 +50,14 @@
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.lblProyectosActivos = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.lblmiembros = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label20 = new System.Windows.Forms.Label();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.lblProyectosActivos = new System.Windows.Forms.Label();
-            this.lblmiembros = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
@@ -136,7 +136,7 @@
             // pictureBox10
             // 
             this.pictureBox10.Image = global::Mock_DSIG.Properties.Resources.Reportes;
-            this.pictureBox10.Location = new System.Drawing.Point(102, 546);
+            this.pictureBox10.Location = new System.Drawing.Point(99, 546);
             this.pictureBox10.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(29, 27);
@@ -147,7 +147,7 @@
             // pictureBox9
             // 
             this.pictureBox9.Image = global::Mock_DSIG.Properties.Resources.Teams;
-            this.pictureBox9.Location = new System.Drawing.Point(102, 490);
+            this.pictureBox9.Location = new System.Drawing.Point(99, 490);
             this.pictureBox9.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(29, 27);
@@ -158,7 +158,7 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = global::Mock_DSIG.Properties.Resources.Proyectos;
-            this.pictureBox8.Location = new System.Drawing.Point(103, 433);
+            this.pictureBox8.Location = new System.Drawing.Point(99, 433);
             this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(29, 27);
@@ -169,7 +169,7 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = global::Mock_DSIG.Properties.Resources.Seed;
-            this.pictureBox7.Location = new System.Drawing.Point(102, 375);
+            this.pictureBox7.Location = new System.Drawing.Point(99, 375);
             this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(29, 27);
@@ -180,7 +180,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::Mock_DSIG.Properties.Resources.home;
-            this.pictureBox6.Location = new System.Drawing.Point(101, 316);
+            this.pictureBox6.Location = new System.Drawing.Point(100, 318);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(29, 27);
@@ -348,6 +348,18 @@
             this.panel3.Size = new System.Drawing.Size(522, 254);
             this.panel3.TabIndex = 24;
             // 
+            // lblProyectosActivos
+            // 
+            this.lblProyectosActivos.AutoSize = true;
+            this.lblProyectosActivos.Font = new System.Drawing.Font("Century Gothic", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProyectosActivos.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblProyectosActivos.Location = new System.Drawing.Point(235, 83);
+            this.lblProyectosActivos.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblProyectosActivos.Name = "lblProyectosActivos";
+            this.lblProyectosActivos.Size = new System.Drawing.Size(89, 99);
+            this.lblProyectosActivos.TabIndex = 10;
+            this.lblProyectosActivos.Text = "8";
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -370,6 +382,18 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(522, 254);
             this.panel4.TabIndex = 25;
+            // 
+            // lblmiembros
+            // 
+            this.lblmiembros.AutoSize = true;
+            this.lblmiembros.Font = new System.Drawing.Font("Century Gothic", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblmiembros.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblmiembros.Location = new System.Drawing.Point(222, 77);
+            this.lblmiembros.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblmiembros.Name = "lblmiembros";
+            this.lblmiembros.Size = new System.Drawing.Size(89, 99);
+            this.lblmiembros.TabIndex = 11;
+            this.lblmiembros.Text = "8";
             // 
             // label5
             // 
@@ -418,30 +442,6 @@
             this.pictureBox13.TabIndex = 21;
             this.pictureBox13.TabStop = false;
             // 
-            // lblProyectosActivos
-            // 
-            this.lblProyectosActivos.AutoSize = true;
-            this.lblProyectosActivos.Font = new System.Drawing.Font("Century Gothic", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProyectosActivos.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblProyectosActivos.Location = new System.Drawing.Point(235, 83);
-            this.lblProyectosActivos.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblProyectosActivos.Name = "lblProyectosActivos";
-            this.lblProyectosActivos.Size = new System.Drawing.Size(89, 99);
-            this.lblProyectosActivos.TabIndex = 10;
-            this.lblProyectosActivos.Text = "8";
-            // 
-            // lblmiembros
-            // 
-            this.lblmiembros.AutoSize = true;
-            this.lblmiembros.Font = new System.Drawing.Font("Century Gothic", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblmiembros.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblmiembros.Location = new System.Drawing.Point(222, 77);
-            this.lblmiembros.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblmiembros.Name = "lblmiembros";
-            this.lblmiembros.Size = new System.Drawing.Size(89, 99);
-            this.lblmiembros.TabIndex = 11;
-            this.lblmiembros.Text = "8";
-            // 
             // MenuPrincipalLider
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -457,6 +457,7 @@
             this.Name = "MenuPrincipalLider";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DSIG - MENÚ INICIAL - LÍDER";
+            this.Load += new System.EventHandler(this.MenuPrincipalLider_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
