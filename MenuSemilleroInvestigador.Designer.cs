@@ -37,6 +37,7 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.gbDescripcion = new System.Windows.Forms.GroupBox();
+            this.dtcompas = new System.Windows.Forms.DataGridView();
             this.gbDatosgenerales = new System.Windows.Forms.GroupBox();
             this.CBXestadoInvestigador = new System.Windows.Forms.ComboBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
@@ -62,12 +63,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.dtcompas = new System.Windows.Forms.DataGridView();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.gbDescripcion.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtcompas)).BeginInit();
             this.gbDatosgenerales.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
@@ -77,7 +78,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtcompas)).BeginInit();
             this.SuspendLayout();
             // 
             // label10
@@ -143,10 +143,10 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(79)))), ((int)(((byte)(124)))));
             this.panel1.Controls.Add(this.pictureBox5);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(297, 2);
+            this.panel1.Location = new System.Drawing.Point(297, -6);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1421, 98);
+            this.panel1.Size = new System.Drawing.Size(1453, 98);
             this.panel1.TabIndex = 27;
             // 
             // pictureBox5
@@ -168,9 +168,9 @@
             this.label1.Location = new System.Drawing.Point(49, 37);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(613, 23);
+            this.label1.Size = new System.Drawing.Size(611, 23);
             this.label1.TabIndex = 3;
-            this.label1.Text = "SIGSI - SISTEMA DE GESTION DE SEMILLEROS DE INVESTIGACIÓN";
+            this.label1.Text = "DSIG - SISTEMA DE GESTION DE SEMILLEROS DE INVESTIGACIÓN";
             // 
             // gbDescripcion
             // 
@@ -185,6 +185,18 @@
             this.gbDescripcion.TabIndex = 30;
             this.gbDescripcion.TabStop = false;
             this.gbDescripcion.Text = "Compañeros";
+            // 
+            // dtcompas
+            // 
+            this.dtcompas.AllowUserToAddRows = false;
+            this.dtcompas.AllowUserToDeleteRows = false;
+            this.dtcompas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtcompas.Location = new System.Drawing.Point(37, 48);
+            this.dtcompas.Name = "dtcompas";
+            this.dtcompas.RowHeadersWidth = 51;
+            this.dtcompas.RowTemplate.Height = 24;
+            this.dtcompas.Size = new System.Drawing.Size(607, 301);
+            this.dtcompas.TabIndex = 0;
             // 
             // gbDatosgenerales
             // 
@@ -225,6 +237,7 @@
             this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombre.Multiline = true;
             this.txtNombre.Name = "txtNombre";
+            this.txtNombre.ReadOnly = true;
             this.txtNombre.Size = new System.Drawing.Size(463, 43);
             this.txtNombre.TabIndex = 19;
             // 
@@ -234,6 +247,7 @@
             this.txtAreadeconocimiento.Margin = new System.Windows.Forms.Padding(4);
             this.txtAreadeconocimiento.Multiline = true;
             this.txtAreadeconocimiento.Name = "txtAreadeconocimiento";
+            this.txtAreadeconocimiento.ReadOnly = true;
             this.txtAreadeconocimiento.Size = new System.Drawing.Size(463, 43);
             this.txtAreadeconocimiento.TabIndex = 16;
             // 
@@ -468,12 +482,12 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(16, 151);
+            this.label3.Location = new System.Drawing.Point(12, 110);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 23);
+            this.label3.Size = new System.Drawing.Size(154, 23);
             this.label3.TabIndex = 5;
-            this.label3.Text = "LÍDER";
+            this.label3.Text = "INVESTIGADOR";
             // 
             // pictureBox1
             // 
@@ -495,18 +509,6 @@
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox12.TabIndex = 20;
             this.pictureBox12.TabStop = false;
-            // 
-            // dtcompas
-            // 
-            this.dtcompas.AllowUserToAddRows = false;
-            this.dtcompas.AllowUserToDeleteRows = false;
-            this.dtcompas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtcompas.Location = new System.Drawing.Point(37, 48);
-            this.dtcompas.Name = "dtcompas";
-            this.dtcompas.RowHeadersWidth = 51;
-            this.dtcompas.RowTemplate.Height = 24;
-            this.dtcompas.Size = new System.Drawing.Size(607, 301);
-            this.dtcompas.TabIndex = 0;
             // 
             // MenuSemilleroInvestigador
             // 
@@ -534,6 +536,7 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.gbDescripcion.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dtcompas)).EndInit();
             this.gbDatosgenerales.ResumeLayout(false);
             this.gbDatosgenerales.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -545,7 +548,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtcompas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

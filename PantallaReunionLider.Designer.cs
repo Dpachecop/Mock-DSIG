@@ -1,6 +1,6 @@
 ﻿namespace Mock_DSIG
 {
-    partial class MenuPrincipalLider
+    partial class PantallaReunionLider
     {
         /// <summary>
         /// Required designer variable.
@@ -28,13 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuPrincipalLider));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PantallaReunionLider));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -50,22 +45,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.lblProyectosActivos = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.lblmiembros = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.label20 = new System.Windows.Forms.Label();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.btnGenerarReportes = new System.Windows.Forms.Button();
-            this.dataGridReportes = new System.Windows.Forms.DataGridView();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.panel1.SuspendLayout();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -73,42 +59,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridReportes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(79)))), ((int)(((byte)(124)))));
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Location = new System.Drawing.Point(280, -3);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1421, 98);
-            this.panel1.TabIndex = 2;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(53, 40);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(611, 23);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "DSIG - SISTEMA DE GESTION DE SEMILLEROS DE INVESTIGACIÓN";
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(79)))), ((int)(((byte)(124)))));
             this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.pictureBox11);
+            this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.pictureBox9);
             this.panel2.Controls.Add(this.pictureBox8);
             this.panel2.Controls.Add(this.pictureBox7);
@@ -123,36 +83,11 @@
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.pictureBox12);
-            this.panel2.Location = new System.Drawing.Point(-7, -2);
+            this.panel2.Location = new System.Drawing.Point(-3, -1);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(311, 1007);
-            this.panel2.TabIndex = 19;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(101, 548);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(29, 27);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 22;
-            this.pictureBox2.TabStop = false;
-            // 
-            // button1
-            // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(0, 532);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(311, 59);
-            this.button1.TabIndex = 21;
-            this.button1.Text = "            REUNIONES";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.panel2.Size = new System.Drawing.Size(311, 1011);
+            this.panel2.TabIndex = 20;
             // 
             // pictureBox11
             // 
@@ -230,7 +165,6 @@
             this.btnSalirLider.TabIndex = 12;
             this.btnSalirLider.Text = "          CERRAR SESIÓN";
             this.btnSalirLider.UseVisualStyleBackColor = true;
-            this.btnSalirLider.Click += new System.EventHandler(this.btnSalirLider_Click);
             // 
             // btnMiembrosLider
             // 
@@ -244,7 +178,6 @@
             this.btnMiembrosLider.TabIndex = 10;
             this.btnMiembrosLider.Text = "           MIEMBROS";
             this.btnMiembrosLider.UseVisualStyleBackColor = true;
-            this.btnMiembrosLider.Click += new System.EventHandler(this.btnMiembrosLider_Click);
             // 
             // btnProyectosLider
             // 
@@ -258,7 +191,6 @@
             this.btnProyectosLider.TabIndex = 9;
             this.btnProyectosLider.Text = "            PROYECTOS";
             this.btnProyectosLider.UseVisualStyleBackColor = true;
-            this.btnProyectosLider.Click += new System.EventHandler(this.btnProyectosLider_Click);
             // 
             // btnMiSemilleroLider
             // 
@@ -272,7 +204,6 @@
             this.btnMiSemilleroLider.TabIndex = 8;
             this.btnMiSemilleroLider.Text = "               MI SEMILLERO";
             this.btnMiSemilleroLider.UseVisualStyleBackColor = true;
-            this.btnMiSemilleroLider.Click += new System.EventHandler(this.btnMiSemilleroLider_Click);
             // 
             // btnInicioLider
             // 
@@ -286,7 +217,6 @@
             this.btnInicioLider.TabIndex = 7;
             this.btnInicioLider.Text = "      INICIO";
             this.btnInicioLider.UseVisualStyleBackColor = true;
-            this.btnInicioLider.Click += new System.EventHandler(this.btnInicioLider_Click);
             // 
             // label4
             // 
@@ -333,193 +263,92 @@
             this.pictureBox12.TabIndex = 20;
             this.pictureBox12.TabStop = false;
             // 
-            // label9
+            // panel1
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label9.Location = new System.Drawing.Point(369, 149);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(302, 39);
-            this.label9.TabIndex = 23;
-            this.label9.Text = "BIENVENIDO LIDER";
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(79)))), ((int)(((byte)(124)))));
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Location = new System.Drawing.Point(303, -1);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1421, 98);
+            this.panel1.TabIndex = 21;
             // 
-            // panel3
+            // label6
             // 
-            this.panel3.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel3.Controls.Add(this.lblProyectosActivos);
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Location = new System.Drawing.Point(488, 236);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(522, 254);
-            this.panel3.TabIndex = 24;
-            // 
-            // lblProyectosActivos
-            // 
-            this.lblProyectosActivos.AutoSize = true;
-            this.lblProyectosActivos.Font = new System.Drawing.Font("Century Gothic", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProyectosActivos.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblProyectosActivos.Location = new System.Drawing.Point(235, 83);
-            this.lblProyectosActivos.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblProyectosActivos.Name = "lblProyectosActivos";
-            this.lblProyectosActivos.Size = new System.Drawing.Size(89, 99);
-            this.lblProyectosActivos.TabIndex = 10;
-            this.lblProyectosActivos.Text = "8";
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label6.Location = new System.Drawing.Point(53, 40);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(611, 23);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "DSIG - SISTEMA DE GESTION DE SEMILLEROS DE INVESTIGACIÓN";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(34, 27);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.label1.Location = new System.Drawing.Point(379, 211);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(215, 23);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "PROYECTOS ACTIVOS";
+            this.label1.Size = new System.Drawing.Size(171, 19);
+            this.label1.TabIndex = 25;
+            this.label1.Text = "Módulo:  Reuniones";
             // 
-            // panel4
+            // label2
             // 
-            this.panel4.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel4.Controls.Add(this.lblmiembros);
-            this.panel4.Controls.Add(this.label5);
-            this.panel4.Location = new System.Drawing.Point(1060, 236);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(522, 254);
-            this.panel4.TabIndex = 25;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(375, 163);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(347, 44);
+            this.label2.TabIndex = 24;
+            this.label2.Text = "Lista de Reuniones";
             // 
-            // lblmiembros
+            // pictureBox2
             // 
-            this.lblmiembros.AutoSize = true;
-            this.lblmiembros.Font = new System.Drawing.Font("Century Gothic", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblmiembros.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblmiembros.Location = new System.Drawing.Point(222, 77);
-            this.lblmiembros.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblmiembros.Name = "lblmiembros";
-            this.lblmiembros.Size = new System.Drawing.Size(89, 99);
-            this.lblmiembros.TabIndex = 11;
-            this.lblmiembros.Text = "8";
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(99, 550);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(29, 27);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 27;
+            this.pictureBox2.TabStop = false;
             // 
-            // label5
+            // button1
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(34, 27);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(113, 23);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "MIEMBROS";
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(-2, 534);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(311, 59);
+            this.button1.TabIndex = 26;
+            this.button1.Text = "            REUNIONES";
+            this.button1.UseVisualStyleBackColor = true;
             // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.Silver;
-            this.panel8.Controls.Add(this.label20);
-            this.panel8.Controls.Add(this.pictureBox13);
-            this.panel8.Location = new System.Drawing.Point(-14, 976);
-            this.panel8.Margin = new System.Windows.Forms.Padding(4);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(1724, 38);
-            this.panel8.TabIndex = 26;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label20.Location = new System.Drawing.Point(104, 11);
-            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(73, 19);
-            this.label20.TabIndex = 22;
-            this.label20.Text = "En linea";
-            // 
-            // pictureBox13
-            // 
-            this.pictureBox13.Image = global::Mock_DSIG.Properties.Resources.conexion_a_internet;
-            this.pictureBox13.Location = new System.Drawing.Point(17, 2);
-            this.pictureBox13.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(79, 34);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox13.TabIndex = 21;
-            this.pictureBox13.TabStop = false;
-            // 
-            // btnGenerarReportes
-            // 
-            this.btnGenerarReportes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(79)))), ((int)(((byte)(124)))));
-            this.btnGenerarReportes.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnGenerarReportes.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGenerarReportes.ForeColor = System.Drawing.Color.White;
-            this.btnGenerarReportes.Location = new System.Drawing.Point(488, 522);
-            this.btnGenerarReportes.Margin = new System.Windows.Forms.Padding(4);
-            this.btnGenerarReportes.Name = "btnGenerarReportes";
-            this.btnGenerarReportes.Size = new System.Drawing.Size(1094, 49);
-            this.btnGenerarReportes.TabIndex = 47;
-            this.btnGenerarReportes.Text = "Generar Reporte de mi Semillero";
-            this.btnGenerarReportes.UseVisualStyleBackColor = false;
-            this.btnGenerarReportes.Click += new System.EventHandler(this.btnGenerarReportes_Click);
-            // 
-            // dataGridReportes
-            // 
-            this.dataGridReportes.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dataGridReportes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridReportes.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridReportes.Location = new System.Drawing.Point(488, 579);
-            this.dataGridReportes.Margin = new System.Windows.Forms.Padding(4);
-            this.dataGridReportes.Name = "dataGridReportes";
-            this.dataGridReportes.RowHeadersWidth = 51;
-            this.dataGridReportes.Size = new System.Drawing.Size(1094, 312);
-            this.dataGridReportes.TabIndex = 48;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(79)))), ((int)(((byte)(124)))));
-            this.pictureBox10.Image = global::Mock_DSIG.Properties.Resources.Reportes;
-            this.pictureBox10.Location = new System.Drawing.Point(844, 534);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(29, 27);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox10.TabIndex = 49;
-            this.pictureBox10.TabStop = false;
-            // 
-            // MenuPrincipalLider
+            // PantallaReunionLider
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1697, 1009);
             this.ControlBox = false;
-            this.Controls.Add(this.pictureBox10);
-            this.Controls.Add(this.dataGridReportes);
-            this.Controls.Add(this.btnGenerarReportes);
-            this.Controls.Add(this.panel8);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Name = "MenuPrincipalLider";
+            this.Name = "PantallaReunionLider";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "DSIG - MENÚ INICIAL - LÍDER";
-            this.Load += new System.EventHandler(this.MenuPrincipalLider_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.Text = "DSIG - REUNIONES - LIDER";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
@@ -527,15 +356,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridReportes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -543,8 +366,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.PictureBox pictureBox9;
@@ -561,19 +382,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.PictureBox pictureBox13;
-        private System.Windows.Forms.Label lblProyectosActivos;
-        private System.Windows.Forms.Label lblmiembros;
-        private System.Windows.Forms.Button btnGenerarReportes;
-        private System.Windows.Forms.DataGridView dataGridReportes;
-        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button1;
     }

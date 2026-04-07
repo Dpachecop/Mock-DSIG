@@ -15,8 +15,6 @@ namespace Mock_DSIG
     {
         conexion cn = new conexion();
         int idLiderSesion; // variable para almacenar el ID del líder que inició sesión
-
-        // ADICIÓN: Constructor por defecto para evitar errores del Diseñador
         public MenuPrincipalLider()
         {
             InitializeComponent();
@@ -30,7 +28,6 @@ namespace Mock_DSIG
 
         private void btnMiSemilleroLider_Click(object sender, EventArgs e)
         {
-            // Pasamos el ID a la pantalla de Semillero
             PantallaSemilleroLider pantallaSemilleroLider = new PantallaSemilleroLider(this.idLiderSesion);
             pantallaSemilleroLider.Show();
             this.Hide();
@@ -38,7 +35,6 @@ namespace Mock_DSIG
 
         private void btnProyectosLider_Click(object sender, EventArgs e)
         {
-            // Pasamos el ID a la pantalla de Proyectos
             ProyectosLider proyectosLider = new ProyectosLider(this.idLiderSesion);
             proyectosLider.Show();
             this.Hide();
@@ -46,7 +42,6 @@ namespace Mock_DSIG
 
         private void btnMiembrosLider_Click(object sender, EventArgs e)
         {
-            // Pasamos el ID a la pantalla de Miembros
             PantallaMiembrosLIder pantallaMiembrosLIder = new PantallaMiembrosLIder(this.idLiderSesion);
             pantallaMiembrosLIder.Show();
             this.Hide();
@@ -131,6 +126,13 @@ namespace Mock_DSIG
             PantallaReporteLider frmReporte = new PantallaReporteLider(this.idLiderSesion);
             frmReporte.ShowDialog(); // Usamos ShowDialog para esperar a que termine
             CargarTablaReportes();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            PantallaReunionLider frmReunion = new PantallaReunionLider(this.idLiderSesion);
+            frmReunion.ShowDialog();
+            this.Hide();
         }
     }
 }

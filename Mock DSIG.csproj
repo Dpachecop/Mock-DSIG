@@ -164,6 +164,12 @@
     <Compile Include="MenuSemilleroInvestigador.Designer.cs">
       <DependentUpon>MenuSemilleroInvestigador.cs</DependentUpon>
     </Compile>
+    <Compile Include="NuevaReunionLider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NuevaReunionLider.Designer.cs">
+      <DependentUpon>NuevaReunionLider.cs</DependentUpon>
+    </Compile>
     <Compile Include="PantallaMiembrosLIder.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,6 +181,12 @@
     </Compile>
     <Compile Include="PantallaReporteLider.Designer.cs">
       <DependentUpon>PantallaReporteLider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaReunionLider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaReunionLider.Designer.cs">
+      <DependentUpon>PantallaReunionLider.cs</DependentUpon>
     </Compile>
     <Compile Include="PantallaSemilleroLider.cs">
       <SubType>Form</SubType>
@@ -298,11 +310,17 @@
     <EmbeddedResource Include="MenuSemilleroInvestigador.resx">
       <DependentUpon>MenuSemilleroInvestigador.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="NuevaReunionLider.resx">
+      <DependentUpon>NuevaReunionLider.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PantallaMiembrosLIder.resx">
       <DependentUpon>PantallaMiembrosLIder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PantallaReporteLider.resx">
       <DependentUpon>PantallaReporteLider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaReunionLider.resx">
+      <DependentUpon>PantallaReunionLider.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PantallaSemilleroLider.resx">
       <DependentUpon>PantallaSemilleroLider.cs</DependentUpon>
