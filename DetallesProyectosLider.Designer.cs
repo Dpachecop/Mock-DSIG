@@ -66,6 +66,9 @@
             // 
             // dataGridFases
             // 
+            this.dataGridFases.AllowUserToAddRows = false;
+            this.dataGridFases.AllowUserToDeleteRows = false;
+            this.dataGridFases.AllowUserToOrderColumns = true;
             this.dataGridFases.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridFases.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridFases.Location = new System.Drawing.Point(32, 204);
@@ -79,6 +82,9 @@
             // 
             // dataGridActividades
             // 
+            this.dataGridActividades.AllowUserToAddRows = false;
+            this.dataGridActividades.AllowUserToDeleteRows = false;
+            this.dataGridActividades.AllowUserToOrderColumns = true;
             this.dataGridActividades.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridActividades.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridActividades.Location = new System.Drawing.Point(32, 476);

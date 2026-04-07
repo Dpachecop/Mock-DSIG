@@ -43,9 +43,9 @@ namespace Mock_DSIG
                 }
                 reader.Close(); // se cierra el reader para ejecutar otras consultas asi no se mezclan los resultados
                 // cantidad de proyectos
-                string queryProy = "SELECT COUNT(*) FROM PROYECTO_INVESTIGADOR WHERE idINVESTIGADOR = @id";
+                string queryProy = "SELECT COUNT(P.idPROYECTO) FROM PROYECTO P INNER JOIN INVESTIGADOR I ON P.SEMILLERO_idSEMILLERO = I.SEMILLERO_idSEMILLERO WHERE I.idInv = @idInv";
                 SqlCommand cmd1 = new SqlCommand(queryProy, conexionAbierta);
-                cmd1.Parameters.AddWithValue("@id", idInvestigadorSesion);
+                cmd1.Parameters.AddWithValue("@idInv", idInvestigadorSesion);
                 lblSemillerossActivos.Text = cmd1.ExecuteScalar().ToString();
                 // cantidad de compañeros del mismo semillero
                 string queryComp = "SELECT COUNT(*) FROM INVESTIGADOR WHERE SEMILLERO_idSEMILLERO = (SELECT SEMILLERO_idSEMILLERO FROM INVESTIGADOR WHERE idInv = @id) AND idInv <> @id";

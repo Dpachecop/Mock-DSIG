@@ -31,14 +31,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProyectosLider));
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.btnSalirLider = new System.Windows.Forms.Button();
-            this.btnReportesLider = new System.Windows.Forms.Button();
             this.btnMiembrosLider = new System.Windows.Forms.Button();
             this.btnProyectosLider = new System.Windows.Forms.Button();
             this.btnMiSemilleroLider = new System.Windows.Forms.Button();
@@ -69,7 +67,6 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -91,14 +88,12 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(79)))), ((int)(((byte)(124)))));
             this.panel2.Controls.Add(this.pictureBox11);
-            this.panel2.Controls.Add(this.pictureBox10);
             this.panel2.Controls.Add(this.pictureBox9);
             this.panel2.Controls.Add(this.pictureBox8);
             this.panel2.Controls.Add(this.pictureBox7);
             this.panel2.Controls.Add(this.pictureBox6);
             this.panel2.Controls.Add(this.panel7);
             this.panel2.Controls.Add(this.btnSalirLider);
-            this.panel2.Controls.Add(this.btnReportesLider);
             this.panel2.Controls.Add(this.btnMiembrosLider);
             this.panel2.Controls.Add(this.btnProyectosLider);
             this.panel2.Controls.Add(this.btnMiSemilleroLider);
@@ -123,17 +118,6 @@
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox11.TabIndex = 19;
             this.pictureBox11.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = global::Mock_DSIG.Properties.Resources.Reportes;
-            this.pictureBox10.Location = new System.Drawing.Point(98, 546);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(29, 27);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox10.TabIndex = 18;
-            this.pictureBox10.TabStop = false;
             // 
             // pictureBox9
             // 
@@ -200,19 +184,6 @@
             this.btnSalirLider.TabIndex = 12;
             this.btnSalirLider.Text = "          CERRAR SESIÓN";
             this.btnSalirLider.UseVisualStyleBackColor = true;
-            // 
-            // btnReportesLider
-            // 
-            this.btnReportesLider.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnReportesLider.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReportesLider.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnReportesLider.Location = new System.Drawing.Point(0, 532);
-            this.btnReportesLider.Margin = new System.Windows.Forms.Padding(4);
-            this.btnReportesLider.Name = "btnReportesLider";
-            this.btnReportesLider.Size = new System.Drawing.Size(311, 60);
-            this.btnReportesLider.TabIndex = 11;
-            this.btnReportesLider.Text = "         REPORTES";
-            this.btnReportesLider.UseVisualStyleBackColor = true;
             // 
             // btnMiembrosLider
             // 
@@ -607,7 +578,6 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
@@ -633,14 +603,12 @@
 
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox11;
-        private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Button btnSalirLider;
-        private System.Windows.Forms.Button btnReportesLider;
         private System.Windows.Forms.Button btnMiembrosLider;
         private System.Windows.Forms.Button btnProyectosLider;
         private System.Windows.Forms.Button btnMiSemilleroLider;

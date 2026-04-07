@@ -50,5 +50,13 @@ namespace Mock_DSIG
             frmPerfilInvestigador.Show();
             this.Hide();
         }
+
+        private void btnSalirInvestigador_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿Desea cerrar sesión?", "Confirmar cierre de sesión", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
     }
 }
