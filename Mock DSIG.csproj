@@ -110,6 +110,12 @@
     <Compile Include="EditarProyectosLider.Designer.cs">
       <DependentUpon>EditarProyectosLider.cs</DependentUpon>
     </Compile>
+    <Compile Include="EditarReuLider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarReuLider.Designer.cs">
+      <DependentUpon>EditarReuLider.cs</DependentUpon>
+    </Compile>
     <Compile Include="EditarSemillerosAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -282,6 +288,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EditarProyectosLider.resx">
       <DependentUpon>EditarProyectosLider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditarReuLider.resx">
+      <DependentUpon>EditarReuLider.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditarSemillerosAdmin.resx">
       <DependentUpon>EditarSemillerosAdmin.cs</DependentUpon>

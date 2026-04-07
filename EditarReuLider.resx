@@ -117,38 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vwAADr8BOAVTJAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAGoSURBVEhL1ZVN
-        KERRGIZnJlZ+Sko2FhYWlhYsJDsWNpNSSlNIaJZWFhI7E9nMTiIbC3sbK0X5K5ailB2K/JTGz+Z4vnu/
-        GXfm3OHeRuKpp+a877nnM9x7Rf4MxphKHMUxrNL4Z+DAGB5glhMs0/p72BzFRXzEr5jApPuxKE+Yxpge
-        7wyISwMbmPJxHl9xD3fxHRfQb+86Cv16vDNg2s1MuUYWdAm8xhsc0tiCTn6dbzinkRPOoPD5tUqAc14w
-        pctgA+jqcBhHsF5jX+jDDSBvwVtnh8s9tmptQRd6wDZeYjM24Tnua21BF3qA/MRpXcpa7paMLi3oQg/Y
-        wQtsxAY8xSOtLehCD5A/biFJrS3ogg8g60F5yOT+X8UVvEK51+O6LQ/yYANYV+AdHmOtxpLXoLybHrBa
-        4xxk1oDsk5z3AmPd58amU6McZG1uZRIaObCW95p847wnuReFNZz0uInCLHpzcQqFLfTmyygM6PG5qfIG
-        fJamRDK4hL43jC9s7pAroQvb3Y+mW+vS4bB/OIADDt1zAnGGUb00GFwwiIX/rYo5rpf9NpHIBzKXn9J4
-        VefzAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vAAADrwBlbxySQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAEFSURBVEhL7ZY/
-        EsFAGMUzEw3upcUpjJqGLoXCIVKgcAgtbqExo3AEmvXe5wuxNrGbpPSbeUV2v/f2X7KTqAmMMTGUQBfo
-        BI20qz4avoJsllpSDwRNn3lOxlpWHYS0oZ3EfXPWsjBg5LakUF+fiwa5iiEEmBi+EbsxN2ig7a5BEjH5
-        AoPrQO/QUPvzg2yhlhh9QDHD13Q6sFcygWIx+sBiyPUq5nmtJAiYymZuk6rNDxh8Zp5Rac//4Z+g+B/u
-        Boa5WH/D78H/C82A6Sj2csJnTmDqQLxLyqgWTmDsSUQx1cMJzAuJcVMvnCDgIFFveCuybQaFH6gNQvib
-        sYe4Em5XV7saIIoe1KO0yCqEiE4AAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="pictureBox4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vAAADrwBlbxySQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAA+SURBVEhL7dEx
-        CgAgDEPR3P/SuvzRQsEiCP9tHZIMjfTWAuc8+h2o0T8zQFcbsT5ybcTu0OWTa/R/PCAdJBtXi69Rpg6H
-        WAAAAABJRU5ErkJggg==
-</value>
-  </data>
 </root>

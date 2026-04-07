@@ -30,7 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PantallaReunionLider));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
@@ -49,9 +51,15 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.btnEliminarReu = new System.Windows.Forms.Button();
+            this.btnEditReu = new System.Windows.Forms.Button();
+            this.btnAggReu = new System.Windows.Forms.Button();
+            this.dataGridReu = new System.Windows.Forms.DataGridView();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -60,7 +68,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridReu)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -89,6 +99,17 @@
             this.panel2.Size = new System.Drawing.Size(311, 1011);
             this.panel2.TabIndex = 20;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(99, 550);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(29, 27);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 27;
+            this.pictureBox2.TabStop = false;
+            // 
             // pictureBox11
             // 
             this.pictureBox11.Image = global::Mock_DSIG.Properties.Resources.Salir;
@@ -99,6 +120,19 @@
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox11.TabIndex = 19;
             this.pictureBox11.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(-2, 534);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(311, 59);
+            this.button1.TabIndex = 26;
+            this.button1.Text = "            REUNIONES";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // pictureBox9
             // 
@@ -165,6 +199,7 @@
             this.btnSalirLider.TabIndex = 12;
             this.btnSalirLider.Text = "          CERRAR SESIÓN";
             this.btnSalirLider.UseVisualStyleBackColor = true;
+            this.btnSalirLider.Click += new System.EventHandler(this.btnSalirLider_Click);
             // 
             // btnMiembrosLider
             // 
@@ -178,6 +213,7 @@
             this.btnMiembrosLider.TabIndex = 10;
             this.btnMiembrosLider.Text = "           MIEMBROS";
             this.btnMiembrosLider.UseVisualStyleBackColor = true;
+            this.btnMiembrosLider.Click += new System.EventHandler(this.btnMiembrosLider_Click);
             // 
             // btnProyectosLider
             // 
@@ -191,6 +227,7 @@
             this.btnProyectosLider.TabIndex = 9;
             this.btnProyectosLider.Text = "            PROYECTOS";
             this.btnProyectosLider.UseVisualStyleBackColor = true;
+            this.btnProyectosLider.Click += new System.EventHandler(this.btnProyectosLider_Click);
             // 
             // btnMiSemilleroLider
             // 
@@ -204,6 +241,7 @@
             this.btnMiSemilleroLider.TabIndex = 8;
             this.btnMiSemilleroLider.Text = "               MI SEMILLERO";
             this.btnMiSemilleroLider.UseVisualStyleBackColor = true;
+            this.btnMiSemilleroLider.Click += new System.EventHandler(this.btnMiSemilleroLider_Click);
             // 
             // btnInicioLider
             // 
@@ -217,6 +255,7 @@
             this.btnInicioLider.TabIndex = 7;
             this.btnInicioLider.Text = "      INICIO";
             this.btnInicioLider.UseVisualStyleBackColor = true;
+            this.btnInicioLider.Click += new System.EventHandler(this.btnInicioLider_Click);
             // 
             // label4
             // 
@@ -309,29 +348,101 @@
             this.label2.TabIndex = 24;
             this.label2.Text = "Lista de Reuniones";
             // 
-            // pictureBox2
+            // label5
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(99, 550);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(29, 27);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 27;
-            this.pictureBox2.TabStop = false;
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Transparent;
+            this.label5.Location = new System.Drawing.Point(905, 306);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(28, 28);
+            this.label5.TabIndex = 36;
+            this.label5.Text = "X";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // button1
+            // pictureBox3
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(-2, 534);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(311, 59);
-            this.button1.TabIndex = 26;
-            this.button1.Text = "            REUNIONES";
-            this.button1.UseVisualStyleBackColor = true;
+            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(79)))), ((int)(((byte)(124)))));
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(698, 308);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(24, 26);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 35;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(122)))), ((int)(((byte)(74)))));
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(411, 308);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox4.TabIndex = 34;
+            this.pictureBox4.TabStop = false;
+            // 
+            // btnEliminarReu
+            // 
+            this.btnEliminarReu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnEliminarReu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnEliminarReu.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarReu.ForeColor = System.Drawing.Color.White;
+            this.btnEliminarReu.Location = new System.Drawing.Point(875, 295);
+            this.btnEliminarReu.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEliminarReu.Name = "btnEliminarReu";
+            this.btnEliminarReu.Size = new System.Drawing.Size(191, 49);
+            this.btnEliminarReu.TabIndex = 33;
+            this.btnEliminarReu.Text = "       ELIMINAR";
+            this.btnEliminarReu.UseVisualStyleBackColor = false;
+            this.btnEliminarReu.Click += new System.EventHandler(this.btnEliminarReu_Click);
+            // 
+            // btnEditReu
+            // 
+            this.btnEditReu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(79)))), ((int)(((byte)(124)))));
+            this.btnEditReu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnEditReu.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditReu.ForeColor = System.Drawing.Color.White;
+            this.btnEditReu.Location = new System.Drawing.Point(662, 295);
+            this.btnEditReu.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEditReu.Name = "btnEditReu";
+            this.btnEditReu.Size = new System.Drawing.Size(191, 49);
+            this.btnEditReu.TabIndex = 32;
+            this.btnEditReu.Text = "     EDITAR";
+            this.btnEditReu.UseVisualStyleBackColor = false;
+            this.btnEditReu.Click += new System.EventHandler(this.btnEditReu_Click);
+            // 
+            // btnAggReu
+            // 
+            this.btnAggReu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(122)))), ((int)(((byte)(74)))));
+            this.btnAggReu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAggReu.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAggReu.ForeColor = System.Drawing.Color.White;
+            this.btnAggReu.Location = new System.Drawing.Point(383, 295);
+            this.btnAggReu.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAggReu.Name = "btnAggReu";
+            this.btnAggReu.Size = new System.Drawing.Size(251, 49);
+            this.btnAggReu.TabIndex = 31;
+            this.btnAggReu.Text = "     NUEVA REUNIÓN";
+            this.btnAggReu.UseVisualStyleBackColor = false;
+            this.btnAggReu.Click += new System.EventHandler(this.btnAggReu_Click);
+            // 
+            // dataGridReu
+            // 
+            this.dataGridReu.AllowUserToAddRows = false;
+            this.dataGridReu.AllowUserToDeleteRows = false;
+            this.dataGridReu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridReu.Location = new System.Drawing.Point(344, 385);
+            this.dataGridReu.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridReu.Name = "dataGridReu";
+            this.dataGridReu.RowHeadersWidth = 51;
+            this.dataGridReu.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridReu.Size = new System.Drawing.Size(1324, 554);
+            this.dataGridReu.TabIndex = 37;
             // 
             // PantallaReunionLider
             // 
@@ -340,6 +451,13 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1697, 1009);
             this.ControlBox = false;
+            this.Controls.Add(this.dataGridReu);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.btnEliminarReu);
+            this.Controls.Add(this.btnEditReu);
+            this.Controls.Add(this.btnAggReu);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel2);
@@ -347,8 +465,10 @@
             this.Name = "PantallaReunionLider";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DSIG - REUNIONES - LIDER";
+            this.Load += new System.EventHandler(this.PantallaReunionLider_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
@@ -358,7 +478,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridReu)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -388,5 +510,12 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Button btnEliminarReu;
+        private System.Windows.Forms.Button btnEditReu;
+        private System.Windows.Forms.Button btnAggReu;
+        private System.Windows.Forms.DataGridView dataGridReu;
     }
 }

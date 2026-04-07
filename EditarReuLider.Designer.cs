@@ -1,6 +1,6 @@
 ﻿namespace Mock_DSIG
 {
-    partial class NuevaReunionLider
+    partial class EditarReuLider
     {
         /// <summary>
         /// Required designer variable.
@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dtpReuFecha = new System.Windows.Forms.DateTimePicker();
             this.txtIDREU = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtMotivoR = new System.Windows.Forms.TextBox();
             this.btnCancelarSActividad = new System.Windows.Forms.Button();
-            this.btnAgregarReu = new System.Windows.Forms.Button();
-            this.dtpReuFecha = new System.Windows.Forms.DateTimePicker();
+            this.btnACTREU = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,14 +50,23 @@
             this.groupBox1.Controls.Add(this.txtMotivoR);
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(79)))), ((int)(((byte)(124)))));
-            this.groupBox1.Location = new System.Drawing.Point(28, 26);
+            this.groupBox1.Location = new System.Drawing.Point(27, 13);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(716, 352);
-            this.groupBox1.TabIndex = 3;
+            this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos de la Reunión";
+            // 
+            // dtpReuFecha
+            // 
+            this.dtpReuFecha.Location = new System.Drawing.Point(31, 286);
+            this.dtpReuFecha.Margin = new System.Windows.Forms.Padding(4);
+            this.dtpReuFecha.Name = "dtpReuFecha";
+            this.dtpReuFecha.ShowCheckBox = true;
+            this.dtpReuFecha.Size = new System.Drawing.Size(652, 27);
+            this.dtpReuFecha.TabIndex = 16;
             // 
             // txtIDREU
             // 
@@ -122,51 +131,43 @@
             this.btnCancelarSActividad.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCancelarSActividad.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelarSActividad.ForeColor = System.Drawing.Color.Black;
-            this.btnCancelarSActividad.Location = new System.Drawing.Point(371, 386);
+            this.btnCancelarSActividad.Location = new System.Drawing.Point(370, 373);
             this.btnCancelarSActividad.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelarSActividad.Name = "btnCancelarSActividad";
             this.btnCancelarSActividad.Size = new System.Drawing.Size(152, 49);
-            this.btnCancelarSActividad.TabIndex = 21;
+            this.btnCancelarSActividad.TabIndex = 23;
             this.btnCancelarSActividad.Text = "CANCELAR";
             this.btnCancelarSActividad.UseVisualStyleBackColor = false;
             this.btnCancelarSActividad.Click += new System.EventHandler(this.btnCancelarSActividad_Click);
             // 
-            // btnAgregarReu
+            // btnACTREU
             // 
-            this.btnAgregarReu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(122)))), ((int)(((byte)(74)))));
-            this.btnAgregarReu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAgregarReu.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarReu.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAgregarReu.Location = new System.Drawing.Point(531, 386);
-            this.btnAgregarReu.Margin = new System.Windows.Forms.Padding(4);
-            this.btnAgregarReu.Name = "btnAgregarReu";
-            this.btnAgregarReu.Size = new System.Drawing.Size(213, 49);
-            this.btnAgregarReu.TabIndex = 20;
-            this.btnAgregarReu.Text = "AGREGAR";
-            this.btnAgregarReu.UseVisualStyleBackColor = false;
-            this.btnAgregarReu.Click += new System.EventHandler(this.btnAgregarReu_Click_1);
+            this.btnACTREU.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(122)))), ((int)(((byte)(74)))));
+            this.btnACTREU.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnACTREU.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnACTREU.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnACTREU.Location = new System.Drawing.Point(530, 373);
+            this.btnACTREU.Margin = new System.Windows.Forms.Padding(4);
+            this.btnACTREU.Name = "btnACTREU";
+            this.btnACTREU.Size = new System.Drawing.Size(213, 49);
+            this.btnACTREU.TabIndex = 22;
+            this.btnACTREU.Text = "ACTUALIZAR";
+            this.btnACTREU.UseVisualStyleBackColor = false;
+            this.btnACTREU.Click += new System.EventHandler(this.btnACTREU_Click);
             // 
-            // dtpReuFecha
-            // 
-            this.dtpReuFecha.Location = new System.Drawing.Point(31, 286);
-            this.dtpReuFecha.Margin = new System.Windows.Forms.Padding(4);
-            this.dtpReuFecha.Name = "dtpReuFecha";
-            this.dtpReuFecha.ShowCheckBox = true;
-            this.dtpReuFecha.Size = new System.Drawing.Size(652, 27);
-            this.dtpReuFecha.TabIndex = 16;
-            // 
-            // NuevaReunionLider
+            // EditarReuLider
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(773, 455);
             this.ControlBox = false;
             this.Controls.Add(this.btnCancelarSActividad);
-            this.Controls.Add(this.btnAgregarReu);
+            this.Controls.Add(this.btnACTREU);
             this.Controls.Add(this.groupBox1);
-            this.Name = "NuevaReunionLider";
+            this.Name = "EditarReuLider";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AGREGAR REUNIÓN - LIDER";
+            this.Text = "EDITAR REUNIÓN - LIDER";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -176,13 +177,13 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.DateTimePicker dtpReuFecha;
         private System.Windows.Forms.TextBox txtIDREU;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtMotivoR;
         private System.Windows.Forms.Button btnCancelarSActividad;
-        private System.Windows.Forms.Button btnAgregarReu;
-        private System.Windows.Forms.DateTimePicker dtpReuFecha;
+        private System.Windows.Forms.Button btnACTREU;
     }
 }
