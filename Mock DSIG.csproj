@@ -170,6 +170,12 @@
     <Compile Include="PantallaMiembrosLIder.Designer.cs">
       <DependentUpon>PantallaMiembrosLIder.cs</DependentUpon>
     </Compile>
+    <Compile Include="PantallaReporteLider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaReporteLider.Designer.cs">
+      <DependentUpon>PantallaReporteLider.cs</DependentUpon>
+    </Compile>
     <Compile Include="PantallaSemilleroLider.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -288,6 +294,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PantallaMiembrosLIder.resx">
       <DependentUpon>PantallaMiembrosLIder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaReporteLider.resx">
+      <DependentUpon>PantallaReporteLider.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PantallaSemilleroLider.resx">
       <DependentUpon>PantallaSemilleroLider.cs</DependentUpon>

@@ -12,28 +12,30 @@ namespace Mock_DSIG
 {
     public partial class MenuProyectosInvestigador : Form
     {
-        public MenuProyectosInvestigador()
+        int idInvestigadorSesion;
+        public MenuProyectosInvestigador(int idInvestigadorSesion)
         {
             InitializeComponent();
+            this.idInvestigadorSesion = idInvestigadorSesion;
         }
 
         private void btnInicioInvestigador_Click(object sender, EventArgs e)
         {
-            menuinicialinvestigador frminicialinvestigador = new menuinicialinvestigador();
+            menuinicialinvestigador frminicialinvestigador = new menuinicialinvestigador(idInvestigadorSesion);
             frminicialinvestigador.Show();
             this.Hide();
         }
 
         private void btnMiSemilleroInvestigador_Click(object sender, EventArgs e)
         {
-            MenuSemilleroInvestigador frmsemillero = new MenuSemilleroInvestigador();
+            MenuSemilleroInvestigador frmsemillero = new MenuSemilleroInvestigador(idInvestigadorSesion);
             frmsemillero.Show();
             this.Hide();
         }
 
         private void btnPerfilInvestigador_Click(object sender, EventArgs e)
         {
-            PerfilInvestigador frmPerfilInvestigador = new PerfilInvestigador();
+            PerfilInvestigador frmPerfilInvestigador = new PerfilInvestigador(idInvestigadorSesion);
             frmPerfilInvestigador.Show();
             this.Hide();
         }

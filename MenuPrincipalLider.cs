@@ -86,8 +86,9 @@ namespace Mock_DSIG
                 lblProyectosActivos.Text = totalProyectos.ToString();
 
                 // consulta para contar miembros del semillero del lider
-                string queryMiembros = @"SELECT COUNT(*) FROM INVESTIGADOR WHERE tipo_inv = 'INVESTIGADOR'";
+                string queryMiembros = "SELECT COUNT(*) FROM INVESTIGADOR WHERE SEMILLERO_idSEMILLERO = (SELECT idSEMILLERO FROM SEMILLERO  WHERE idInv = @idLider)";
                 SqlCommand cmd2 = new SqlCommand(queryMiembros, conexionAbierta);
+                cmd2.Parameters.AddWithValue("@idLider", idLiderSesion);
                 int totalMiembros = (int)cmd2.ExecuteScalar();
                 lblmiembros.Text = totalMiembros.ToString();
                 cn.Cerrar();
@@ -98,10 +99,38 @@ namespace Mock_DSIG
                 if (cn.Conectar().State == ConnectionState.Open) cn.Cerrar();
             }
         }
+        public void CargarTablaReportes()
+        {
+            try
+            {
+                SqlConnection conexionAbierta = cn.Conectar();
+                // Consulta para traer los reportes del semillero del líder logueado
+                string query = "SELECT idREPORTE AS [ID], nombre_reporte AS [Nombre], tipo_reporte AS [Tipo], fecha_reporte AS [Fecha], descripcion_reporte AS [Descripción] FROM REPORTE  WHERE SEMILLERO_idSEMILLERO = (SELECT idSEMILLERO FROM SEMILLERO WHERE idInv = @idLider)";
+                SqlDataAdapter da = new SqlDataAdapter(query, conexionAbierta);
+                da.SelectCommand.Parameters.AddWithValue("@idLider", idLiderSesion);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                dataGridReportes.DataSource = dt;
+
+                cn.Cerrar();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar reportes: " + ex.Message);
+            }
+        }
 
         private void MenuPrincipalLider_Load(object sender, EventArgs e)
         {
             CargarDatosdelSemillero();
+            CargarTablaReportes();
+        }
+
+        private void btnGenerarReportes_Click(object sender, EventArgs e)
+        {
+            PantallaReporteLider frmReporte = new PantallaReporteLider(this.idLiderSesion);
+            frmReporte.ShowDialog(); // Usamos ShowDialog para esperar a que termine
+            CargarTablaReportes();
         }
     }
 }

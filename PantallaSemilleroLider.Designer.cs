@@ -59,7 +59,6 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.btnSalirLider = new System.Windows.Forms.Button();
-            this.btnReportesLider = new System.Windows.Forms.Button();
             this.btnMiembrosLider = new System.Windows.Forms.Button();
             this.btnProyectosLider = new System.Windows.Forms.Button();
             this.btnMiSemilleroLider = new System.Windows.Forms.Button();
@@ -358,7 +357,6 @@
             this.panel2.Controls.Add(this.pictureBox6);
             this.panel2.Controls.Add(this.panel7);
             this.panel2.Controls.Add(this.btnSalirLider);
-            this.panel2.Controls.Add(this.btnReportesLider);
             this.panel2.Controls.Add(this.btnMiembrosLider);
             this.panel2.Controls.Add(this.btnProyectosLider);
             this.panel2.Controls.Add(this.btnMiSemilleroLider);
@@ -461,19 +459,6 @@
             this.btnSalirLider.Text = "          CERRAR SESIÓN";
             this.btnSalirLider.UseVisualStyleBackColor = true;
             this.btnSalirLider.Click += new System.EventHandler(this.btnSalirLider_Click);
-            // 
-            // btnReportesLider
-            // 
-            this.btnReportesLider.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnReportesLider.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReportesLider.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnReportesLider.Location = new System.Drawing.Point(0, 532);
-            this.btnReportesLider.Margin = new System.Windows.Forms.Padding(4);
-            this.btnReportesLider.Name = "btnReportesLider";
-            this.btnReportesLider.Size = new System.Drawing.Size(311, 60);
-            this.btnReportesLider.TabIndex = 11;
-            this.btnReportesLider.Text = "         REPORTES";
-            this.btnReportesLider.UseVisualStyleBackColor = true;
             // 
             // btnMiembrosLider
             // 
@@ -647,7 +632,6 @@
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Button btnSalirLider;
-        private System.Windows.Forms.Button btnReportesLider;
         private System.Windows.Forms.Button btnMiembrosLider;
         private System.Windows.Forms.Button btnProyectosLider;
         private System.Windows.Forms.Button btnMiSemilleroLider;

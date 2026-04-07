@@ -15,6 +15,7 @@ namespace Mock_DSIG
         DataSet ds = new DataSet(); // Variable de tipo DataSet para almacenar los datos obtenidos de la base de datos
         Boolean estado_coneccion = false; // Variable booleana para verificar el estado de la conexión
         int idLiderSesion; // Variable para almacenar el ID del líder que inició sesión
+        int idInvestigadorSesion; // Variable para almacenar el ID del investigador que inició sesión
 
         public Boolean IniciarSesionComoAdmin(String correo_admin, string contrasenia_admin)
         {
@@ -82,7 +83,8 @@ namespace Mock_DSIG
                         {
                             MessageBox.Show("Bienvenido INVESTIGADOR");
                             cn.Cerrar();
-                            menuinicialinvestigador MenuInvestigador = new menuinicialinvestigador();
+                            idInvestigadorSesion = Convert.ToInt32(dr["idInv"]);
+                            menuinicialinvestigador MenuInvestigador = new menuinicialinvestigador(idInvestigadorSesion);
                             MenuInvestigador.Show();
                             estado_coneccion = true;
                         }
